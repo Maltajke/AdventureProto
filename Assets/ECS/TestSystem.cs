@@ -19,7 +19,11 @@ namespace ECS
         public void Run()
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
-                _world.NewEntity().Get<SomeOneFrameComponent>().Value = Random.Range(0, 255);
+            {
+                var entity = _world.NewEntity();
+                entity.Get<DefaultComponent>();
+                entity.Get<SomeOneFrameComponent>().Value = Random.Range(0, 255);
+            }
         }
     }    
     

@@ -45,7 +45,9 @@ namespace ECS
             Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create (_updateSystems);
             Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create (_world);
 #endif  
-            _updateSystems.Init();
+            _updateSystems?.Init();
+            _fixedUpdateSystems?.Init();
+            _lateUpdateSystems?.Init();
         }
 
         public void Tick()
@@ -53,14 +55,14 @@ namespace ECS
             _updateSystems?.Run();
         }
 
-        public void LateTick()
-        {
-            _lateUpdateSystems?.Run();
-        }
-
         public void FixedTick()
         {
             _fixedUpdateSystems?.Run();
+        }
+        
+        public void LateTick()
+        {
+            _lateUpdateSystems?.Run();
         }
     }
 }
