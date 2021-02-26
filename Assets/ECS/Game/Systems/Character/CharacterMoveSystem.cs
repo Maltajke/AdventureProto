@@ -1,30 +1,31 @@
-﻿using ECS.Core.Utils.SystemInterfaces;
+﻿using DataBase.Character;
+using ECS.Core.Utils.SystemInterfaces;
 using ECS.Game.Components;
 using ECS.Game.Components.Flags;
 using Leopotam.Ecs;
 using Services.Input;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;
 using Zenject;
 
 namespace ECS.Game.Systems.Character
 {
     public class CharacterMoveSystem : IEcsUpdateSystem
     {
-        [Inject] 
-        private readonly IInputManager _inputManager;
-        private readonly EcsFilter<PositionComponent, PlayerComponent> _player;
+        [Inject] private readonly IInputManager _inputManager;
+        [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
+        private readonly EcsFilter<PlayerComponent, PositionComponent, RotationComponent> _player;
 
         public void Run()
         {
             foreach (var i in _player)
             {
                 var inputValue = _inputManager.InputValue;
-                ref var position = ref _player.Get1(i).Value;
+                ref var position = ref _player.Get2(i).Value;
+                ref var rotation = ref _player.Get3(i).Value;
                 if (inputValue.sqrMagnitude >= .01f)
                 {
-                    var newPos = position + inputValue * Time.deltaTime * 10f;
+                    var newPos = position + inputValue * Time.deltaTime * _characterSettingsBase.CharacterSettings.MoveSpeed;
                     NavMeshHit hit;
                     var isValid = NavMesh.SamplePosition(newPos, out hit, .3f, NavMesh.AllAreas);
                     if (isValid)
@@ -32,6 +33,10 @@ namespace ECS.Game.Systems.Character
                         if ((position - hit.position).magnitude >= .02f)
                             position = hit.position;
                     }
+                    
+                    var lookDir = new Vector3(inputValue.x, 0, inputValue.z);
+                    var toRotation = Quaternion.LookRotation(lookDir, Vector3.up);
+                    rotation = Quaternion.RotateTowards(rotation, toRotation, 720 * Time.deltaTime);
                 }
             }
         }

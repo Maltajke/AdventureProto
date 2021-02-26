@@ -11,11 +11,6 @@ namespace ECS.Game.Systems
     {
         [Inject] private readonly ISpawnService<EcsEntity, ILinkable> _spawnService;
         protected override EcsFilter<PrefabComponent> ReactiveFilter { get; }
-        protected override bool EntityFilter(EcsEntity entity)
-        {
-            return true;
-        }
-
         protected override void Execute(EcsEntity entity)
         {
             var linkable = _spawnService.Spawn(entity);

@@ -18,7 +18,8 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterMoveSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<PositionTranslateSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<SetCharacterViewSystem>().AsSingle();
         }
     }
 }

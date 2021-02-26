@@ -3,10 +3,10 @@ using Leopotam.Ecs;
 
 namespace ECS.Core.Utils.ReactiveSystem
 {
-    public abstract class ReactiveSystem<T>  : IEcsUpdateSystem where T : struct
+    public abstract class ReactiveSystem<T> : IEcsUpdateSystem where T : struct
     {
         protected abstract EcsFilter<T> ReactiveFilter { get; }
-        protected abstract bool EntityFilter(EcsEntity entity);
+        protected virtual bool EntityFilter(EcsEntity entity) => true;
         public void Run()
         {
             foreach (var i in ReactiveFilter)

@@ -69,6 +69,7 @@
               <e p="LinkComponent.cs" t="Include" />
               <e p="PositionComponent.cs" t="Include" />
               <e p="PrefabComponent.cs" t="Include" />
+              <e p="RotationComponent.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="Character" t="Include">
@@ -77,7 +78,8 @@
               <e p="GameInitializeSystem.cs" t="Include" />
               <e p="InstantiateSystem.cs" t="Include" />
               <e p="Linked" t="Include">
-                <e p="PositionTranslateSystem.cs" t="Include" />
+                <e p="PositionRotationTranslateSystem.cs" t="Include" />
+                <e p="SetCharacterViewSystem.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -1310,6 +1312,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="DataBase" t="Include">
+            <e p="Character" t="Include">
+              <e p="CharacterSettings.cs" t="Include" />
+              <e p="CharacterSettingsBase.cs" t="Include" />
+              <e p="ICharacterSettingsBase.cs" t="Include" />
+            </e>
             <e p="Objects" t="Include">
               <e p="Impl" t="Include">
                 <e p="PrefabsBase.cs" t="Include" />
