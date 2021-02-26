@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Services.Input;
+using Services.Input.Impls;
 using Zenject;
 
 namespace Installers
@@ -7,7 +8,7 @@ namespace Installers
     {
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<TestService>().AsSingle();
+            Container.BindInterfacesTo<InputManager>().AsSingle();
         }
     }
 }

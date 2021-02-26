@@ -1,6 +1,6 @@
-﻿using ECS.Core.Utils;
-using Leopotam.Ecs;
-using UnityEngine;
+﻿using ECS.Game.Systems;
+using ECS.Game.Systems.Character;
+using ECS.Game.Systems.Linked;
 using Zenject;
 
 namespace ECS.Installers
@@ -15,8 +15,10 @@ namespace ECS.Installers
 
         private void BindSystems()
         {
-            Container.BindInterfacesAndSelfTo<TestSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<TestSystem2>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CharacterMoveSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<PositionTranslateSystem>().AsSingle();
         }
     }
 }
