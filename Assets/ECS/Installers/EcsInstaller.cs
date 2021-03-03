@@ -17,7 +17,17 @@ namespace ECS.Installers
         {
             Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
+            
             Container.BindInterfacesAndSelfTo<CharacterMoveSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CameraMoveSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<CalculateDistanceSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<NpcMarkerSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<NpcSetInteractViewSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<NpcUnsetInteractViewSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<NpcInteractSystem>().AsSingle();
+            
             Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<SetCharacterViewSystem>().AsSingle();
         }

@@ -1,6 +1,7 @@
 {
     "name": "UniRx",
-    "references": [],
+    "references": [       
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

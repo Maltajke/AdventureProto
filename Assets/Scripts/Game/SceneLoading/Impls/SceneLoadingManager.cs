@@ -9,7 +9,6 @@ namespace Game.SceneLoading.Impls
 	public class SceneLoadingManager : ISceneLoadingManager
 	{
 		private readonly SignalBus _signalBus;
-		private ISceneLoadingManager _sceneLoadingManagerImplementation;
 		private LoadingProcessor _processor;
 
 		public SceneLoadingManager(SignalBus signalBus)
@@ -37,8 +36,8 @@ namespace Game.SceneLoading.Impls
 		{
 			_processor = new LoadingProcessor();
 			_processor
-				.AddProcess(new LoadingProcess("Game", LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess("Menu"))
+				.AddProcess(new LoadingProcess("StartScene", LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess("MainMenu"))
 				.AddProcess(new RunContextProcess("GameContext"))
 				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
 				.DoProcess();
@@ -64,6 +63,39 @@ namespace Game.SceneLoading.Impls
 				.AddProcess(new LoadingProcess("Menu", LoadSceneMode.Additive))
 				.AddProcess(new UnloadProcess("Menu"))
 				.AddProcess(new RunContextProcess("MenuContext"))
+				.DoProcess();
+		}
+
+		public void LoadZalupinskFromStartScene()
+		{
+			_processor = new LoadingProcessor();
+			_processor
+				.AddProcess(new LoadingProcess("Zalupinsk", LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess("StartScene"))
+				.AddProcess(new RunContextProcess("GameContext"))
+				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
+				.DoProcess();
+		}
+
+		public void LoadScene(string from, string to)
+		{
+			_processor = new LoadingProcessor();
+			_processor
+				.AddProcess(new LoadingProcess(to, LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess(from))
+				.AddProcess(new RunContextProcess("GameContext"))
+				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
+				.DoProcess();
+		}
+
+		public void LoadScene(string key)
+		{
+			_processor = new LoadingProcessor();
+			_processor
+				.AddProcess(new LoadingProcess("Zalupinsk", LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess("StartScene"))
+				.AddProcess(new RunContextProcess("GameContext"))
+				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
 				.DoProcess();
 		}
 

@@ -1,4 +1,6 @@
-﻿using ECS.Game.Components;
+﻿using System;
+using ECS.Core.Utils.ReactiveSystem.Components;
+using ECS.Game.Components;
 using Leopotam.Ecs;
 
 namespace ECS.Utils.Extensions

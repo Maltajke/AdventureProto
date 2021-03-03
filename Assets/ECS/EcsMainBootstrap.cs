@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ECS.Core.Utils.SystemInterfaces;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
@@ -6,7 +7,7 @@ using Zenject;
 
 namespace ECS
 {
-    public class EcsMainBootstrap : IInitializable, ITickable
+    public class EcsMainBootstrap : IInitializable, ITickable, IDisposable
     {
         private readonly EcsWorld _world;
         private readonly EcsSystems _initUpdateSystems;
@@ -38,6 +39,12 @@ namespace ECS
         public void Tick()
         {
             _initUpdateSystems?.Run();
+        }
+
+        public void Dispose()
+        {
+            _initUpdateSystems?.Destroy();
+            _world?.Destroy();
         }
     }
 }

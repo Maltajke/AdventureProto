@@ -9,10 +9,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="ECS" t="Include">
-          <e p="Components" t="Include">
-            <e p="DefaultComponent.cs" t="Include" />
-            <e p="SomeOneFrameComponent.cs" t="Include" />
-          </e>
           <e p="Core" t="Include">
             <e p="Leopotam.Ecs.asmdef" t="Include" />
             <e p="src" t="Include">
@@ -50,6 +46,10 @@
             </e>
             <e p="Utils" t="Include">
               <e p="ReactiveSystem" t="Include">
+                <e p="Components" t="Include">
+                  <e p="EventAddComponent.cs" t="Include" />
+                  <e p="EventRemoveComponent.cs" t="Include" />
+                </e>
                 <e p="ReactiveSystem.cs" t="Include" />
               </e>
               <e p="SystemInterfaces" t="Include">
@@ -62,8 +62,12 @@
           <e p="EcsMainBootstrap.cs" t="Include" />
           <e p="Game" t="Include">
             <e p="Components" t="Include">
+              <e p="DistanceToPlayerComponent.cs" t="Include" />
               <e p="Flags" t="Include">
                 <e p="CameraComponent.cs" t="Include" />
+                <e p="EnemyComponent.cs" t="Include" />
+                <e p="InteractComponent.cs" t="Include" />
+                <e p="NpcComponent.cs" t="Include" />
                 <e p="PlayerComponent.cs" t="Include" />
               </e>
               <e p="LinkComponent.cs" t="Include" />
@@ -72,15 +76,21 @@
               <e p="RotationComponent.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
+              <e p="CalculateDistanceSystem.cs" t="Include" />
               <e p="Character" t="Include">
+                <e p="CameraMoveSystem.cs" t="Include" />
                 <e p="CharacterMoveSystem.cs" t="Include" />
               </e>
               <e p="GameInitializeSystem.cs" t="Include" />
               <e p="InstantiateSystem.cs" t="Include" />
               <e p="Linked" t="Include">
+                <e p="NpcSetInteractViewSystem.cs" t="Include" />
+                <e p="NpcUnsetInteractViewSystem.cs" t="Include" />
                 <e p="PositionRotationTranslateSystem.cs" t="Include" />
                 <e p="SetCharacterViewSystem.cs" t="Include" />
               </e>
+              <e p="NpcInteractSystem.cs" t="Include" />
+              <e p="NpcMarkerSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Installers" t="Include">
@@ -99,15 +109,70 @@
           <e p="Views" t="Include">
             <e p="ILinkable.cs" t="Include" />
             <e p="Impls" t="Include">
+              <e p="CameraView.cs" t="Include" />
               <e p="Character" t="Include">
                 <e p="CharacterView.cs" t="Include" />
+                <e p="Impls" t="Include">
+                  <e p="EnemyView.cs" t="Include" />
+                  <e p="NpcView.cs" t="Include" />
+                </e>
               </e>
               <e p="LinkableView.cs" t="Include" />
-              <e p="ObjectView.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
+          <e p="EasyButtons" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Button.cs" t="Include" />
+              <e p="ButtonsDrawer.cs" t="Include" />
+              <e p="ButtonWithoutParams.cs" t="Include" />
+              <e p="ButtonWithParams.cs" t="Include" />
+              <e p="EasyButtons.Editor.asmdef" t="Include" />
+              <e p="NonSerializedError.cs" t="Include" />
+              <e p="NoScriptFieldEditor.cs" t="Include" />
+              <e p="ObjectEditor.cs" t="Include" />
+              <e p="Utils" t="Include">
+                <e p="DrawUtility.cs" t="Include" />
+                <e p="EnumExtensions.cs" t="Include" />
+                <e p="ScriptableObjectCache.cs" t="Include" />
+                <e p="StringExtensions.cs" t="Include" />
+                <e p="TypeExtensions.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="ButtonAttribute.cs" t="Include" />
+              <e p="EasyButtons.asmdef" t="Include" />
+            </e>
+            <e p="Samples" t="Include">
+              <e p="ButtonsExample" t="Include">
+                <e p="ButtonsExample.cs" t="Include" />
+              </e>
+              <e p="CustomEditorButtonsExample" t="Include">
+                <e p="CustomEditorButtonsExample.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="CustomEditorButtonsExampleEditor.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ScriptableObjectExample" t="Include">
+                <e p="ScriptableObjectExample.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Extensions" t="Include">
             <e p="ZenjectUtil" t="Include">
               <e p="Extensions" t="Include">
@@ -142,6 +207,135 @@
                   <e p="ResourceSubstitute.cs" t="Include" />
                   <e p="ZenjectContextExtensions.cs" t="Include" />
                 </e>
+              </e>
+            </e>
+          </e>
+          <e p="PdUtils" t="Include">
+            <e p="Runtime" t="Include">
+              <e p="AppVersion" t="Include">
+                <e p="IAppVersionService.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="AppVersionService.cs" t="Include" />
+                </e>
+                <e p="Version.cs" t="Include" />
+              </e>
+              <e p="CollectionExtensions.cs" t="Include" />
+              <e p="Dao" t="Include">
+                <e p="IDao.cs" t="Include" />
+                <e p="LocalStorageDao.cs" t="Include" />
+                <e p="LocalStorageDaoEmpty.cs" t="Include" />
+              </e>
+              <e p="DataPool.cs" t="Include" />
+              <e p="DateTimeService" t="Include">
+                <e p="IDateTimeService.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="DateTimeService.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ExtensionFormat.cs" t="Include" />
+              <e p="FileHandling.cs" t="Include" />
+              <e p="FirstStartService" t="Include">
+                <e p="IFirstStartService.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="FirstStartService.cs" t="Include" />
+                </e>
+              </e>
+              <e p="FlagUtils.cs" t="Include" />
+              <e p="GeoLocation" t="Include">
+                <e p="IGeoLocationService.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="GeoLocationService.cs" t="Include" />
+                </e>
+                <e p="LocationVo.cs" t="Include" />
+              </e>
+              <e p="GizmosUtil.cs" t="Include" />
+              <e p="GZipUtils.cs" t="Include" />
+              <e p="Interfaces" t="Include">
+                <e p="IStartable.cs" t="Include" />
+                <e p="IUiInitializable.cs" t="Include" />
+              </e>
+              <e p="IntervalTimeManager" t="Include">
+                <e p="IIntervalTimeManager.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="IntervalTimeManager.cs" t="Include" />
+                </e>
+              </e>
+              <e p="IRepository.cs" t="Include" />
+              <e p="Json" t="Include">
+                <e p="QuaternionJsonConverter.cs" t="Include" />
+                <e p="Vector2JsonConverter.cs" t="Include" />
+                <e p="Vector3JsonConverter.cs" t="Include" />
+              </e>
+              <e p="MailService" t="Include">
+                <e p="IMailService.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="MailService.cs" t="Include" />
+                </e>
+                <e p="Mail.cs" t="Include" />
+              </e>
+              <e p="NetworkConnectionChecker.cs" t="Include" />
+              <e p="PdAudio" t="Include">
+                <e p="Attributes" t="Include">
+                  <e p="UiSoundAttribute.cs" t="Include" />
+                </e>
+                <e p="AudioInstaller.cs" t="Include" />
+                <e p="IPdAudio.cs" t="Include" />
+                <e p="IPdAudioSettings.cs" t="Include" />
+                <e p="IPdUiSoundPlayable.cs" t="Include" />
+                <e p="PdAudio.cs" t="Include" />
+                <e p="PdAudioSources.cs" t="Include" />
+                <e p="PdAudioUiPlayables.cs" t="Include" />
+              </e>
+              <e p="pdutils.asmdef" t="Include" />
+              <e p="PlayerPrefs" t="Include">
+                <e p="Impl" t="Include">
+                  <e p="InMemoryPlayerPrefsManager.cs" t="Include" />
+                  <e p="PersistancePlayerPrefsManager.cs" t="Include" />
+                </e>
+                <e p="IPlayerPrefsManager.cs" t="Include" />
+                <e p="PlayerPrefsKeys.cs" t="Include" />
+              </e>
+              <e p="RandomProvider" t="Include">
+                <e p="Impl" t="Include">
+                  <e p="SystemRandomProvider.cs" t="Include" />
+                  <e p="UnityRandomProvider.cs" t="Include" />
+                </e>
+                <e p="IRandomProvider.cs" t="Include" />
+              </e>
+              <e p="Range.cs" t="Include" />
+              <e p="SceneLoadingProcessor" t="Include">
+                <e p="ILoadingProcessor.cs" t="Include" />
+                <e p="Impls" t="Include">
+                  <e p="LoadingProcess.cs" t="Include" />
+                  <e p="LoadingProcessor.cs" t="Include" />
+                  <e p="Process.cs" t="Include" />
+                  <e p="SetActiveSceneProcessor.cs" t="Include" />
+                  <e p="UnloadProcess.cs" t="Include" />
+                  <e p="WaitFramesProcessor.cs" t="Include" />
+                </e>
+                <e p="IProcess.cs" t="Include" />
+                <e p="IProcessor.cs" t="Include" />
+                <e p="IProgressable.cs" t="Include" />
+              </e>
+              <e p="ScheduledExecutorService" t="Include">
+                <e p="Impl" t="Include">
+                  <e p="ScheduledExecutorService.cs" t="Include" />
+                  <e p="ScheduledExecutorServiceEmpty.cs" t="Include" />
+                </e>
+                <e p="IScheduledExecutorService.cs" t="Include" />
+              </e>
+              <e p="TemplatePool.cs" t="Include" />
+              <e p="Uid.cs" t="Include" />
+              <e p="Web" t="Include">
+                <e p="Impl" t="Include">
+                  <e p="WebRequester.cs" t="Include" />
+                </e>
+                <e p="IWebRequester.cs" t="Include" />
+                <e p="WebResponse.cs" t="Include" />
+              </e>
+              <e p="Weight" t="Include">
+                <e p="IWeight.cs" t="Include" />
+                <e p="WeightUtils.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -1312,6 +1506,12 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="DataBase" t="Include">
+            <e p="Audio" t="Include">
+              <e p="IAudioBase.cs" t="Include" />
+              <e p="Impl" t="Include">
+                <e p="AudioBase.cs" t="Include" />
+              </e>
+            </e>
             <e p="Character" t="Include">
               <e p="CharacterSettings.cs" t="Include" />
               <e p="CharacterSettingsBase.cs" t="Include" />
@@ -1337,11 +1537,45 @@
                 <e p="RunContextProcess.cs" t="Include" />
               </e>
             </e>
+            <e p="UI" t="Include">
+              <e p="BlackScreen" t="Include">
+                <e p="BlackScreenView.cs" t="Include" />
+                <e p="BlackScreenViewController.cs" t="Include" />
+                <e p="BlackScreenWindow.cs" t="Include" />
+              </e>
+              <e p="LocationChoise" t="Include">
+                <e p="LocationChoiseController.cs" t="Include" />
+                <e p="LocationChoiseView.cs" t="Include" />
+                <e p="LocationChoiseWIndow.cs" t="Include" />
+              </e>
+              <e p="MainMenu" t="Include">
+                <e p="MainMenuView.cs" t="Include" />
+                <e p="MainMenuViewController.cs" t="Include" />
+                <e p="MainMenuWindow.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Utils" t="Include">
+              <e p="LevelUtils.cs" t="Include" />
+              <e p="MonoBehUtils" t="Include">
+                <e p="GetPointFromScene.cs" t="Include" />
+                <e p="QuadArea.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Initializers" t="Include">
+            <e p="GameInitializer.cs" t="Include" />
+            <e p="MenuInitializer.cs" t="Include" />
+            <e p="PdAudioInitializer.cs" t="Include" />
           </e>
           <e p="Installers" t="Include">
             <e p="GameInstaller.cs" t="Include" />
+            <e p="GameUiPrefabInstaller.cs" t="Include" />
+            <e p="MenuInstaller.cs" t="Include" />
+            <e p="MenuUiPrefabInstaller.cs" t="Include" />
             <e p="ProjectInstaller.cs" t="Include" />
-            <e p="ProjectPrefabInstaller.cs" t="Include" />
+            <e p="ProjectPrefabsInstaller.cs" t="Include" />
+            <e p="ProjectUiPrefabInstaller.cs" t="Include" />
+            <e p="SignalInstaller.cs" t="Include" />
           </e>
           <e p="NavMeshComponents" t="Include">
             <e p="Editor" t="Include">
@@ -1392,134 +1626,13 @@
           </e>
         </e>
       </e>
+      <e p="EasyButtons.csproj" t="IncludeRecursive" />
+      <e p="EasyButtons.Editor.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.UnityIntegration.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.UnityIntegration.Editor.csproj" t="IncludeRecursive" />
       <e p="Library" t="Include">
         <e p="PackageCache" t="Include">
-          <e p="com.playdarium.pdutils@f1d9b28c61" t="Include">
-            <e p="Runtime" t="Include">
-              <e p="AppVersion" t="Include">
-                <e p="IAppVersionService.cs" t="Include" />
-                <e p="Impl" t="Include">
-                  <e p="AppVersionService.cs" t="Include" />
-                </e>
-                <e p="Version.cs" t="Include" />
-              </e>
-              <e p="CollectionExtensions.cs" t="Include" />
-              <e p="Dao" t="Include">
-                <e p="IDao.cs" t="Include" />
-                <e p="LocalStorageDao.cs" t="Include" />
-                <e p="LocalStorageDaoEmpty.cs" t="Include" />
-              </e>
-              <e p="DataPool.cs" t="Include" />
-              <e p="DateTimeService" t="Include">
-                <e p="IDateTimeService.cs" t="Include" />
-                <e p="Impl" t="Include">
-                  <e p="DateTimeService.cs" t="Include" />
-                </e>
-              </e>
-              <e p="ExtensionFormat.cs" t="Include" />
-              <e p="FileHandling.cs" t="Include" />
-              <e p="FirstStartService" t="Include">
-                <e p="IFirstStartService.cs" t="Include" />
-                <e p="Impl" t="Include">
-                  <e p="FirstStartService.cs" t="Include" />
-                </e>
-              </e>
-              <e p="FlagUtils.cs" t="Include" />
-              <e p="GeoLocation" t="Include">
-                <e p="IGeoLocationService.cs" t="Include" />
-                <e p="Impl" t="Include">
-                  <e p="GeoLocationService.cs" t="Include" />
-                </e>
-                <e p="LocationVo.cs" t="Include" />
-              </e>
-              <e p="GizmosUtil.cs" t="Include" />
-              <e p="GZipUtils.cs" t="Include" />
-              <e p="Interfaces" t="Include">
-                <e p="IStartable.cs" t="Include" />
-                <e p="IUiInitializable.cs" t="Include" />
-              </e>
-              <e p="IntervalTimeManager" t="Include">
-                <e p="IIntervalTimeManager.cs" t="Include" />
-                <e p="Impl" t="Include">
-                  <e p="IntervalTimeManager.cs" t="Include" />
-                </e>
-              </e>
-              <e p="IRepository.cs" t="Include" />
-              <e p="Json" t="Include">
-                <e p="QuaternionJsonConverter.cs" t="Include" />
-                <e p="Vector2JsonConverter.cs" t="Include" />
-                <e p="Vector3JsonConverter.cs" t="Include" />
-              </e>
-              <e p="MailService" t="Include">
-                <e p="IMailService.cs" t="Include" />
-                <e p="Impl" t="Include">
-                  <e p="MailService.cs" t="Include" />
-                </e>
-                <e p="Mail.cs" t="Include" />
-              </e>
-              <e p="NetworkConnectionChecker.cs" t="Include" />
-              <e p="pdutils.asmdef" t="Include" />
-              <e p="PlayerPrefs" t="Include">
-                <e p="Impl" t="Include">
-                  <e p="InMemoryPlayerPrefsManager.cs" t="Include" />
-                  <e p="PersistancePlayerPrefsManager.cs" t="Include" />
-                </e>
-                <e p="IPlayerPrefsManager.cs" t="Include" />
-                <e p="PlayerPrefsKeys.cs" t="Include" />
-              </e>
-              <e p="RandomProvider" t="Include">
-                <e p="Impl" t="Include">
-                  <e p="SystemRandomProvider.cs" t="Include" />
-                  <e p="UnityRandomProvider.cs" t="Include" />
-                </e>
-                <e p="IRandomProvider.cs" t="Include" />
-              </e>
-              <e p="Range.cs" t="Include" />
-              <e p="SceneLoadingProcessor" t="Include">
-                <e p="ILoadingProcessor.cs" t="Include" />
-                <e p="Impls" t="Include">
-                  <e p="LoadingProcess.cs" t="Include" />
-                  <e p="LoadingProcessor.cs" t="Include" />
-                  <e p="Process.cs" t="Include" />
-                  <e p="SetActiveSceneProcessor.cs" t="Include" />
-                  <e p="UnloadProcess.cs" t="Include" />
-                  <e p="WaitFramesProcessor.cs" t="Include" />
-                </e>
-                <e p="IProcess.cs" t="Include" />
-                <e p="IProcessor.cs" t="Include" />
-                <e p="IProgressable.cs" t="Include" />
-              </e>
-              <e p="ScheduledExecutorService" t="Include">
-                <e p="Impl" t="Include">
-                  <e p="ScheduledExecutorService.cs" t="Include" />
-                  <e p="ScheduledExecutorServiceEmpty.cs" t="Include" />
-                </e>
-                <e p="IScheduledExecutorService.cs" t="Include" />
-              </e>
-              <e p="TemplatePool.cs" t="Include" />
-              <e p="Uid.cs" t="Include" />
-              <e p="Vibration" t="Include">
-                <e p="Impl" t="Include">
-                  <e p="VibrationService.cs" t="Include" />
-                </e>
-                <e p="IVibrationService.cs" t="Include" />
-              </e>
-              <e p="Web" t="Include">
-                <e p="Impl" t="Include">
-                  <e p="WebRequester.cs" t="Include" />
-                </e>
-                <e p="IWebRequester.cs" t="Include" />
-                <e p="WebResponse.cs" t="Include" />
-              </e>
-              <e p="Weight" t="Include">
-                <e p="IWeight.cs" t="Include" />
-                <e p="WeightUtils.cs" t="Include" />
-              </e>
-            </e>
-          </e>
           <e p="com.unity.collab-proxy@1.2.16" t="Include">
             <e p="Editor" t="Include">
               <e p="AssemblyInfo.cs" t="Include" />

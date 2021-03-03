@@ -6,6 +6,7 @@
 
 using System;
 using System.Runtime.CompilerServices;
+using ECS.Core.Utils.ReactiveSystem.Components;
 
 namespace Leopotam.Ecs {
     /// <summary>
@@ -97,6 +98,7 @@ namespace Leopotam.Ecs {
                     return ref ((EcsComponentPool<T>) entity.Owner.ComponentPools[typeIdx]).Items[entityData.Components[i + 1]];
                 }
             }
+
             // attach new component.
             if (entityData.Components.Length == entityData.ComponentsCountX2) {
                 Array.Resize (ref entityData.Components, entityData.ComponentsCountX2 << 1);
@@ -113,9 +115,9 @@ namespace Leopotam.Ecs {
             }
 #endif
             entity.Owner.UpdateFilters (typeIdx, entity, entityData);
+            
             return ref pool.Items[idx];
         }
-
         /// <summary>
         /// Checks that component is attached to entity.
         /// </summary>

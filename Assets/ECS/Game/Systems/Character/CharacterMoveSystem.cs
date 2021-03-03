@@ -26,8 +26,7 @@ namespace ECS.Game.Systems.Character
                 if (inputValue.sqrMagnitude >= .01f)
                 {
                     var newPos = position + inputValue * Time.deltaTime * _characterSettingsBase.CharacterSettings.MoveSpeed;
-                    NavMeshHit hit;
-                    var isValid = NavMesh.SamplePosition(newPos, out hit, .3f, NavMesh.AllAreas);
+                    var isValid = NavMesh.SamplePosition(newPos, out var hit, .3f, NavMesh.AllAreas);
                     if (isValid)
                     {
                         if ((position - hit.position).magnitude >= .02f)

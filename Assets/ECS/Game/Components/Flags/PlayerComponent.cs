@@ -1,6 +1,8 @@
-﻿namespace ECS.Game.Components.Flags
+﻿using Leopotam.Ecs;
+
+namespace ECS.Game.Components.Flags
 {
-    public struct PlayerComponent
+    public struct PlayerComponent : IEcsIgnoreInFilter
     {
         
     }

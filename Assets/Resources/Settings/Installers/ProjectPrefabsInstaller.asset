@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b69cc58253d34a59abb1e3e3d32d5472, type: 3}
   m_Name: ProjectPrefabsInstaller
-  m_EditorClassIdentifier: Assembly-CSharp:Installers:ProjectPrefabsInstaller
+  m_EditorClassIdentifier: 
   prefabBase: {fileID: 11400000, guid: 591907a7a196021409d354f0c953cf07, type: 2}
   characterBase: {fileID: 11400000, guid: 702214905685f7441b6cec7f733570d7, type: 2}

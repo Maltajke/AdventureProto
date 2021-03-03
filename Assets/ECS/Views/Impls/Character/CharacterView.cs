@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ECS.Views.Impls.Character
 {
-    public class CharacterView : ObjectView
+    public class CharacterView : LinkableView
     {
         [SerializeField] private Animator _animator;
         private static readonly int Forward = Animator.StringToHash("Forward");

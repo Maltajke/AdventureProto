@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "com.playdarium.pdutils": {
-      "version": "https://gitlab.com/nazgull30/pdutils.git",
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "f1d9b28c617daa1ac2fbcfa59fe858e011bee0c3"
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.collab-proxy": {
       "version": "1.2.16",

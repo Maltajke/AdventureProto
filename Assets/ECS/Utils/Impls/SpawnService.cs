@@ -1,4 +1,5 @@
-﻿using DataBase.Objects;
+﻿using System;
+using DataBase.Objects;
 using ECS.Game.Components;
 using ECS.Views;
 using Leopotam.Ecs;
@@ -30,6 +31,9 @@ namespace ECS.Utils.Impls
         private ILinkable InstantiateLinkable(EcsEntity entity, GameObject prefab)
         {
             var go = _container.InstantiatePrefab(prefab, Vector3.zero, Quaternion.identity, null);
+            var components = go.GetComponents<ILinkable>();
+            Debug.Assert(components.Length == 1,$"Object view must have only one ILinkable component!!" +
+                                                $" Description : {go.name} " );
             return go.GetComponent<ILinkable>();
         }
     }

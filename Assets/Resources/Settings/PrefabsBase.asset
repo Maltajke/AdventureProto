@@ -14,5 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - Name: MainPlayer
+    GameObject: {fileID: 671760075909527164, guid: 6280c81f983cd5342a267359f301370e,
+      type: 3}
+  - Name: MainCamera
+    GameObject: {fileID: 2181769509312897065, guid: 40668d4469e9b774397e05935f8264a1,
+      type: 3}
+  - Name: Enemy
     GameObject: {fileID: 7744615296825873937, guid: 82bcbf11ceeef8d43b0d88684a27a6e1,
+      type: 3}
+  - Name: NPC
+    GameObject: {fileID: 8299163323473465985, guid: 9523ac8f772112540937ec2f9b29203a,
       type: 3}
