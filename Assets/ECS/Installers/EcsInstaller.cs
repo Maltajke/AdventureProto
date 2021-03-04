@@ -1,6 +1,7 @@
 ﻿using ECS.Game.Systems;
 using ECS.Game.Systems.Character;
 using ECS.Game.Systems.Linked;
+using Leopotam.Ecs;
 using Zenject;
 
 namespace ECS.Installers
@@ -9,6 +10,7 @@ namespace ECS.Installers
     {
         public override void InstallBindings()
         {
+            Container.BindInterfacesAndSelfTo<EcsWorld>().AsSingle().NonLazy();
             BindSystems();
             Container.BindInterfacesTo<EcsMainBootstrap>().AsSingle();
         }

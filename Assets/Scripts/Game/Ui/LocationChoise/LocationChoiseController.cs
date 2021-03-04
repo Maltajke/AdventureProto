@@ -1,6 +1,9 @@
 ﻿using System;
+using ECS.Game.Components;
+using ECS.Game.Components.Flags;
 using Game.SceneLoading;
 using Game.Ui.BlackScreen;
+using Leopotam.Ecs;
 using Services.Input;
 using Signals;
 using SimpleUi.Abstracts;
@@ -18,7 +21,6 @@ namespace Game.Ui.LocationChoise
         private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly IInputManager _inputManager;
         private readonly SignalBus _signalBus;
-
 
         public LocationChoiseController(
             ISceneLoadingManager sceneLoadingManager, IInputManager inputManager,
@@ -49,11 +51,11 @@ namespace Game.Ui.LocationChoise
             }).AddTo(View);
 
             View.cancel.OnClickAsObservable().Subscribe(x => OnClose()).AddTo(View.cancel);
-            View.zalupinsk.OnClickAsObservable().Subscribe(x => OnLocationChoose()).AddTo(View.zalupinsk);;
-            View.ebenevo.OnClickAsObservable().Subscribe(x => OnLocationChooseWrong()).AddTo(View.ebenevo);;
-            View.eblansk.OnClickAsObservable().Subscribe(x => OnLocationChooseWrong()).AddTo(View.eblansk);;
-            View.pizdyansk.OnClickAsObservable().Subscribe(x => OnLocationChooseWrong()).AddTo(View.pizdyansk);;
-            View.submit.OnClickAsObservable().Subscribe(x => OnLocationChoose()).AddTo(View.submit);;
+            View.zalupinsk.OnClickAsObservable().Subscribe(x => OnLocationChoose()).AddTo(View.zalupinsk);
+            View.ebenevo.OnClickAsObservable().Subscribe(x => OnLocationChooseWrong()).AddTo(View.ebenevo);
+            View.eblansk.OnClickAsObservable().Subscribe(x => OnLocationChooseWrong()).AddTo(View.eblansk);
+            View.pizdyansk.OnClickAsObservable().Subscribe(x => OnLocationChooseWrong()).AddTo(View.pizdyansk);
+            View.submit.OnClickAsObservable().Subscribe(x => OnLocationChoose()).AddTo(View.submit);
         }
 
         private void OnLocationChooseWrong()
@@ -70,7 +72,7 @@ namespace Game.Ui.LocationChoise
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>
             {
-                _sceneLoadingManager.LoadZalupinskFromStartScene();
+                _sceneLoadingManager.LoadGameScene("Zalupinsk");
                 _inputManager.PlayerEnable(true);
             }));
         }

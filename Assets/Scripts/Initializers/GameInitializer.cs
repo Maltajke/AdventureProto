@@ -1,4 +1,5 @@
 ﻿using DataBase.Audio;
+using Game.SceneLoading;
 using Plugins.PdUtils.Runtime.PdAudio;
 using Zenject;
 namespace Initializers
@@ -8,19 +9,19 @@ namespace Initializers
         private readonly SignalBus _signalBus;
         private readonly PdAudio _pdAudio;
         private readonly IAudioBase _audioBase;
-        private readonly string _sceneName;
+        private readonly ISceneLoadingManager _sceneLoadingManager;
 
-        public GameInitializer(SignalBus signalBus, PdAudio pdAudio, IAudioBase audioBase, string sceneName)
+        public GameInitializer(SignalBus signalBus, PdAudio pdAudio, IAudioBase audioBase, ISceneLoadingManager sceneLoadingManager)
         {
             _signalBus = signalBus;
             _pdAudio = pdAudio;
             _audioBase = audioBase;
-            _sceneName = sceneName;
+            _sceneLoadingManager = sceneLoadingManager;
         }
 
         public void Initialize()
         {
-            _pdAudio.PlayMusic(_audioBase.Get(_sceneName));
+            _pdAudio.PlayMusic(_audioBase.Get(_sceneLoadingManager.CurrentScene));
         }
     }
 }

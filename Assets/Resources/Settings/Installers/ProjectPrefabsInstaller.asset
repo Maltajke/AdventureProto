@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBase: {fileID: 11400000, guid: 591907a7a196021409d354f0c953cf07, type: 2}
   characterBase: {fileID: 11400000, guid: 702214905685f7441b6cec7f733570d7, type: 2}
+  audioBase: {fileID: 11400000, guid: be3172739187ab64a91363260a2795af, type: 2}

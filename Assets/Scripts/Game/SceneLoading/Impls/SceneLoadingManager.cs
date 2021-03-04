@@ -10,93 +10,41 @@ namespace Game.SceneLoading.Impls
 	{
 		private readonly SignalBus _signalBus;
 		private LoadingProcessor _processor;
+		
+		private const string GAME_CONTEXT = "GameContext";
+		private const string MENU_SCENE = "MainMenu";
+		private const string LOAD_SCENE = "LoadingScene";
 
 		public SceneLoadingManager(SignalBus signalBus)
 		{
 			_signalBus = signalBus;
+			CurrentScene = MENU_SCENE;
 		}
+		public string CurrentScene { get; private set; }
 
-		public void LoadMenuFromSplash()
-		{
-			_processor = new LoadingProcessor();
-			_processor.AddProcess(new LoadingProcess("Menu", LoadSceneMode.Additive))
-#if UNITY_EDITOR
-				.AddProcess(new UnloadProcess("Splash"))
-				.AddProcess(new RunContextProcess("MenuContext"))
-#else
-                .AddProcess(new SetActiveSceneProcess("Menu"))
-                .AddProcess(new RunContextProcess("MenuContext"))
-                .AddProcess(new WaitFramesProcessor(4))
-                .AddProcess(new UnloadProcess("Splash"))
-#endif
-				.DoProcess();
-		}
-
-		public void LoadGameFromMenu()
+		public void LoadGameScene(string key)
 		{
 			_processor = new LoadingProcessor();
 			_processor
-				.AddProcess(new LoadingProcess("StartScene", LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess("MainMenu"))
-				.AddProcess(new RunContextProcess("GameContext"))
+				.AddProcess(new LoadingProcess(LOAD_SCENE, LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess(CurrentScene))
+				.AddProcess(new LoadingProcess(key, LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess(LOAD_SCENE))
+				.AddProcess(new RunContextProcess(GAME_CONTEXT))
 				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
 				.DoProcess();
+			CurrentScene = key;
 		}
 
-		
-		
-		public void LoadMenuFromGame()
+		public void LoadMenu()
 		{
 			_processor = new LoadingProcessor();
 			_processor
-				.AddProcess(new LoadingProcess("Menu", LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess("Game"))
-				.AddProcess(new RunContextProcess("MenuContext"))
-				.AddProcess(new ProjectWindowBack(_signalBus))
-				.DoProcess();
-		}
-
-		public void LoadSplashFromMenu()
-		{
-			_processor = new LoadingProcessor();
-			_processor
-				.AddProcess(new LoadingProcess("Menu", LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess("Menu"))
-				.AddProcess(new RunContextProcess("MenuContext"))
-				.DoProcess();
-		}
-
-		public void LoadZalupinskFromStartScene()
-		{
-			_processor = new LoadingProcessor();
-			_processor
-				.AddProcess(new LoadingProcess("Zalupinsk", LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess("StartScene"))
-				.AddProcess(new RunContextProcess("GameContext"))
+				.AddProcess(new LoadingProcess(MENU_SCENE, LoadSceneMode.Additive))
+				.AddProcess(new UnloadProcess(SceneManager.GetActiveScene().name))
 				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
 				.DoProcess();
-		}
-
-		public void LoadScene(string from, string to)
-		{
-			_processor = new LoadingProcessor();
-			_processor
-				.AddProcess(new LoadingProcess(to, LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess(from))
-				.AddProcess(new RunContextProcess("GameContext"))
-				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
-				.DoProcess();
-		}
-
-		public void LoadScene(string key)
-		{
-			_processor = new LoadingProcessor();
-			_processor
-				.AddProcess(new LoadingProcess("Zalupinsk", LoadSceneMode.Additive))
-				.AddProcess(new UnloadProcess("StartScene"))
-				.AddProcess(new RunContextProcess("GameContext"))
-				.AddProcess(new ProjectWindowBack(_signalBus, new SignalGameInit()))
-				.DoProcess();
+			CurrentScene = MENU_SCENE;
 		}
 
 		public float GetProgress() => _processor?.Progress ?? 0f;

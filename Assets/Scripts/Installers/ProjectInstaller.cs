@@ -4,6 +4,7 @@ using Game.Ui.BlackScreen;
 using Game.Utils;
 using PdUtils.PlayerPrefs;
 using PdUtils.PlayerPrefs.Impl;
+using Services.Input;
 using Services.Input.Impls;
 using UniRx;
 using Zenject;
@@ -17,8 +18,8 @@ namespace Installers
         {
             MainThreadDispatcher.Initialize();
             SignalBusInstaller.Install(Container);
-            Container.BindInterfacesTo<InputManager>().AsSingle();
             Container.BindSubstituteInterfacesTo<ISceneLoadingManager, SceneLoadingManager>().AsSingle();
+            Container.BindSubstituteInterfacesTo<IInputManager, InputManager>().AsSingle();
             Container.BindFromSubstitute<IPlayerPrefsManager, PersistancePlayerPrefsManager>().AsSingle();
             Container.BindInterfacesTo<PdAudioInitializer>().AsSingle().NonLazy();
             

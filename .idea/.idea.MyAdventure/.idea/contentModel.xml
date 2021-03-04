@@ -1543,6 +1543,11 @@
                 <e p="BlackScreenViewController.cs" t="Include" />
                 <e p="BlackScreenWindow.cs" t="Include" />
               </e>
+              <e p="InGameMenu" t="Include">
+                <e p="InGameMenuView.cs" t="Include" />
+                <e p="InGameMenuViewController.cs" t="Include" />
+                <e p="InGameMenuWindow.cs" t="Include" />
+              </e>
               <e p="LocationChoise" t="Include">
                 <e p="LocationChoiseController.cs" t="Include" />
                 <e p="LocationChoiseView.cs" t="Include" />

@@ -11,11 +11,11 @@ namespace ECS
     {
         private readonly EcsWorld _world;
         private readonly EcsSystems _initUpdateSystems;
-        public EcsMainBootstrap(
+        public EcsMainBootstrap(EcsWorld world,
             IList<IEcsUpdateSystem> updateSystems,
             IList<IEcsInitSystem> initSystems)
         {
-            _world = new EcsWorld();
+            _world = world;
             _initUpdateSystems = new EcsSystems(_world);
 
             if (initSystems.Count > 0)

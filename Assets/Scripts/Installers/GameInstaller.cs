@@ -1,4 +1,5 @@
 ﻿using ECS.Utils.Impls;
+using Game.Ui.InGameMenu;
 using Game.Ui.LocationChoise;
 using Game.Utils.MonoBehUtils;
 using Initializers;
@@ -17,12 +18,13 @@ namespace Installers
             BindWindows();
             BindServices();
             Container.BindInterfacesAndSelfTo<GetPointFromScene>().FromInstance(_getPointFromScene).AsSingle();
-            Container.BindInterfacesAndSelfTo<GameInitializer>().AsSingle().WithArguments(SceneName);
+            Container.BindInterfacesAndSelfTo<GameInitializer>().AsSingle();
         }
 
         private void BindWindows()
         {
             Container.BindInterfacesAndSelfTo<LocationChoiseWindow>().AsSingle();
+            Container.BindInterfacesAndSelfTo<InGameMenuWindow>().AsSingle();
         }
 
         private void BindServices()

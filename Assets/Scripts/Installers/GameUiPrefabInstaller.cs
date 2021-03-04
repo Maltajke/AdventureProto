@@ -1,4 +1,5 @@
-﻿using Game.Ui.LocationChoise;
+﻿using Game.Ui.InGameMenu;
+using Game.Ui.LocationChoise;
 using SimpleUi;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,6 +15,7 @@ namespace Installers
         [FormerlySerializedAs("Canvas"), SerializeField]
         private Canvas canvas;
         [SerializeField] private LocationChoiseView locationChoise;
+        [SerializeField] private InGameMenuView inGameMenu;
         public override void InstallBindings()
         {
             var canvasObj = Instantiate(canvas);
@@ -24,6 +26,7 @@ namespace Installers
             Container.Bind<EventSystem>().FromInstance(eventSystem).AsSingle().NonLazy();
            
             Container.BindUiView<LocationChoiseController, LocationChoiseView>(locationChoise, canvasTransform);
+            Container.BindUiView<InGameMenuViewController, InGameMenuView>(inGameMenu, canvasTransform);
         }
     }
 }

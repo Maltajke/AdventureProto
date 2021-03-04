@@ -5,6 +5,7 @@ using SimpleUi.Abstracts;
 using SimpleUi.Signals;
 using UniRx;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 namespace Game.Ui.MainMenu
@@ -13,6 +14,7 @@ namespace Game.Ui.MainMenu
     {
         private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly SignalBus _signalBus;
+        private readonly EventSystem _eventSystem;
 
         public MainMenuViewController(ISceneLoadingManager sceneLoadingManager, SignalBus signalBus)
         {
@@ -35,10 +37,11 @@ namespace Game.Ui.MainMenu
 
         private void OnStart()
         {
+            View.start.interactable = false;
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>
             {
-                _sceneLoadingManager.LoadGameFromMenu();
+                _sceneLoadingManager.LoadGameScene("StartScene");
             }));
         }
         private void OnAbout()
