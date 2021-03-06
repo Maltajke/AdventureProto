@@ -15,14 +15,12 @@ namespace Game.Ui.BlackScreen
         private readonly SignalBus _signalBus;
         private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly PdAudio _pdAudio;
-        private readonly IInputManager _inputManager;
 
-        public BlackScreenViewController(SignalBus signalBus, ISceneLoadingManager sceneLoadingManager, PdAudio pdAudio, IInputManager inputManager)
+        public BlackScreenViewController(SignalBus signalBus, ISceneLoadingManager sceneLoadingManager, PdAudio pdAudio)
         {
             _signalBus = signalBus;
             _sceneLoadingManager = sceneLoadingManager;
             _pdAudio = pdAudio;
-            _inputManager = inputManager;
         }
         
         public void Initialize()
@@ -30,7 +28,6 @@ namespace Game.Ui.BlackScreen
             var duration = 2f;
             _signalBus.Subscribe<SignalBlackScreen>(x=>
             {
-                _inputManager.Actions.Disable();
                 View.Show(() => OnComplete(x.Open, x.Complete), x.Open, duration);
                 DOVirtual.Float(x.Open ? 0 : 1, x.Open ? 1 : 0, duration, _pdAudio.SetMusicVolume);
             });
@@ -41,7 +38,6 @@ namespace Game.Ui.BlackScreen
             if (open)
             {
                 _signalBus.BackWindow(EWindowLayer.Project);
-                _inputManager.Actions.Enable();
             }
             complete?.Invoke();
         }

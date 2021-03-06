@@ -1,28 +1,22 @@
-﻿using ECS.Core.Utils.SystemInterfaces;
+﻿using ECS.Core.Utils.ReactiveSystem;
+using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
 using Game.Ui.LocationChoise;
 using Leopotam.Ecs;
-using Services.Input;
 using SimpleUi.Signals;
-using UnityEngine;
 using Zenject;
 
 namespace ECS.Game.Systems
 {
-    public class NpcInteractSystem : IEcsUpdateSystem
+    public class NpcInteractSystem : ReactiveSystem<InteractEventComponent>
     {
-        [Inject] private readonly IInputManager _inputManager;
         [Inject] private readonly SignalBus _signalBus;
         private readonly EcsFilter<NpcComponent, InteractComponent> _npc;
-        public void Run()
+        protected override EcsFilter<InteractEventComponent> ReactiveFilter { get; }
+        protected override void Execute(EcsEntity entity)
         {
-            foreach (var i in _npc)
-            {
-                if(_inputManager.PlayerInteract())
-                {
-                    _signalBus.OpenWindow<LocationChoiseWindow>();
-                }
-            }
+            if(!_npc.IsEmpty())
+                _signalBus.OpenWindow<LocationChoiseWindow>();
         }
     }
 }

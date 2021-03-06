@@ -3,8 +3,8 @@ using Game.Ui.InGameMenu;
 using Game.Ui.LocationChoise;
 using Game.Utils.MonoBehUtils;
 using Initializers;
+using Services.Input.Impls;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace Installers
@@ -12,13 +12,13 @@ namespace Installers
     public class GameInstaller : MonoInstaller
     {
         [SerializeField] private GetPointFromScene _getPointFromScene;
-        private string SceneName => SceneManager.GetActiveScene().name;
         public override void InstallBindings()
         {
             BindWindows();
             BindServices();
             Container.BindInterfacesAndSelfTo<GetPointFromScene>().FromInstance(_getPointFromScene).AsSingle();
             Container.BindInterfacesAndSelfTo<GameInitializer>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GameInputCallbackReceiver>().AsSingle();
         }
 
         private void BindWindows()

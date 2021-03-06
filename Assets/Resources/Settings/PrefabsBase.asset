@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - Name: MainPlayer
-    GameObject: {fileID: 671760075909527164, guid: 6280c81f983cd5342a267359f301370e,
+    GameObject: {fileID: 814853910352218332, guid: 6280c81f983cd5342a267359f301370e,
       type: 3}
   - Name: MainCamera
     GameObject: {fileID: 2181769509312897065, guid: 40668d4469e9b774397e05935f8264a1,

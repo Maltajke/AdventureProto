@@ -72,7 +72,7 @@ namespace Game.Ui.LocationChoise
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>
             {
-                _sceneLoadingManager.LoadGameScene("Zalupinsk");
+                _sceneLoadingManager.LoadScene("Zalupinsk");
                 _inputManager.PlayerEnable(true);
             }));
         }

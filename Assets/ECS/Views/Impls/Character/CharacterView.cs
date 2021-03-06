@@ -5,7 +5,7 @@ namespace ECS.Views.Impls.Character
 {
     public class CharacterView : LinkableView
     {
-        [SerializeField] private Animator _animator;
+        [SerializeField] protected Animator _animator;
         private static readonly int Forward = Animator.StringToHash("Forward");
 
         public void SetMoveValue(float value)

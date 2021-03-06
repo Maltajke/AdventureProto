@@ -63,10 +63,15 @@
           <e p="Game" t="Include">
             <e p="Components" t="Include">
               <e p="DistanceToPlayerComponent.cs" t="Include" />
+              <e p="Events" t="Include">
+                <e p="InteractEventComponent.cs" t="Include" />
+              </e>
               <e p="Flags" t="Include">
                 <e p="CameraComponent.cs" t="Include" />
                 <e p="EnemyComponent.cs" t="Include" />
+                <e p="InSafeAreaComponent.cs" t="Include" />
                 <e p="InteractComponent.cs" t="Include" />
+                <e p="LevelComponent.cs" t="Include" />
                 <e p="NpcComponent.cs" t="Include" />
                 <e p="PlayerComponent.cs" t="Include" />
               </e>
@@ -74,18 +79,24 @@
               <e p="PositionComponent.cs" t="Include" />
               <e p="PrefabComponent.cs" t="Include" />
               <e p="RotationComponent.cs" t="Include" />
+              <e p="SafeAreaComponent.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="CalculateDistanceSystem.cs" t="Include" />
               <e p="Character" t="Include">
                 <e p="CameraMoveSystem.cs" t="Include" />
                 <e p="CharacterMoveSystem.cs" t="Include" />
+                <e p="CharacterSafeMarkerSystem.cs" t="Include" />
               </e>
               <e p="GameInitializeSystem.cs" t="Include" />
               <e p="InstantiateSystem.cs" t="Include" />
               <e p="Linked" t="Include">
-                <e p="NpcSetInteractViewSystem.cs" t="Include" />
-                <e p="NpcUnsetInteractViewSystem.cs" t="Include" />
+                <e p="CharacterSetAggressiveSystem.cs" t="Include" />
+                <e p="CharacterUnsetAggressiveSystem.cs" t="Include" />
+                <e p="Npc" t="Include">
+                  <e p="NpcSetInteractViewSystem.cs" t="Include" />
+                  <e p="NpcUnsetInteractViewSystem.cs" t="Include" />
+                </e>
                 <e p="PositionRotationTranslateSystem.cs" t="Include" />
                 <e p="SetCharacterViewSystem.cs" t="Include" />
               </e>
@@ -114,6 +125,7 @@
                 <e p="CharacterView.cs" t="Include" />
                 <e p="Impls" t="Include">
                   <e p="EnemyView.cs" t="Include" />
+                  <e p="MainPlayerView.cs" t="Include" />
                   <e p="NpcView.cs" t="Include" />
                 </e>
               </e>
@@ -1505,6 +1517,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Behaviours" t="Include">
+            <e p="TransitionBehaviour.cs" t="Include" />
+          </e>
           <e p="DataBase" t="Include">
             <e p="Audio" t="Include">
               <e p="IAudioBase.cs" t="Include" />
@@ -1558,6 +1573,13 @@
                 <e p="MainMenuViewController.cs" t="Include" />
                 <e p="MainMenuWindow.cs" t="Include" />
               </e>
+              <e p="SplashScreen" t="Include">
+                <e p="Impls" t="Include">
+                  <e p="SplashScreenView.cs" t="Include" />
+                  <e p="SplashScreenViewController.cs" t="Include" />
+                  <e p="SplashScreenWIndow.cs" t="Include" />
+                </e>
+              </e>
             </e>
             <e p="Utils" t="Include">
               <e p="LevelUtils.cs" t="Include" />
@@ -1571,6 +1593,7 @@
             <e p="GameInitializer.cs" t="Include" />
             <e p="MenuInitializer.cs" t="Include" />
             <e p="PdAudioInitializer.cs" t="Include" />
+            <e p="SplashInitializer.cs" t="Include" />
           </e>
           <e p="Installers" t="Include">
             <e p="GameInstaller.cs" t="Include" />
@@ -1581,6 +1604,8 @@
             <e p="ProjectPrefabsInstaller.cs" t="Include" />
             <e p="ProjectUiPrefabInstaller.cs" t="Include" />
             <e p="SignalInstaller.cs" t="Include" />
+            <e p="SplashInstaller.cs" t="Include" />
+            <e p="SplashUiPrefabInstaller.cs" t="Include" />
           </e>
           <e p="NavMeshComponents" t="Include">
             <e p="Editor" t="Include">
@@ -1604,6 +1629,7 @@
             <e p="Input" t="Include">
               <e p="IInputManager.cs" t="Include" />
               <e p="Impls" t="Include">
+                <e p="GameInputCallbackReceiver.cs" t="Include" />
                 <e p="InputManager.cs" t="Include" />
               </e>
               <e p="InputActions.cs" t="Include" />

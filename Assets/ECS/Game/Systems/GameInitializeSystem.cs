@@ -15,6 +15,7 @@ namespace ECS.Game.Systems
             CreateCamera();
             CreateEnemies(10);
             CreateNPC();
+            CreateLevel();
         }
 
         private void CreatePlayer()
@@ -26,6 +27,11 @@ namespace ECS.Game.Systems
         private void CreateCamera()
         {
             _world.CreateCamera();
+        }
+
+        private void CreateLevel()
+        {
+            _world.CreateLevel(_getPointFromScene.GetSaveArea);
         }
 
         private void CreateEnemies(int count)

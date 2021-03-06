@@ -1,6 +1,7 @@
 ﻿using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
 using ECS.Game.Components.Flags;
+using Game.Utils.MonoBehUtils;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -48,6 +49,16 @@ namespace ECS.Utils.Extensions
             entity.Get<PositionComponent>().Value = position;
             entity.Get<RotationComponent>().Value = rotation;
             entity.Get<PrefabComponent>().Value = "NPC";
+            return entity;
+        }
+        
+        public static EcsEntity CreateLevel(this EcsWorld world, QuadArea quadArea)
+        {
+            var entity = world.NewEntity();
+            entity.Get<LevelComponent>();
+            ref var area = ref entity.Get<SafeAreaComponent>();
+            area.firstPoint = quadArea.point1.position;
+            area.secondPoint = quadArea.point2.position;
             return entity;
         }
     }

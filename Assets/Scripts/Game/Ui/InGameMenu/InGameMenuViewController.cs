@@ -47,8 +47,7 @@ namespace Game.Ui.InGameMenu
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>
             {
-                _sceneLoadingManager.LoadMenu();
-                _inputManager.PlayerEnable(true);
+                _sceneLoadingManager.LoadScene("MainMenu");
             }));
         }
     }

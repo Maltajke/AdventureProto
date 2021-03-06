@@ -1,7 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.InputSystem;
-using Zenject;
+﻿using UnityEngine;
 
 namespace Services.Input.Impls
 {
@@ -12,7 +9,6 @@ namespace Services.Input.Impls
         {
             Actions = new InputActions();
             Actions.Enable();
-            
         }
 
         private static Vector3 GetInput(Vector2 inputValue) => new Vector3 {x = inputValue.x, z = inputValue.y};
@@ -25,7 +21,5 @@ namespace Services.Input.Impls
             else 
                 Actions.Player.Disable();
         }
-
-        public bool PlayerInteract() => Actions.Player.Interact.triggered;
     }
 }

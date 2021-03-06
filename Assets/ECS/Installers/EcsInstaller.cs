@@ -25,11 +25,15 @@ namespace ECS.Installers
             
             Container.BindInterfacesAndSelfTo<CalculateDistanceSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<NpcMarkerSystem>().AsSingle();
-            
+            Container.BindInterfacesAndSelfTo<CharacterSafeMarkerSystem>().AsSingle();
+
+            Container.BindInterfacesAndSelfTo<CharacterSetAggressiveSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CharacterUnsetAggressiveSystem>().AsSingle();
+
             Container.BindInterfacesAndSelfTo<NpcSetInteractViewSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<NpcUnsetInteractViewSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<NpcInteractSystem>().AsSingle();
-            
+
             Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<SetCharacterViewSystem>().AsSingle();
         }

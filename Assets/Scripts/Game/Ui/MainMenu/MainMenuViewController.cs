@@ -41,7 +41,7 @@ namespace Game.Ui.MainMenu
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>
             {
-                _sceneLoadingManager.LoadGameScene("StartScene");
+                _sceneLoadingManager.LoadScene("StartScene");
             }));
         }
         private void OnAbout()

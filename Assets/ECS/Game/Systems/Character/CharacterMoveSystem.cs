@@ -25,7 +25,10 @@ namespace ECS.Game.Systems.Character
                 ref var rotation = ref _player.Get3(i).Value;
                 if (inputValue.sqrMagnitude >= .01f)
                 {
-                    var newPos = position + inputValue * Time.deltaTime * _characterSettingsBase.CharacterSettings.MoveSpeed;
+                    var moveSpeed = _characterSettingsBase.CharacterSettings.MoveSpeed;
+                    if (!_player.GetEntity(i).Has<InSafeAreaComponent>())
+                        moveSpeed += 2;
+                    var newPos = position + inputValue * Time.deltaTime * moveSpeed;
                     var isValid = NavMesh.SamplePosition(newPos, out var hit, .3f, NavMesh.AllAreas);
                     if (isValid)
                     {

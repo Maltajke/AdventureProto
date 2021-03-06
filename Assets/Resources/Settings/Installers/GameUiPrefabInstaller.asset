@@ -15,3 +15,5 @@ MonoBehaviour:
   canvas: {fileID: 7768699646857002867, guid: 391113a733bff1443afd3106782d0afd, type: 3}
   locationChoise: {fileID: 425477622189702704, guid: a434bfb4ef2fd7c4e91de8c8df69365c,
     type: 3}
+  inGameMenu: {fileID: 6781872839508693167, guid: fa2a9d70ac0341f41aa914c5c3bbfa03,
+    type: 3}
