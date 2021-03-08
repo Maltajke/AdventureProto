@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components.Events;
+using ECS.Utils.Extensions;
 using Game.Ui.InGameMenu;
 using Leopotam.Ecs;
 using SimpleUi.Signals;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
 
@@ -23,21 +27,36 @@ namespace Services.Input.Impls
 
         public void Initialize()
         {
-            _inputManager.Actions.Player.Menu.started += MenuOnStarted;
-            _inputManager.Actions.Player.Interact.started += InteractOnStarted;
-            _inputManager.Actions.Player.Dive.started += DiveOnstarted;
+            _inputManager.Actions.PlayerInteractions.Menu.started += MenuOnStarted;
+            _inputManager.Actions.PlayerInteractions.Interact.started += InteractOnStarted;
+            _inputManager.Actions.PlayerInteractions.Dive.started += DiveOnStarted;
+            _inputManager.Actions.PlayerInteractions.Fire.started += FireOnstarted;
+            _inputManager.Actions.PlayerInteractions.Fire.canceled += FireOncanceled;
+        }
+
+        private void FireOnstarted(InputAction.CallbackContext obj)
+        {
+            _world.GetPlayer().Get<EventAddComponent<ShootingComponent>>();
+        }
+
+        private void FireOncanceled(InputAction.CallbackContext obj)
+        {
+            
         }
 
         public void Dispose()
         {
-            _inputManager.Actions.Player.Menu.started -= MenuOnStarted;
-            _inputManager.Actions.Player.Interact.started -= InteractOnStarted;
-            _inputManager.Actions.Player.Dive.started -= DiveOnstarted;
+            _inputManager.Actions.PlayerInteractions.Menu.started -= MenuOnStarted;
+            _inputManager.Actions.PlayerInteractions.Interact.started -= InteractOnStarted;
+            _inputManager.Actions.PlayerInteractions.Dive.started -= DiveOnStarted;
+            _inputManager.Actions.PlayerInteractions.Fire.started -= FireOnstarted;
+            _inputManager.Actions.PlayerInteractions.Fire.canceled -= FireOncanceled;
         }
 
-        private void DiveOnstarted(InputAction.CallbackContext obj)
+        private void DiveOnStarted(InputAction.CallbackContext obj)
         {
-            
+            _world.GetPlayer().Get<DiveComponent>();
+            _world.GetPlayer().Get<EventAddComponent<DiveComponent>>();
         }
 
         private void InteractOnStarted(InputAction.CallbackContext obj)

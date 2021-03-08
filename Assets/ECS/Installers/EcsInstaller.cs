@@ -1,6 +1,8 @@
 ﻿using ECS.Game.Systems;
 using ECS.Game.Systems.Character;
+using ECS.Game.Systems.Character.Dive;
 using ECS.Game.Systems.Linked;
+using ECS.Game.Systems.Linked.Character.Shooting;
 using Leopotam.Ecs;
 using Zenject;
 
@@ -19,8 +21,12 @@ namespace ECS.Installers
         {
             Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
-            
+
+            Container.BindInterfacesAndSelfTo<CharacterStartDiveSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CharacterEndDiveSystem>().AsSingle();
+
             Container.BindInterfacesAndSelfTo<CharacterMoveSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CharacterDiveSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CameraMoveSystem>().AsSingle();
             
             Container.BindInterfacesAndSelfTo<CalculateDistanceSystem>().AsSingle();
@@ -35,7 +41,14 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<NpcInteractSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<SetCharacterViewSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CharacterSetMoveViewSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<CharacterSetDiveViewSystem>().AsSingle();
+
+            Container.BindInterfacesAndSelfTo<CharacterSetShootingViewSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CharacterShootingStartSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<CharacterShootingEndSystem>().AsSingle();
         }
     }
 }

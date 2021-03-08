@@ -5,6 +5,8 @@ namespace Services.Input.Impls
     public class InputManager : IInputManager
     {
         public InputActions Actions { get; }
+
+        private bool moveEnable;
         public InputManager()
         {
             Actions = new InputActions();
@@ -13,13 +15,24 @@ namespace Services.Input.Impls
 
         private static Vector3 GetInput(Vector2 inputValue) => new Vector3 {x = inputValue.x, z = inputValue.y};
 
-        public Vector3 InputValue => GetInput(Actions.Player.Move.ReadValue<Vector2>());
+        public Vector3 InputValue => moveEnable ? GetInput(Actions.PlayerMove.Move.ReadValue<Vector2>()) : Vector3.zero;
+
         public void PlayerEnable(bool value)
         {
+            moveEnable = value;
             if(value)
-                Actions.Player.Enable();
+                Actions.PlayerInteractions.Enable();
             else 
-                Actions.Player.Disable();
+                Actions.PlayerInteractions.Disable();
+        }
+
+        public void MoveEnable(bool value)
+        {
+            if(value)
+                Actions.PlayerInteractions.Dive.Enable();
+            else 
+                Actions.PlayerInteractions.Dive.Disable();
+            moveEnable = value;
         }
     }
 }

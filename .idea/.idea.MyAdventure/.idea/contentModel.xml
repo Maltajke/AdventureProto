@@ -49,6 +49,8 @@
                 <e p="Components" t="Include">
                   <e p="EventAddComponent.cs" t="Include" />
                   <e p="EventRemoveComponent.cs" t="Include" />
+                  <e p="StateMachineCallbackEnd.cs" t="Include" />
+                  <e p="StateMachineCallbackStart.cs" t="Include" />
                 </e>
                 <e p="ReactiveSystem.cs" t="Include" />
               </e>
@@ -64,6 +66,7 @@
             <e p="Components" t="Include">
               <e p="DistanceToPlayerComponent.cs" t="Include" />
               <e p="Events" t="Include">
+                <e p="DiveComponent.cs" t="Include" />
                 <e p="InteractEventComponent.cs" t="Include" />
               </e>
               <e p="Flags" t="Include">
@@ -74,6 +77,7 @@
                 <e p="LevelComponent.cs" t="Include" />
                 <e p="NpcComponent.cs" t="Include" />
                 <e p="PlayerComponent.cs" t="Include" />
+                <e p="ShootingComponent.cs" t="Include" />
               </e>
               <e p="LinkComponent.cs" t="Include" />
               <e p="PositionComponent.cs" t="Include" />
@@ -85,23 +89,38 @@
               <e p="CalculateDistanceSystem.cs" t="Include" />
               <e p="Character" t="Include">
                 <e p="CameraMoveSystem.cs" t="Include" />
+                <e p="CharacterDiveSystem.cs" t="Include" />
                 <e p="CharacterMoveSystem.cs" t="Include" />
                 <e p="CharacterSafeMarkerSystem.cs" t="Include" />
               </e>
               <e p="GameInitializeSystem.cs" t="Include" />
               <e p="InstantiateSystem.cs" t="Include" />
               <e p="Linked" t="Include">
-                <e p="CharacterSetAggressiveSystem.cs" t="Include" />
-                <e p="CharacterUnsetAggressiveSystem.cs" t="Include" />
+                <e p="Character" t="Include">
+                  <e p="CharacterSetAggressiveSystem.cs" t="Include" />
+                  <e p="CharacterSetMoveViewSystem.cs" t="Include" />
+                  <e p="CharacterUnsetAggressiveSystem.cs" t="Include" />
+                  <e p="Dive" t="Include">
+                    <e p="CharacterEndDiveSystem.cs" t="Include" />
+                    <e p="CharacterSetDiveViewSystem.cs" t="Include" />
+                    <e p="CharacterStartDiveSystem.cs" t="Include" />
+                  </e>
+                  <e p="Shooting" t="Include">
+                    <e p="CharacterSetShootingViewSystem.cs" t="Include" />
+                    <e p="CharacterShootingEndSystem.cs" t="Include" />
+                    <e p="CharacterShootingStartSystem.cs" t="Include" />
+                  </e>
+                </e>
                 <e p="Npc" t="Include">
                   <e p="NpcSetInteractViewSystem.cs" t="Include" />
                   <e p="NpcUnsetInteractViewSystem.cs" t="Include" />
                 </e>
                 <e p="PositionRotationTranslateSystem.cs" t="Include" />
-                <e p="SetCharacterViewSystem.cs" t="Include" />
               </e>
-              <e p="NpcInteractSystem.cs" t="Include" />
-              <e p="NpcMarkerSystem.cs" t="Include" />
+              <e p="Npc" t="Include">
+                <e p="NpcInteractSystem.cs" t="Include" />
+                <e p="NpcMarkerSystem.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Installers" t="Include">
@@ -1518,7 +1537,12 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Behaviours" t="Include">
-            <e p="TransitionBehaviour.cs" t="Include" />
+            <e p="Impls" t="Include">
+              <e p="DiveBehaviour.cs" t="Include" />
+              <e p="ShotBehaviour.cs" t="Include" />
+              <e p="TransitionBehaviour.cs" t="Include" />
+            </e>
+            <e p="StateMachineEcsReceiver.cs" t="Include" />
           </e>
           <e p="DataBase" t="Include">
             <e p="Audio" t="Include">
