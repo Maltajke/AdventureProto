@@ -32,19 +32,13 @@ namespace ECS.Utils.Extensions
         
         public static EcsEntity GetPlayer(this EcsWorld world)
         {
-            var value = new EcsEntity();
             var filter = world.GetFilter(typeof(EcsFilter<PlayerComponent, PositionComponent>));
-            foreach(var i in filter)
-                value = filter.GetEntity(i);
-            return value;
+            return filter.GetEntity(0);
         }
         public static EcsEntity GetGameStage(this EcsWorld world)
         {
-            var value = new EcsEntity();
             var filter = world.GetFilter(typeof(EcsFilter<GameStageComponent>));
-            foreach(var i in filter)
-                value = filter.GetEntity(i);
-            return value;
+            return filter.GetEntity(0);
         }
         
         public static EcsEntity GetEntityWithUid(this EcsWorld world, Uid uid)

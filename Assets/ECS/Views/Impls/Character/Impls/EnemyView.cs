@@ -11,10 +11,5 @@ namespace ECS.Views.Impls.Character.Impls
         {
             _selected.gameObject.SetActive(false);
         }
-
-        public void SetSelected(bool value)
-        {
-            _selected.gameObject.SetActive(value);
-        }
     }
 }

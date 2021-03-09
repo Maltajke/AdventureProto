@@ -1545,6 +1545,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Behaviours" t="Include">
+            <e p="IEcsBehaviourReceiver.cs" t="Include" />
             <e p="Impls" t="Include">
               <e p="DiveBehaviour.cs" t="Include" />
               <e p="ShotBehaviour.cs" t="Include" />

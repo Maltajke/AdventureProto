@@ -18,18 +18,12 @@ namespace ECS.Game.Systems
             var stage = ReactiveFilter.Get1(0).Value;
             foreach (var i in _links)
             {
-                try
-                {
-                    var view = (IPause) _links.Get1(i).View;
-                    if(stage == EGameStage.Pause)
-                        view.Pause();
-                    else
-                        view.UnPause();
-                }
-                catch (Exception e)
-                {
-                    // ignored
-                }
+                if (!(_links.Get1(i).View is IPause)) continue;
+                var view = (IPause) _links.Get1(i).View;
+                if(stage == EGameStage.Pause)
+                    view.Pause();
+                else
+                    view.UnPause();
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Leopotam.Ecs;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace ECS.Views.Impls.Character.Impls
@@ -21,11 +22,5 @@ namespace ECS.Views.Impls.Character.Impls
         public void SetAggressState(bool value) => _animator.SetBool(Aggressive, value);
         public void SetDive(bool value) => _animator.SetBool(Dive, value);
         public void SetShooting(bool value) => _animator.SetBool(Shooting, value);
-
-        public void pidor(int val)
-        {
-            _animator.speed = val;
-        }
-
     }
 }
