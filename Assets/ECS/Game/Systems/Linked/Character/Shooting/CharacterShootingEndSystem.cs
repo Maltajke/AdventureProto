@@ -1,6 +1,6 @@
-﻿using Behaviours;
-using ECS.Core.Utils.ReactiveSystem;
+﻿using ECS.Core.Utils.ReactiveSystem;
 using ECS.Core.Utils.ReactiveSystem.Components;
+using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using Leopotam.Ecs;
 using Services.Input;
@@ -14,6 +14,7 @@ namespace ECS.Game.Systems.Linked.Character.Shooting
         protected override EcsFilter<StateMachineCallbackEnd<ShootingComponent>> ReactiveFilter { get; }
         protected override void Execute(EcsEntity entity)
         {
+            entity.Del<TargetComponent>();
             if (entity.Has<ShootingComponent>()) return;
             _inputManager.MoveEnable(true);
         }

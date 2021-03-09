@@ -7,7 +7,7 @@ namespace ECS.Core.Utils.ReactiveSystem
     {
         protected abstract EcsFilter<T> ReactiveFilter { get; }
         protected virtual bool EntityFilter(EcsEntity entity) => true;
-        protected virtual bool DeleteEvent() => true;
+        protected virtual bool DeleteEvent => true;
 
         public void Run()
         {
@@ -16,7 +16,7 @@ namespace ECS.Core.Utils.ReactiveSystem
                 var entity = ReactiveFilter.GetEntity(i);
                 if (EntityFilter(entity))
                     Execute(entity);
-                if(DeleteEvent())
+                if(DeleteEvent)
                     entity.Del<T>();
             }
         }

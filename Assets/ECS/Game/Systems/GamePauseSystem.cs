@@ -12,7 +12,7 @@ namespace ECS.Game.Systems
     {
         protected override EcsFilter<ChangeStageComponent> ReactiveFilter { get; }
         private readonly EcsFilter<LinkComponent> _links;
-        protected override bool DeleteEvent() => false;
+        protected override bool DeleteEvent => false;
         protected override void Execute(EcsEntity entity)
         {
             var stage = ReactiveFilter.Get1(0).Value;

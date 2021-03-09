@@ -8,7 +8,6 @@ namespace Behaviours
 {
     public class StateMachineEcsReceiver<T> : StateMachineBehaviour where T : struct
     {
-        
         [Inject] private readonly EcsWorld _world;
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {

@@ -86,14 +86,18 @@
               <e p="PrefabComponent.cs" t="Include" />
               <e p="RotationComponent.cs" t="Include" />
               <e p="SafeAreaComponent.cs" t="Include" />
+              <e p="TargetComponent.cs" t="Include" />
+              <e p="UIdComponent.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="CalculateDistanceSystem.cs" t="Include" />
               <e p="Character" t="Include">
                 <e p="CameraMoveSystem.cs" t="Include" />
                 <e p="CharacterDiveSystem.cs" t="Include" />
+                <e p="CharacterLookAtSystem.cs" t="Include" />
                 <e p="CharacterMoveSystem.cs" t="Include" />
                 <e p="CharacterSafeMarkerSystem.cs" t="Include" />
+                <e p="CharacterSetTargetSystem.cs" t="Include" />
               </e>
               <e p="GameInitializeSystem.cs" t="Include" />
               <e p="GamePauseSystem.cs" t="Include" />
@@ -1671,6 +1675,9 @@
               </e>
               <e p="IPause.cs" t="Include" />
               <e p="IPauseService.cs" t="Include" />
+            </e>
+            <e p="Uid" t="Include">
+              <e p="UidGenerator.cs" t="Include" />
             </e>
           </e>
           <e p="Signals" t="Include">

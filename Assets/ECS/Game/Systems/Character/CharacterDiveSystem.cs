@@ -18,7 +18,7 @@ namespace ECS.Game.Systems.Character
         private readonly EcsFilter<GameStageComponent> _gameStage;
         [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
         protected override EcsFilter<DiveComponent> ReactiveFilter { get; }
-        protected override bool DeleteEvent() => false;
+        protected override bool DeleteEvent => false;
         protected override void Execute(EcsEntity entity)
         {
             if (entity.Has<InSafeAreaComponent>())

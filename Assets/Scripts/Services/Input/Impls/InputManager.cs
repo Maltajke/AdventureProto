@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,7 +17,6 @@ namespace Services.Input.Impls
             }
         }
         public InputActions Actions { get; }
-        
         private readonly CacheInput _cacheInput;
         private bool moveEnable;
         public InputManager()

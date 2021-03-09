@@ -1,7 +1,9 @@
-﻿using ECS.Game.Components;
+﻿using System.Runtime.CompilerServices;
+using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
 using Leopotam.Ecs;
+using PdUtils;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -44,7 +46,21 @@ namespace ECS.Utils.Extensions
                 value = filter.GetEntity(i);
             return value;
         }
-
+        
+        public static EcsEntity GetEntityWithUid(this EcsWorld world, Uid uid)
+        {
+            var value = new EcsEntity();
+            var filter = world.GetFilter(typeof(EcsFilter<UIdComponent>));
+            foreach (var i in filter)
+            {
+                ref var entity = ref filter.GetEntity(i);
+                if (uid.Equals(entity.Get<UIdComponent>().Value))
+                    return entity;
+            }
+            return value;
+        }
+        
+        
         public static void DeclareOneFrameEvents(this EcsSystems systems)
         {
             systems.OneFrame<PrefabComponent>();

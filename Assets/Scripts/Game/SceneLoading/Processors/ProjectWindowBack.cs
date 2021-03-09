@@ -1,7 +1,6 @@
 using System;
 using PdUtils.SceneLoadingProcessor.Impls;
 using Signals;
-using SimpleUi.Signals;
 using UniRx;
 using Zenject;
 

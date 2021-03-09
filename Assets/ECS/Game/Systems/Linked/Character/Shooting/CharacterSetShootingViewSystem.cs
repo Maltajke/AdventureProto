@@ -14,9 +14,14 @@ namespace ECS.Game.Systems.Linked.Character.Shooting
     {
         [Inject] private IInputManager _inputManager;
         protected override EcsFilter<EventAddComponent<ShootingComponent>> ReactiveFilter { get; }
+        protected override bool DeleteEvent => false;
         protected override void Execute(EcsEntity entity)
         {
-            if (entity.Has<InSafeAreaComponent>() || entity.Has<DiveComponent>()) return;
+            if (entity.Has<InSafeAreaComponent>() || entity.Has<DiveComponent>())
+            {
+                entity.Del<EventAddComponent<ShootingComponent>>();
+                return;
+            }
             _inputManager.MoveEnable(false);
             entity.Get<ShootingComponent>();
             var link = (MainPlayerView) entity.Get<LinkComponent>().View;

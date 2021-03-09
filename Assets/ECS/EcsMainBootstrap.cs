@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ECS.Core.Utils.SystemInterfaces;
+using ECS.Game.Components;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using Zenject;
@@ -33,6 +34,7 @@ namespace ECS
             Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create (_initUpdateSystems);
             Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create (_world);
 #endif
+            _world.GetFilter(typeof(EcsFilter<UIdComponent>));
             _initUpdateSystems?.Init();
         }
 

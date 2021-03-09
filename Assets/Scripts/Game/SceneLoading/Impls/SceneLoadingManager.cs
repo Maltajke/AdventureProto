@@ -1,6 +1,7 @@
 ﻿using Game.SceneLoading.Processors;
 using PdUtils.SceneLoadingProcessor.Impls;
 using Services.Input;
+using Services.Uid;
 using Signals;
 using UnityEngine.SceneManagement;
 using Zenject;
@@ -29,6 +30,7 @@ namespace Game.SceneLoading.Impls
 
 		public void LoadScene(string key)
 		{
+			UidGenerator.Clear();
 			_inputManager.Dispose();
 			_processor = new LoadingProcessor();
 			_processor

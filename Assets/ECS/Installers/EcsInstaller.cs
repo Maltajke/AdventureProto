@@ -28,8 +28,10 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<CharacterStartDiveSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterEndDiveSystem>().AsSingle();
 
+            Container.BindInterfacesAndSelfTo<CharacterLookAtSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterMoveSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterDiveSystem>().AsSingle();
+            
             Container.BindInterfacesAndSelfTo<CameraMoveSystem>().AsSingle();
             
             Container.BindInterfacesAndSelfTo<CalculateDistanceSystem>().AsSingle();
@@ -50,8 +52,9 @@ namespace ECS.Installers
 
             Container.BindInterfacesAndSelfTo<CharacterSetShootingViewSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterShootingStartSystem>().AsSingle();
-            
             Container.BindInterfacesAndSelfTo<CharacterShootingEndSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<CharacterSetTargetSystem>().AsSingle();
         }
     }
 }
