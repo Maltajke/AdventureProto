@@ -18,7 +18,7 @@ namespace ECS.Game.Systems.Character.Dive
         {
             var link = (MainPlayerView) entity.Get<LinkComponent>().View;
             link.SetDive(false);
-            _inputManager.PlayerEnable(false);
+            _inputManager.MoveEnable(false);
         }
     }
 }

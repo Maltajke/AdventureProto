@@ -1,4 +1,5 @@
 ﻿using DataBase.Character;
+using DataBase.Game;
 using ECS.Core.Utils.SystemInterfaces;
 using ECS.Game.Components;
 using ECS.Game.Components.Events;
@@ -17,9 +18,11 @@ namespace ECS.Game.Systems.Character
         [Inject] private readonly IInputManager _inputManager;
         [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
         private readonly EcsFilter<PlayerComponent, PositionComponent, RotationComponent> _player;
+        private readonly EcsFilter<GameStageComponent> _gameStage;
 
         public void Run()
         {
+            if(_gameStage.Get1(0).Value == EGameStage.Pause) return;
             foreach (var i in _player)
             {
                 var inputValue = _inputManager.InputValue;

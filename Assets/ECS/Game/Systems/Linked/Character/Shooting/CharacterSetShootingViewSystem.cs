@@ -16,7 +16,7 @@ namespace ECS.Game.Systems.Linked.Character.Shooting
         protected override EcsFilter<EventAddComponent<ShootingComponent>> ReactiveFilter { get; }
         protected override void Execute(EcsEntity entity)
         {
-            if (entity.Has<InSafeAreaComponent>()) return;
+            if (entity.Has<InSafeAreaComponent>() || entity.Has<DiveComponent>()) return;
             _inputManager.MoveEnable(false);
             entity.Get<ShootingComponent>();
             var link = (MainPlayerView) entity.Get<LinkComponent>().View;

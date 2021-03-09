@@ -11,6 +11,7 @@ namespace ECS.Game.Systems
         private readonly EcsWorld _world;
         public void Init()
         {
+            CreateGameStage();
             CreatePlayer();
             CreateCamera();
             CreateEnemies(10);
@@ -32,6 +33,11 @@ namespace ECS.Game.Systems
         private void CreateLevel()
         {
             _world.CreateLevel(_getPointFromScene.GetSaveArea);
+        }
+
+        private void CreateGameStage()
+        {
+            _world.CreateGameStage();
         }
 
         private void CreateEnemies(int count)

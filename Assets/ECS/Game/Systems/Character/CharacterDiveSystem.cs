@@ -1,4 +1,5 @@
 ﻿using DataBase.Character;
+using DataBase.Game;
 using ECS.Core.Utils.ReactiveSystem;
 using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
@@ -14,6 +15,7 @@ namespace ECS.Game.Systems.Character
 {
     public class CharacterDiveSystem : ReactiveSystem<DiveComponent>
     {
+        private readonly EcsFilter<GameStageComponent> _gameStage;
         [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
         protected override EcsFilter<DiveComponent> ReactiveFilter { get; }
         protected override bool DeleteEvent() => false;
@@ -25,6 +27,7 @@ namespace ECS.Game.Systems.Character
                 entity.Del<EventAddComponent<DiveComponent>>();
                 return;
             }
+            if(_gameStage.Get1(0).Value == EGameStage.Pause) return;
             ref var position = ref entity.Get<PositionComponent>().Value;
             ref var rotation = ref entity.Get<RotationComponent>().Value;
             var inputValue = rotation * Vector3.forward;

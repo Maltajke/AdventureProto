@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataBase.Game;
 using ECS.Core.Utils.ReactiveSystem.Components;
+using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Utils.Extensions;
+using ECS.Views.Impls.Character.Impls;
 using Game.Ui.InGameMenu;
 using Leopotam.Ecs;
 using SimpleUi.Signals;
@@ -31,17 +34,11 @@ namespace Services.Input.Impls
             _inputManager.Actions.PlayerInteractions.Interact.started += InteractOnStarted;
             _inputManager.Actions.PlayerInteractions.Dive.started += DiveOnStarted;
             _inputManager.Actions.PlayerInteractions.Fire.started += FireOnstarted;
-            _inputManager.Actions.PlayerInteractions.Fire.canceled += FireOncanceled;
         }
 
         private void FireOnstarted(InputAction.CallbackContext obj)
         {
             _world.GetPlayer().Get<EventAddComponent<ShootingComponent>>();
-        }
-
-        private void FireOncanceled(InputAction.CallbackContext obj)
-        {
-            
         }
 
         public void Dispose()
@@ -50,7 +47,6 @@ namespace Services.Input.Impls
             _inputManager.Actions.PlayerInteractions.Interact.started -= InteractOnStarted;
             _inputManager.Actions.PlayerInteractions.Dive.started -= DiveOnStarted;
             _inputManager.Actions.PlayerInteractions.Fire.started -= FireOnstarted;
-            _inputManager.Actions.PlayerInteractions.Fire.canceled -= FireOncanceled;
         }
 
         private void DiveOnStarted(InputAction.CallbackContext obj)

@@ -4,8 +4,11 @@ using Game.Ui.LocationChoise;
 using Game.Utils.MonoBehUtils;
 using Initializers;
 using Services.Input.Impls;
+using Services.PauseService;
+using Services.PauseService.Impls;
 using UnityEngine;
 using Zenject;
+using ZenjectUtil.Test.Extensions;
 
 namespace Installers
 {
@@ -30,6 +33,7 @@ namespace Installers
         private void BindServices()
         {
             Container.BindInterfacesTo<SpawnService>().AsSingle();
+            Container.BindSubstituteInterfacesTo<IPauseService, PauseService>().AsSingle();
         }
     }
 }

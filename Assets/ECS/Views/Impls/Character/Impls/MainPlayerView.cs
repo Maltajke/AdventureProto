@@ -22,5 +22,10 @@ namespace ECS.Views.Impls.Character.Impls
         public void SetDive(bool value) => _animator.SetBool(Dive, value);
         public void SetShooting(bool value) => _animator.SetBool(Shooting, value);
 
+        public void pidor(int val)
+        {
+            _animator.speed = val;
+        }
+
     }
 }

@@ -1,6 +1,12 @@
-﻿using Game.SceneLoading;
+﻿using DataBase.Game;
+using ECS.Game.Components;
+using ECS.Utils.Extensions;
+using ECS.Views.Impls.Character.Impls;
+using Game.SceneLoading;
 using Game.Ui.BlackScreen;
+using Leopotam.Ecs;
 using Services.Input;
+using Services.PauseService;
 using Signals;
 using SimpleUi.Abstracts;
 using SimpleUi.Signals;
@@ -13,13 +19,13 @@ namespace Game.Ui.InGameMenu
     {
         private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly SignalBus _signalBus;
-        private readonly IInputManager _inputManager;
+        private readonly IPauseService _pauseService;
 
-        public InGameMenuViewController(ISceneLoadingManager sceneLoadingManager, SignalBus signalBus, IInputManager inputManager)
+        public InGameMenuViewController(ISceneLoadingManager sceneLoadingManager,  SignalBus signalBus, IPauseService pauseService)
         {
             _sceneLoadingManager = sceneLoadingManager;
             _signalBus = signalBus;
-            _inputManager = inputManager;
+            _pauseService = pauseService;
         }
         
         public void Initialize()
@@ -30,15 +36,15 @@ namespace Game.Ui.InGameMenu
 
         public override void OnShow()
         {
+            _pauseService.PauseGame(true);
             View.GoMenu.Select();
             View.GoMenu.OnSelect(null);
-            _inputManager.PlayerEnable(false);
         }
 
         private void OnContinue()
         {
+            _pauseService.PauseGame(false);
             _signalBus.BackWindow();
-            _inputManager.PlayerEnable(true);
         }
         
         private void OnGoMenu()

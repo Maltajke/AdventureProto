@@ -1,4 +1,5 @@
-﻿using ECS.Core.Utils.ReactiveSystem.Components;
+﻿using DataBase.Game;
+using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
 using ECS.Game.Components.Flags;
 using Game.Utils.MonoBehUtils;
@@ -59,6 +60,13 @@ namespace ECS.Utils.Extensions
             ref var area = ref entity.Get<SafeAreaComponent>();
             area.firstPoint = quadArea.point1.position;
             area.secondPoint = quadArea.point2.position;
+            return entity;
+        }
+        
+        public static EcsEntity CreateGameStage(this EcsWorld world)
+        {
+            var entity = world.NewEntity();
+            entity.Get<GameStageComponent>().Value = EGameStage.Play;
             return entity;
         }
     }

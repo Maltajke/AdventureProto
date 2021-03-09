@@ -1,4 +1,5 @@
 ﻿using Leopotam.Ecs;
+using Services.PauseService;
 using UnityEngine;
 
 namespace ECS.Views

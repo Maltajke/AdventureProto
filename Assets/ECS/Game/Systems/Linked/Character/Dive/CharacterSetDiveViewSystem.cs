@@ -4,9 +4,6 @@ using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Views.Impls.Character.Impls;
 using Leopotam.Ecs;
-using Services.Input;
-using UnityEngine;
-using Zenject;
 
 namespace ECS.Game.Systems.Linked
 {

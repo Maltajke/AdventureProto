@@ -36,10 +36,20 @@ namespace ECS.Utils.Extensions
                 value = filter.GetEntity(i);
             return value;
         }
+        public static EcsEntity GetGameStage(this EcsWorld world)
+        {
+            var value = new EcsEntity();
+            var filter = world.GetFilter(typeof(EcsFilter<GameStageComponent>));
+            foreach(var i in filter)
+                value = filter.GetEntity(i);
+            return value;
+        }
+
         public static void DeclareOneFrameEvents(this EcsSystems systems)
         {
             systems.OneFrame<PrefabComponent>();
             systems.OneFrame<InteractEventComponent>();
+            systems.OneFrame<ChangeStageComponent>();
         }
     }
 }

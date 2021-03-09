@@ -13,13 +13,11 @@ namespace Game.Ui.BlackScreen
     public class BlackScreenViewController : UiController<BlackScreenView>, IInitializable
     {
         private readonly SignalBus _signalBus;
-        private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly PdAudio _pdAudio;
 
-        public BlackScreenViewController(SignalBus signalBus, ISceneLoadingManager sceneLoadingManager, PdAudio pdAudio)
+        public BlackScreenViewController(SignalBus signalBus, PdAudio pdAudio)
         {
             _signalBus = signalBus;
-            _sceneLoadingManager = sceneLoadingManager;
             _pdAudio = pdAudio;
         }
         

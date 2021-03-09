@@ -15,7 +15,7 @@ namespace ECS.Game.Systems.Linked
         {
             entity.Del<DiveComponent>();
             if(entity.Has<ShootingComponent>()) return;
-            _inputManager.PlayerEnable(true);
+            _inputManager.MoveEnable(true);
         }
     }
 }

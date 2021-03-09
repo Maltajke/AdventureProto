@@ -19,6 +19,9 @@ namespace ECS.Installers
 
         private void BindSystems()
         {
+            Container.BindInterfacesAndSelfTo<GameStageSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GamePauseSystem>().AsSingle();
+
             Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
 

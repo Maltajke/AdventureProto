@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Services.Input
 {
-    public interface IInputManager
+    public interface IInputManager : IDisposable
     {
         InputActions Actions { get; }
         Vector3 InputValue { get; }
