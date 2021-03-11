@@ -51,7 +51,7 @@ namespace ECS.Game.Systems
         private void CreateArrowPool(int count)
         {
             for (int i = 0; i < count; i++)
-                _world.CreateArrow(Vector3.zero);
+                _world.CreateArrow(Vector3.zero + new Vector3(0,1000,0));
         }
 
         private void CreateNPC()

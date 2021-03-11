@@ -92,9 +92,14 @@
               <e p="RotationComponent.cs" t="Include" />
               <e p="SafeAreaComponent.cs" t="Include" />
               <e p="TargetComponent.cs" t="Include" />
+              <e p="TargetPositionComponent.cs" t="Include" />
               <e p="UIdComponent.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
+              <e p="Arrow" t="Include">
+                <e p="ArrowMoveSystem.cs" t="Include" />
+                <e p="ArrowShotSystem.cs" t="Include" />
+              </e>
               <e p="CalculateDistanceSystem.cs" t="Include" />
               <e p="Character" t="Include">
                 <e p="CameraMoveSystem.cs" t="Include" />
@@ -119,10 +124,6 @@
                     <e p="CharacterStartDiveSystem.cs" t="Include" />
                   </e>
                   <e p="Shooting" t="Include">
-                    <e p="Arrow" t="Include">
-                      <e p="ArrowMoveSystem.cs" t="Include" />
-                      <e p="ArrowShotSystem.cs" t="Include" />
-                    </e>
                     <e p="CharacterSetShootingViewSystem.cs" t="Include" />
                     <e p="CharacterShootingEndSystem.cs" t="Include" />
                     <e p="CharacterShootingStartSystem.cs" t="Include" />

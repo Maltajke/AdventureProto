@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace ECS.Game.Components.Events
 {
-    public struct ShotEventComponent
+    public struct ShotEventComponent : IEcsIgnoreInFilter
     {
-        public Vector3 startPosition;
+        
     }
 }

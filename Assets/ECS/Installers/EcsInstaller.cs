@@ -1,9 +1,9 @@
 ﻿using ECS.Game.Systems;
+using ECS.Game.Systems.Arrow;
 using ECS.Game.Systems.Character;
 using ECS.Game.Systems.Character.Dive;
 using ECS.Game.Systems.Linked;
 using ECS.Game.Systems.Linked.Character.Shooting;
-using ECS.Game.Systems.Linked.Character.Shooting.Arrow;
 using Leopotam.Ecs;
 using Zenject;
 
@@ -58,6 +58,7 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<CharacterSetTargetSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<ArrowShotSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<ArrowMoveSystem>().AsSingle();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -23,13 +24,20 @@ namespace ECS.Views.Impls.Character.Impls
         {
             arrowMesh.SetActive(false);
         }
-
         private void EnableArrowMesh(int value)
         {
             arrowMesh.SetActive(value == 1);
             if (value != 0) return;
-            _world.NewEntity().Get<ShotEventComponent>().startPosition = arrowMesh.transform.position;
+            ShotSignal();
+        }
 
+        private void ShotSignal()
+        {
+            var shotEvent = _world.NewEntity();
+            shotEvent.Get<ShotEventComponent>();
+            shotEvent.Get<PositionComponent>().Value = arrowMesh.transform.position;
+            shotEvent.Get<RotationComponent>().Value = arrowMesh.transform.rotation;
+            shotEvent.Get<OwnerComponent>().Value = _entity.Get<UIdComponent>().Value;
         }
         private void EnableBowMesh(int value)
         {

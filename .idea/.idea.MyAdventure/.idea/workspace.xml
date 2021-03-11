@@ -25,36 +25,16 @@
     <list default="true" id="2f306edf-e37a-4e87-9226-a15713c61a47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Animations/Longbow Aiming Pack/standing draw arrow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Animations/Longbow Aiming Pack/standing draw arrow.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Animations/Pro Longbow Pack/standing aim recoil.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Animations/Pro Longbow Pack/standing aim recoil.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Animations/Pro Longbow Pack/standing disarm bow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Animations/Pro Longbow Pack/standing disarm bow.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Animations/Pro Longbow Pack/standing equip bow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Animations/Pro Longbow Pack/standing equip bow.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/ShootingComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/IsShootingComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/ShootingComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/IsShootingComponent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterSetTargetSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterSetTargetSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/ShotEventComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/ShotEventComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GamePauseSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GamePauseSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Dive/CharacterEndDiveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Dive/CharacterEndDiveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterSetShootingViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterSetShootingViewSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterShootingEndSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterShootingEndSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterShootingStartSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterShootingStartSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow/ArrowMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow/ArrowMoveSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow/ArrowShotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow/ArrowShotSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Impls/SpawnService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Impls/SpawnService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/CharacterView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/LinkableView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/LinkableView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/Character_archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Character_archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop/3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop/3D.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/IEcsBehaviourReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/IEcsBehaviourReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/Impls/ShotBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/Impls/ShotBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/StateMachineEcsReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/StateMachineEcsReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/GameInputCallbackReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/GameInputCallbackReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/IPauseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/IPauseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/Impls/PauseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/Impls/PauseService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,9 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ECS/Views/ILinkable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializers/MenuInitializer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Ui/BlackScreen/BlackScreenViewController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/Input/IInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/InputManager.cs" />
@@ -137,25 +114,28 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/StateMachineEcsReceiver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/GameInputCallbackReceiver.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Utils/Impls/SpawnService.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/ArrowComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/DamageComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/Impls/PauseService.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/CharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Objects/ArrowView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/CharacterShootingEndSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/ShootingComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/ShotEventComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/IsAvailableComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow/ArrowMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/Shooting/Arrow/ArrowShotSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/OwnerComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/LinkableView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/ShotEventComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/TargetPositionComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" />
       </list>
     </option>
   </component>
@@ -196,10 +176,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16984">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16984" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -231,6 +211,7 @@
       <workItem from="1615224204743" duration="1083000" />
       <workItem from="1615281580362" duration="34435000" />
       <workItem from="1615473568989" duration="13365000" />
+      <workItem from="1615494045918" duration="6002000" />
     </task>
     <servers />
   </component>
@@ -351,10 +332,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="253" width="856" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615318415045" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615488180063">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615500007085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615488180063" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615500007085" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
