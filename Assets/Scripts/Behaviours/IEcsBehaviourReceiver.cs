@@ -4,6 +4,6 @@ namespace Behaviours
 {
     public interface IEcsBehaviourReceiver
     {
-        EcsEntity Entity { set; }
+        void SetEntity(EcsEntity entity);
     }
 }

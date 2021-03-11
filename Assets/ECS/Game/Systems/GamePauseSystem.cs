@@ -15,16 +15,7 @@ namespace ECS.Game.Systems
         protected override bool DeleteEvent => false;
         protected override void Execute(EcsEntity entity)
         {
-            var stage = ReactiveFilter.Get1(0).Value;
-            foreach (var i in _links)
-            {
-                if (!(_links.Get1(i).View is IPause)) continue;
-                var view = (IPause) _links.Get1(i).View;
-                if(stage == EGameStage.Pause)
-                    view.Pause();
-                else
-                    view.UnPause();
-            }
+            //pause
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Installers
         private void BindServices()
         {
             Container.BindInterfacesTo<SpawnService>().AsSingle();
-            Container.BindSubstituteInterfacesTo<IPauseService, PauseService>().AsSingle();
+            Container.BindInterfacesTo<PauseService>().AsSingle();
         }
     }
 }

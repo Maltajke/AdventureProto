@@ -7,10 +7,10 @@ using Leopotam.Ecs;
 
 namespace ECS.Game.Systems.Character
 {
-    public class CharacterSetTargetSystem : ReactiveSystem<EventAddComponent<ShootingComponent>>
+    public class CharacterSetTargetSystem : ReactiveSystem<EventAddComponent<IsShootingComponent>>
     {
         private readonly EcsFilter<DistanceToPlayerComponent, EnemyComponent> _enemies;
-        protected override EcsFilter<EventAddComponent<ShootingComponent>> ReactiveFilter { get; }
+        protected override EcsFilter<EventAddComponent<IsShootingComponent>> ReactiveFilter { get; }
         private EcsEntity ClosestEnemy
         {
             get

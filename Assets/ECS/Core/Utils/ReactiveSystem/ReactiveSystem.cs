@@ -8,7 +8,6 @@ namespace ECS.Core.Utils.ReactiveSystem
         protected abstract EcsFilter<T> ReactiveFilter { get; }
         protected virtual bool EntityFilter(EcsEntity entity) => true;
         protected virtual bool DeleteEvent => true;
-
         public void Run()
         {
             foreach (var i in ReactiveFilter)

@@ -64,24 +64,29 @@
           <e p="EcsMainBootstrap.cs" t="Include" />
           <e p="Game" t="Include">
             <e p="Components" t="Include">
+              <e p="DamageComponent.cs" t="Include" />
               <e p="DistanceToPlayerComponent.cs" t="Include" />
               <e p="Events" t="Include">
                 <e p="ChangeStageComponent.cs" t="Include" />
                 <e p="DiveComponent.cs" t="Include" />
                 <e p="InteractEventComponent.cs" t="Include" />
+                <e p="ShotEventComponent.cs" t="Include" />
               </e>
               <e p="Flags" t="Include">
+                <e p="ArrowComponent.cs" t="Include" />
                 <e p="CameraComponent.cs" t="Include" />
                 <e p="EnemyComponent.cs" t="Include" />
                 <e p="InSafeAreaComponent.cs" t="Include" />
                 <e p="InteractComponent.cs" t="Include" />
+                <e p="IsAvailableComponent.cs" t="Include" />
+                <e p="IsShootingComponent.cs" t="Include" />
                 <e p="LevelComponent.cs" t="Include" />
                 <e p="NpcComponent.cs" t="Include" />
                 <e p="PlayerComponent.cs" t="Include" />
-                <e p="ShootingComponent.cs" t="Include" />
               </e>
               <e p="GameStageComponent.cs" t="Include" />
               <e p="LinkComponent.cs" t="Include" />
+              <e p="OwnerComponent.cs" t="Include" />
               <e p="PositionComponent.cs" t="Include" />
               <e p="PrefabComponent.cs" t="Include" />
               <e p="RotationComponent.cs" t="Include" />
@@ -114,6 +119,10 @@
                     <e p="CharacterStartDiveSystem.cs" t="Include" />
                   </e>
                   <e p="Shooting" t="Include">
+                    <e p="Arrow" t="Include">
+                      <e p="ArrowMoveSystem.cs" t="Include" />
+                      <e p="ArrowShotSystem.cs" t="Include" />
+                    </e>
                     <e p="CharacterSetShootingViewSystem.cs" t="Include" />
                     <e p="CharacterShootingEndSystem.cs" t="Include" />
                     <e p="CharacterShootingStartSystem.cs" t="Include" />
@@ -157,6 +166,9 @@
                 </e>
               </e>
               <e p="LinkableView.cs" t="Include" />
+              <e p="Objects" t="Include">
+                <e p="ArrowView.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>

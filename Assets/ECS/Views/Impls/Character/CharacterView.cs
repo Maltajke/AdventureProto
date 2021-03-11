@@ -24,7 +24,7 @@ namespace ECS.Views.Impls.Character
             {
                 if (!(behaviour is IEcsBehaviourReceiver)) continue;
                 var iReceiver = (IEcsBehaviourReceiver) behaviour;
-                iReceiver.Entity = entity;
+                iReceiver.SetEntity(entity);
             }
         }
         

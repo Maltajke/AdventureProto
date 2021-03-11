@@ -46,6 +46,17 @@ namespace ECS.Utils.Extensions
             return entity;
         }
         
+        public static EcsEntity CreateArrow(this EcsWorld world, Vector3 position)
+        {
+            var entity = world.NewEntity();
+            entity.Get<UIdComponent>().Value = UidGenerator.Next();
+            entity.Get<ArrowComponent>();
+            entity.Get<PositionComponent>().Value = position;
+            entity.Get<RotationComponent>().Value = Quaternion.identity;
+            entity.Get<PrefabComponent>().Value = "Arrow";
+            return entity;
+        }
+        
         public static EcsEntity CreateNPC(this EcsWorld world, Vector3 position, Quaternion rotation)
         {
             var entity = world.NewEntity();

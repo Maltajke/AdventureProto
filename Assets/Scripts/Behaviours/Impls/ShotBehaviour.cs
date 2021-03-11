@@ -2,7 +2,7 @@
 
 namespace Behaviours
 {
-    public class ShotBehaviour : StateMachineEcsReceiver<ShootingComponent>
+    public class ShotBehaviour : StateMachineEcsReceiver<IsShootingComponent>
     {
         
     }

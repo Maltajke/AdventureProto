@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using DataBase.Game;
 using ECS.Core.Utils.ReactiveSystem.Components;
-using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Utils.Extensions;
-using ECS.Views.Impls.Character.Impls;
 using Game.Ui.InGameMenu;
 using Leopotam.Ecs;
 using SimpleUi.Signals;
-using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
 
@@ -35,18 +30,18 @@ namespace Services.Input.Impls
             _inputManager.Actions.PlayerInteractions.Dive.started += DiveOnStarted;
             _inputManager.Actions.PlayerInteractions.Fire.started += FireOnstarted;
         }
-
-        private void FireOnstarted(InputAction.CallbackContext obj)
-        {
-            _world.GetPlayer().Get<EventAddComponent<ShootingComponent>>();
-        }
-
+        
         public void Dispose()
         {
             _inputManager.Actions.PlayerInteractions.Menu.started -= MenuOnStarted;
             _inputManager.Actions.PlayerInteractions.Interact.started -= InteractOnStarted;
             _inputManager.Actions.PlayerInteractions.Dive.started -= DiveOnStarted;
             _inputManager.Actions.PlayerInteractions.Fire.started -= FireOnstarted;
+        }
+
+        private void FireOnstarted(InputAction.CallbackContext obj)
+        {
+            _world.GetPlayer().Get<EventAddComponent<IsShootingComponent>>();
         }
 
         private void DiveOnStarted(InputAction.CallbackContext obj)

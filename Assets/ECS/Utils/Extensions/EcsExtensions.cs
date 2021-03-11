@@ -1,7 +1,10 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Runtime.CompilerServices;
 using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
+using ECS.Views;
+using ECS.Views.Impls.Character.Impls;
 using Leopotam.Ecs;
 using PdUtils;
 using UnityEngine;
@@ -11,7 +14,32 @@ namespace ECS.Utils.Extensions
 {
     public static class EcsExtensions
     {
-
+        // private static bool ValidateViewType<T>(this ILinkable linkable)
+        // {
+        //     if (linkable is T)
+        //         return true;
+        //     throw new Exception("You must have suitable view component on GameObject");
+        // }
+        // public static void SetConcreteViewLink(this EcsEntity entity, ref ILinkable linkable)
+        // {
+        //     if (entity.Has<PlayerComponent>())
+        //     {
+        //         if (ValidateViewType<MainPlayerView>(linkable))
+        //             linkable = (MainPlayerView)linkable;
+        //             
+        //         
+        //     }
+        //     else if (entity.Has<EnemyComponent>())
+        //     {
+        //         if (ValidateViewType<EnemyView>(linkable))
+        //             linkable = (EnemyView) linkable;
+        //     }
+        //     else if (entity.Has<NpcComponent>())
+        //     {
+        //         if (ValidateViewType<NpcView>(linkable))
+        //             linkable = (NpcView) linkable;
+        //     }
+        // }
         public static void MovePlayerOnNavMesh(Vector3 inputValue, ref Vector3 pos, ref Quaternion rot, float moveSpeed, float rotateSpeed = 1)
         {
             if (inputValue.sqrMagnitude >= .01f)

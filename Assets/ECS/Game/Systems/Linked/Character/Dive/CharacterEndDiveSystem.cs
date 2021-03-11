@@ -14,7 +14,7 @@ namespace ECS.Game.Systems.Linked
         protected override void Execute(EcsEntity entity)
         {
             entity.Del<DiveComponent>();
-            if(entity.Has<ShootingComponent>()) return;
+            if(entity.Has<IsShootingComponent>()) return;
             _inputManager.MoveEnable(true);
         }
     }

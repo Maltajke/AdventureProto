@@ -2,7 +2,7 @@
 
 namespace ECS.Game.Components.Events
 {
-    public struct ShootingComponent : IEcsIgnoreInFilter
+    public struct IsShootingComponent : IEcsIgnoreInFilter
     {
         
     }

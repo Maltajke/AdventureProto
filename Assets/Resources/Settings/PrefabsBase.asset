@@ -25,3 +25,6 @@ MonoBehaviour:
   - Name: NPC
     GameObject: {fileID: 8299163323473465985, guid: 9523ac8f772112540937ec2f9b29203a,
       type: 3}
+  - Name: Arrow
+    GameObject: {fileID: 2750478387250968840, guid: 3d55dd12def6ec74ba022858b453c370,
+      type: 3}

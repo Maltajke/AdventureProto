@@ -8,14 +8,14 @@ using Zenject;
 
 namespace ECS.Game.Systems.Linked.Character.Shooting
 {
-    public class CharacterShootingEndSystem : ReactiveSystem<StateMachineCallbackEnd<ShootingComponent>>
+    public class CharacterShootingEndSystem : ReactiveSystem<StateMachineCallbackEnd<IsShootingComponent>>
     {
         [Inject] private IInputManager _inputManager;
-        protected override EcsFilter<StateMachineCallbackEnd<ShootingComponent>> ReactiveFilter { get; }
+        protected override EcsFilter<StateMachineCallbackEnd<IsShootingComponent>> ReactiveFilter { get; }
         protected override void Execute(EcsEntity entity)
         {
             entity.Del<TargetComponent>();
-            if (entity.Has<ShootingComponent>()) return;
+            if (entity.Has<IsShootingComponent>()) return;
             _inputManager.MoveEnable(true);
         }
     }

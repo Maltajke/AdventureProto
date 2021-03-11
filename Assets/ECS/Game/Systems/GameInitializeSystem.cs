@@ -1,6 +1,7 @@
 ﻿using ECS.Utils.Extensions;
 using Game.Utils.MonoBehUtils;
 using Leopotam.Ecs;
+using UnityEngine;
 using Zenject;
 
 namespace ECS.Game.Systems
@@ -17,6 +18,7 @@ namespace ECS.Game.Systems
             CreateEnemies(10);
             CreateNPC();
             CreateLevel();
+            CreateArrowPool(20);
         }
 
         private void CreatePlayer()
@@ -44,6 +46,12 @@ namespace ECS.Game.Systems
         {
             for (int i = 0; i < count; i++)
                 _world.CreateEnemy(_getPointFromScene.GetRandomPoint());
+        }
+
+        private void CreateArrowPool(int count)
+        {
+            for (int i = 0; i < count; i++)
+                _world.CreateArrow(Vector3.zero);
         }
 
         private void CreateNPC()
