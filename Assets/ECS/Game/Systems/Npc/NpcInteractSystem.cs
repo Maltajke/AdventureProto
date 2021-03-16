@@ -6,7 +6,7 @@ using Leopotam.Ecs;
 using SimpleUi.Signals;
 using Zenject;
 
-namespace ECS.Game.Systems
+namespace ECS.Game.Systems.Npc
 {
     public class NpcInteractSystem : ReactiveSystem<InteractEventComponent>
     {

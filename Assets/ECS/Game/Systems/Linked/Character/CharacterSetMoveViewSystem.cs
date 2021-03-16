@@ -1,14 +1,12 @@
 ﻿using ECS.Core.Utils.SystemInterfaces;
 using ECS.Game.Components;
-using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
-using ECS.Views.Impls.Character;
 using ECS.Views.Impls.Character.Impls;
 using Leopotam.Ecs;
 using Services.Input;
 using Zenject;
 
-namespace ECS.Game.Systems.Linked
+namespace ECS.Game.Systems.Linked.Character
 {
     public class CharacterSetMoveViewSystem : IEcsUpdateSystem
     {

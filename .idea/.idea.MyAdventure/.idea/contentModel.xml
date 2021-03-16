@@ -5,6 +5,7 @@
     <e p="C:\Users\cstri\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MyAdventure.1765091709.00" t="ExcludeRecursive" />
     <e p="D:\Projects\Unity\MyAdventure" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -52,6 +53,8 @@
                   <e p="StateMachineCallbackEnd.cs" t="Include" />
                   <e p="StateMachineCallbackStart.cs" t="Include" />
                 </e>
+                <e p="IEventAddComponent.cs" t="Include" />
+                <e p="IEventRemoveComponent.cs" t="Include" />
                 <e p="ReactiveSystem.cs" t="Include" />
               </e>
               <e p="SystemInterfaces" t="Include">
@@ -86,6 +89,9 @@
               </e>
               <e p="GameStageComponent.cs" t="Include" />
               <e p="LinkComponent.cs" t="Include" />
+              <e p="Listeners" t="Include">
+                <e p="IsAvailableListenerComponent.cs" t="Include" />
+              </e>
               <e p="OwnerComponent.cs" t="Include" />
               <e p="PositionComponent.cs" t="Include" />
               <e p="PrefabComponent.cs" t="Include" />
@@ -97,6 +103,7 @@
             </e>
             <e p="Systems" t="Include">
               <e p="Arrow" t="Include">
+                <e p="ArrowDestroySystem.cs" t="Include" />
                 <e p="ArrowMoveSystem.cs" t="Include" />
                 <e p="ArrowShotSystem.cs" t="Include" />
               </e>
@@ -115,9 +122,8 @@
               <e p="InstantiateSystem.cs" t="Include" />
               <e p="Linked" t="Include">
                 <e p="Character" t="Include">
-                  <e p="CharacterSetAggressiveSystem.cs" t="Include" />
+                  <e p="CharacterSetAggressiveViewSystem.cs" t="Include" />
                   <e p="CharacterSetMoveViewSystem.cs" t="Include" />
-                  <e p="CharacterUnsetAggressiveSystem.cs" t="Include" />
                   <e p="Dive" t="Include">
                     <e p="CharacterEndDiveSystem.cs" t="Include" />
                     <e p="CharacterSetDiveViewSystem.cs" t="Include" />
@@ -129,9 +135,9 @@
                     <e p="CharacterShootingStartSystem.cs" t="Include" />
                   </e>
                 </e>
+                <e p="IsAvailableSetViewSystem.cs" t="Include" />
                 <e p="Npc" t="Include">
                   <e p="NpcSetInteractViewSystem.cs" t="Include" />
-                  <e p="NpcUnsetInteractViewSystem.cs" t="Include" />
                 </e>
                 <e p="PositionRotationTranslateSystem.cs" t="Include" />
               </e>
@@ -1578,6 +1584,13 @@
               <e p="CharacterSettingsBase.cs" t="Include" />
               <e p="ICharacterSettingsBase.cs" t="Include" />
             </e>
+            <e p="FX" t="Include">
+              <e p="EFxType.cs" t="Include" />
+              <e p="IFxBase.cs" t="Include" />
+              <e p="Impl" t="Include">
+                <e p="FxBase.cs" t="Include" />
+              </e>
+            </e>
             <e p="Game" t="Include">
               <e p="EGameStage.cs" t="Include" />
             </e>
@@ -1675,6 +1688,9 @@
             </e>
           </e>
           <e p="Services" t="Include">
+            <e p="FX" t="Include">
+              <e p="IFxPoolService.cs" t="Include" />
+            </e>
             <e p="Input" t="Include">
               <e p="IInputManager.cs" t="Include" />
               <e p="Impls" t="Include">
@@ -1703,6 +1719,98 @@
           </e>
         </e>
         <e p="ThirdParty" t="Include">
+          <e p="JMO Assets" t="Include">
+            <e p="Cartoon FX (legacy)" t="Include">
+              <e p="CartoonFX Readme.txt" t="Include" />
+              <e p="Demo" t="Include">
+                <e p="Assets" t="Include">
+                  <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                  <e p="CFX_Demo.cs" t="Include" />
+                  <e p="CFX_Demo_New.cs" t="Include" />
+                  <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                  <e p="CFX_Demo_RandomDirectionTranslate.cs" t="Include" />
+                  <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                  <e p="CFX_Demo_Translate.cs" t="Include" />
+                  <e p="CFX_Demo_WaterWiggle.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Editor" t="Include">
+                <e p="CFX_InspectorHelpEditor.cs" t="Include" />
+                <e p="CFX_SpawnSystemEditor.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+                <e p="CFX_AutodestructWhenNoChildren.cs" t="Include" />
+                <e p="CFX_AutoRotate.cs" t="Include" />
+                <e p="CFX_InspectorHelp.cs" t="Include" />
+                <e p="CFX_LightIntensityFade.cs" t="Include" />
+                <e p="CFX_ShurikenThreadFix.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="CFXM_MobileParticleAB_Alpha8.shader" t="Include" />
+                <e p="CFXM_MobileParticleAdd_Alpha8.shader" t="Include" />
+              </e>
+              <e p="Spawn System" t="Include">
+                <e p="CFX_SpawnSystem.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Cartoon FX Easy Editor" t="Include">
+              <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CFXEasyEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Cartoon FX Remaster" t="Include">
+              <e p="CFXR Assets" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="CFXR Editor.asmdef" t="Include" />
+                  <e p="CFXR_ExpressionParser.cs" t="Include" />
+                  <e p="CFXR_MaterialInspector.cs" t="Include" />
+                  <e p="CFXR_Styles.cs" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="CFXR Runtime.asmdef" t="Include" />
+                  <e p="CFXR_Effect.CameraShake.cs" t="Include" />
+                  <e p="CFXR_Effect.cs" t="Include" />
+                  <e p="CFXR_ParticleText.cs" t="Include" />
+                  <e p="CFXR_ParticleText_Runtime.cs" t="Include" />
+                  <e p="CFXR_ParticleTextFontAsset.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="CFXR Particle Glow.shader" t="Include" />
+                  <e p="CFXR Particle Procedural Ring.shader" t="Include" />
+                  <e p="CFXR Particle Ubershader.shader" t="Include" />
+                  <e p="CFXR.cginc" t="Include" />
+                  <e p="CFXR_SETTINGS.cginc" t="Include" />
+                  <e p="CFXR_URP.cginc" t="Include" />
+                </e>
+              </e>
+              <e p="CFXR Prefabs" t="Include">
+                <e p="Texts" t="Include">
+                  <e p="_Make your own text effect.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Demo Assets" t="Include">
+                <e p="CFXR Demo.asmdef" t="Include" />
+                <e p="CFXR_Demo.cs" t="Include" />
+                <e p="CFXR_Demo_RandomText.cs" t="Include" />
+                <e p="CFXR_Demo_Rotate.cs" t="Include" />
+                <e p="Kino Bloom" t="Include">
+                  <e p="Bloom.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="BloomEditor.cs" t="Include" />
+                    <e p="BloomGraphDrawer.cs" t="Include" />
+                    <e p="CFXR Demo Editor.asmdef" t="Include" />
+                  </e>
+                  <e p="Shader" t="Include">
+                    <e p="Bloom.cginc" t="Include" />
+                    <e p="Bloom.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Readme Cartoon FX Remaster.txt" t="Include" />
+            </e>
+          </e>
           <e p="PolygonNature" t="Include">
             <e p="Shaders" t="Include">
               <e p="SyntyStudios_LOD.shader" t="Include" />
@@ -1716,6 +1824,10 @@
           </e>
         </e>
       </e>
+      <e p="CFXRDemo.csproj" t="IncludeRecursive" />
+      <e p="CFXRDemoEditor.csproj" t="IncludeRecursive" />
+      <e p="CFXREditor.csproj" t="IncludeRecursive" />
+      <e p="CFXRRuntime.csproj" t="IncludeRecursive" />
       <e p="EasyButtons.csproj" t="IncludeRecursive" />
       <e p="EasyButtons.Editor.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.csproj" t="IncludeRecursive" />

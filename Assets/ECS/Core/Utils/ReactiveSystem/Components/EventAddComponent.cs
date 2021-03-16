@@ -2,7 +2,7 @@
 
 namespace ECS.Core.Utils.ReactiveSystem.Components
 {
-    public struct EventAddComponent<T> : IEcsIgnoreInFilter where T : struct
+    public struct EventAddComponent<T> : IEcsIgnoreInFilter, IEventAddComponent where T : struct
     {
         
     }

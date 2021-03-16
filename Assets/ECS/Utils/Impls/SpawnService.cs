@@ -1,6 +1,8 @@
 ﻿using System;
+using DataBase.FX;
 using DataBase.Objects;
 using ECS.Game.Components;
+using ECS.Game.Components.Flags;
 using ECS.Views;
 using Leopotam.Ecs;
 using Services.PauseService;
@@ -13,15 +15,18 @@ namespace ECS.Utils.Impls
     {
         private readonly DiContainer _container;
         private readonly IPrefabsBase _prefabsBase;
+        private readonly IFxBase _fxBase;
         private readonly IPauseService _pauseService;
 
         public SpawnService(
             DiContainer container,
             IPrefabsBase prefabsBase,
+            IFxBase fxBase,
             IPauseService pauseService)
         {
             _container = container;
             _prefabsBase = prefabsBase;
+            _fxBase = fxBase;
             _pauseService = pauseService;
         }
 

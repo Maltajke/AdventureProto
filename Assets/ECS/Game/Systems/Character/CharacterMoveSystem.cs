@@ -2,13 +2,10 @@
 using DataBase.Game;
 using ECS.Core.Utils.SystemInterfaces;
 using ECS.Game.Components;
-using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using Services.Input;
-using UnityEngine;
-using UnityEngine.AI;
 using Zenject;
 
 namespace ECS.Game.Systems.Character

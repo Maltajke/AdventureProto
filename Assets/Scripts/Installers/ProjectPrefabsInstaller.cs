@@ -1,5 +1,7 @@
 ﻿using DataBase.Audio;
 using DataBase.Character;
+using DataBase.FX;
+using DataBase.FX.Impl;
 using DataBase.Objects;
 using DataBase.Objects.Impl;
 using UnityEngine;
@@ -14,12 +16,14 @@ namespace Installers
         [SerializeField] private PrefabsBase prefabBase;
         [SerializeField] private CharacterSettingsBase characterBase;
         [SerializeField] private AudioBase audioBase;
+        [SerializeField] private FxBase fxBase;
         
         public override void InstallBindings()
         {
             Container.Bind<IPrefabsBase>().FromSubstitute(prefabBase).AsSingle();
             Container.Bind<ICharacterSettingsBase>().FromSubstitute(characterBase).AsSingle();
             Container.Bind<IAudioBase>().FromSubstitute(audioBase).AsSingle();
+            Container.Bind<IFxBase>().FromSubstitute(fxBase).AsSingle();
         }
     }
 }

@@ -3,7 +3,10 @@ using ECS.Game.Systems.Arrow;
 using ECS.Game.Systems.Character;
 using ECS.Game.Systems.Character.Dive;
 using ECS.Game.Systems.Linked;
+using ECS.Game.Systems.Linked.Character;
 using ECS.Game.Systems.Linked.Character.Shooting;
+using ECS.Game.Systems.Linked.Npc;
+using ECS.Game.Systems.Npc;
 using Leopotam.Ecs;
 using Zenject;
 
@@ -20,6 +23,8 @@ namespace ECS.Installers
 
         private void BindSystems()
         {
+            Container.BindInterfacesAndSelfTo<IsAvailableSetViewSystem>().AsSingle();
+            
             Container.BindInterfacesAndSelfTo<GameStageSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<GamePauseSystem>().AsSingle();
 
@@ -38,15 +43,12 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<CalculateDistanceSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<NpcMarkerSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterSafeMarkerSystem>().AsSingle();
-
-            Container.BindInterfacesAndSelfTo<CharacterSetAggressiveSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<CharacterUnsetAggressiveSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<CharacterSetAggressiveViewSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<NpcSetInteractViewSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<NpcUnsetInteractViewSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<NpcInteractSystem>().AsSingle();
-
-            Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
+            
             Container.BindInterfacesAndSelfTo<CharacterSetMoveViewSystem>().AsSingle();
             
             Container.BindInterfacesAndSelfTo<CharacterSetDiveViewSystem>().AsSingle();
@@ -59,6 +61,9 @@ namespace ECS.Installers
 
             Container.BindInterfacesAndSelfTo<ArrowShotSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<ArrowMoveSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<ArrowDestroySystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
         }
     }
 }

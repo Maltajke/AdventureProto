@@ -1,4 +1,7 @@
-﻿using ECS.Utils.Extensions;
+﻿using DataBase.FX;
+using ECS.Core.Utils.ReactiveSystem.Components;
+using ECS.Game.Components.Flags;
+using ECS.Utils.Extensions;
 using Game.Utils.MonoBehUtils;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -53,6 +56,7 @@ namespace ECS.Game.Systems
             for (int i = 0; i < count; i++)
                 _world.CreateArrow(Vector3.zero + new Vector3(0,1000,0));
         }
+
 
         private void CreateNPC()
         {

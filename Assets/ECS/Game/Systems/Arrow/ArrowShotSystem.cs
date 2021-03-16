@@ -1,4 +1,6 @@
-﻿using ECS.Core.Utils.ReactiveSystem;
+﻿using DataBase.FX;
+using ECS.Core.Utils.ReactiveSystem;
+using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
@@ -20,7 +22,8 @@ namespace ECS.Game.Systems.Arrow
             {
                 var arrowEntity = _arrows.GetEntity(i);
                 arrowEntity.Get<IsAvailableComponent>();
-                
+                arrowEntity.Get<EventAddComponent<IsAvailableComponent>>();
+
                 ref var position = ref _arrows.Get1(i).Value;
                 position = entity.Get<PositionComponent>().Value;         //start pos
                 
@@ -37,7 +40,7 @@ namespace ECS.Game.Systems.Arrow
                     arrowEntity.Get<TargetPositionComponent>().Value = new Vector3(targetPos.x, position.y, targetPos.z);
                 }
                 else arrowEntity.Get<TargetPositionComponent>().Value = position + (rotation * Vector3.forward) * 10;
-                
+
                 break;
             }
             entity.Destroy();

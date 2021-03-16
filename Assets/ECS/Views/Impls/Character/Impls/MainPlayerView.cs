@@ -1,9 +1,7 @@
-﻿using System;
-using ECS.Game.Components;
+﻿using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using Leopotam.Ecs;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Zenject;
 
 namespace ECS.Views.Impls.Character.Impls

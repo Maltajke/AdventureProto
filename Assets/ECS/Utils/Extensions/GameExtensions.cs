@@ -1,4 +1,5 @@
-﻿using DataBase.Game;
+﻿using DataBase.FX;
+using DataBase.Game;
 using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
 using ECS.Game.Components.Flags;
@@ -87,5 +88,6 @@ namespace ECS.Utils.Extensions
             entity.Get<GameStageComponent>().Value = EGameStage.Play;
             return entity;
         }
+
     }
 }
