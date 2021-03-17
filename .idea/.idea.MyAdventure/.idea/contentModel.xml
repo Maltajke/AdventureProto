@@ -67,6 +67,9 @@
           <e p="EcsMainBootstrap.cs" t="Include" />
           <e p="Game" t="Include">
             <e p="Components" t="Include">
+              <e p="AI" t="Include">
+                <e p="PathComponent.cs" t="Include" />
+              </e>
               <e p="DamageComponent.cs" t="Include" />
               <e p="DistanceToPlayerComponent.cs" t="Include" />
               <e p="Events" t="Include">
@@ -76,6 +79,7 @@
                 <e p="ShotEventComponent.cs" t="Include" />
               </e>
               <e p="Flags" t="Include">
+                <e p="AiComponent.cs" t="Include" />
                 <e p="ArrowComponent.cs" t="Include" />
                 <e p="CameraComponent.cs" t="Include" />
                 <e p="EnemyComponent.cs" t="Include" />
@@ -102,6 +106,9 @@
               <e p="UIdComponent.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
+              <e p="AI" t="Include">
+                <e p="CalculatePathSystem.cs" t="Include" />
+              </e>
               <e p="Arrow" t="Include">
                 <e p="ArrowDestroySystem.cs" t="Include" />
                 <e p="ArrowMoveSystem.cs" t="Include" />
@@ -192,6 +199,65 @@
                 <e p="DOTweenModuleUtils.cs" t="Include" />
               </e>
               <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Easy performant outline" t="Include">
+            <e p="Resources" t="Include">
+              <e p="Easy performant outline" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="BasicBlit.shader" t="Include" />
+                  <e p="Blur.shader" t="Include" />
+                  <e p="ClearStencil.shader" t="Include" />
+                  <e p="Dilate.shader" t="Include" />
+                  <e p="EdgeDilate.shader" t="Include" />
+                  <e p="Fills" t="Include">
+                    <e p="ColorFill.shader" t="Include" />
+                    <e p="Dots.shader" t="Include" />
+                    <e p="EmptyFill.shader" t="Include" />
+                    <e p="FillMask.shader" t="Include" />
+                    <e p="Fresnel.shader" t="Include" />
+                    <e p="Interlaced.shader" t="Include" />
+                  </e>
+                  <e p="FinalBlit.shader" t="Include" />
+                  <e p="MiskCG.cginc" t="Include" />
+                  <e p="Outline.shader" t="Include" />
+                  <e p="OutlineMask.shader" t="Include" />
+                  <e p="PartialBlit.shader" t="Include" />
+                  <e p="TransparentBlit.shader" t="Include" />
+                  <e p="ZPrepass.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="BlitUtility.cs" t="Include" />
+              <e p="BlurType.cs" t="Include" />
+              <e p="CameraUtility.cs" t="Include" />
+              <e p="CustomTargetBlitter.cs" t="Include" />
+              <e p="DOTween support" t="Include">
+                <e p="DOTweenEPO.cs" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="EPOSetuper.cs" t="Include" />
+                <e p="ModelPostprocessor.cs" t="Include" />
+                <e p="OutlinableEditor.cs" t="Include" />
+                <e p="OutlinePropertiesPropertyDrawer.cs" t="Include" />
+                <e p="OutlinerEditor.cs" t="Include" />
+                <e p="OutlineTargetPropertyDrawer.cs" t="Include" />
+                <e p="SerializedPassPropertyDrawer.cs" t="Include" />
+              </e>
+              <e p="KeywordsUtility.cs" t="Include" />
+              <e p="OnPreRenderEventTransferer.cs" t="Include" />
+              <e p="Outlinable.cs" t="Include" />
+              <e p="OutlineEffect.cs" t="Include" />
+              <e p="OutlineParameters.cs" t="Include" />
+              <e p="Outliner.cs" t="Include" />
+              <e p="OutlineTarget.cs" t="Include" />
+              <e p="PipelineAssetUtility.cs" t="Include" />
+              <e p="RendererFilteringUtility.cs" t="Include" />
+              <e p="RenderTargetUtility.cs" t="Include" />
+              <e p="SerializedPass.cs" t="Include" />
+              <e p="TargetsHolder.cs" t="Include" />
+              <e p="URPOutlineFeature.cs" t="Include" />
             </e>
           </e>
           <e p="EasyButtons" t="Include">
@@ -1688,6 +1754,12 @@
             </e>
           </e>
           <e p="Services" t="Include">
+            <e p="AI" t="Include">
+              <e p="Impl" t="Include">
+                <e p="PathCalculator.cs" t="Include" />
+              </e>
+              <e p="IPathCalculator.cs" t="Include" />
+            </e>
             <e p="FX" t="Include">
               <e p="IFxPoolService.cs" t="Include" />
             </e>
@@ -1716,6 +1788,9 @@
             <e p="SignalGameInit.cs" t="Include" />
             <e p="SignalMakeHudButtonsVisible.cs" t="Include" />
             <e p="SignalRemoveGameData.cs" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="TestPath.cs" t="Include" />
           </e>
         </e>
         <e p="ThirdParty" t="Include">

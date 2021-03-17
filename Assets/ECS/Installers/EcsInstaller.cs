@@ -1,4 +1,5 @@
 ﻿using ECS.Game.Systems;
+using ECS.Game.Systems.AI;
 using ECS.Game.Systems.Arrow;
 using ECS.Game.Systems.Character;
 using ECS.Game.Systems.Character.Dive;
@@ -30,6 +31,8 @@ namespace ECS.Installers
 
             Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
+            
+            Container.BindInterfacesAndSelfTo<CalculatePathSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<CharacterStartDiveSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterEndDiveSystem>().AsSingle();

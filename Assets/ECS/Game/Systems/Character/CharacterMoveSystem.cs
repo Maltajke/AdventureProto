@@ -6,17 +6,21 @@ using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using Services.Input;
+using UnityEngine.AI;
 using Zenject;
 
 namespace ECS.Game.Systems.Character
 {
     public class CharacterMoveSystem : IEcsUpdateSystem
     {
+        private NavMeshPath path;
+        
+        
         [Inject] private readonly IInputManager _inputManager;
         [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
         private readonly EcsFilter<PlayerComponent, PositionComponent, RotationComponent> _player;
         private readonly EcsFilter<GameStageComponent> _gameStage;
-
+        private readonly int _mask = 1 << NavMesh.GetAreaFromName("Walkable");
         public void Run()
         {
             if(_gameStage.Get1(0).Value == EGameStage.Pause) return;
@@ -32,7 +36,7 @@ namespace ECS.Game.Systems.Character
                     moveSpeed += 2;
                     rotateSpeed = 2;
                 }
-                EcsExtensions.MovePlayerOnNavMesh(inputValue, ref position, ref rotation, moveSpeed, rotateSpeed);
+                EcsExtensions.MovePlayerOnNavMesh(inputValue, ref position, ref rotation, _mask, moveSpeed, rotateSpeed);
             }
         }
     }

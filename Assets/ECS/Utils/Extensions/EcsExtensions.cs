@@ -12,11 +12,11 @@ namespace ECS.Utils.Extensions
 {
     public static class EcsExtensions
     {
-        public static void MovePlayerOnNavMesh(Vector3 inputValue, ref Vector3 pos, ref Quaternion rot, float moveSpeed, float rotateSpeed = 1)
+        public static void MovePlayerOnNavMesh(Vector3 inputValue, ref Vector3 pos, ref Quaternion rot, int areaMask, float moveSpeed, float rotateSpeed = 1)
         {
             if (!(inputValue.sqrMagnitude >= .01f)) return;
             var newPos = pos + inputValue * Time.deltaTime * moveSpeed;
-            var isValid = NavMesh.SamplePosition(newPos, out var hit, .3f, NavMesh.AllAreas);
+            var isValid = NavMesh.SamplePosition(newPos, out var hit, .3f, areaMask);
             if (isValid)
                 if ((pos - hit.position).magnitude >= .02f)
                     pos = hit.position;

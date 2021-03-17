@@ -1,5 +1,6 @@
 ﻿using ECS.Core.Utils.ReactiveSystem;
 using ECS.Game.Components;
+using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -10,10 +11,11 @@ namespace ECS.Game.Systems.Character
     {
         private readonly EcsWorld _world;
         protected override EcsFilter<TargetComponent> ReactiveFilter { get; }
+        protected override bool EntityFilter(EcsEntity entity) => entity.Has<PlayerComponent>();
         protected override bool DeleteEvent => false;
         protected override void Execute(EcsEntity entity)
         {
-            var target = _world.GetEntityWithUid(ReactiveFilter.Get1(0).value);
+            var target = _world.GetEntityWithUid(entity.Get<TargetComponent>().value);
             
             ref var targetPos = ref target.Get<PositionComponent>().Value;
             ref var myPos = ref entity.Get<PositionComponent>().Value;

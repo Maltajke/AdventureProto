@@ -3,6 +3,7 @@ using Game.Ui.InGameMenu;
 using Game.Ui.LocationChoise;
 using Game.Utils.MonoBehUtils;
 using Initializers;
+using Services.AI.Impl;
 using Services.Input.Impls;
 using Services.PauseService;
 using Services.PauseService.Impls;
@@ -34,6 +35,7 @@ namespace Installers
         {
             Container.BindInterfacesTo<SpawnService>().AsSingle();
             Container.BindInterfacesTo<PauseService>().AsSingle();
+            Container.BindInterfacesTo<PathCalculator>().AsSingle();
         }
     }
 }

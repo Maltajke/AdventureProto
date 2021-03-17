@@ -8,12 +8,14 @@ using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using UnityEngine;
+using UnityEngine.AI;
 using Zenject;
 
 namespace ECS.Game.Systems.Character
 {
     public class CharacterDiveSystem : ReactiveSystem<DiveComponent>
     {
+        private readonly int _mask = 1 << NavMesh.GetAreaFromName("Walkable");
         private readonly EcsFilter<GameStageComponent> _gameStage;
         [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
         protected override EcsFilter<DiveComponent> ReactiveFilter { get; }
@@ -31,7 +33,7 @@ namespace ECS.Game.Systems.Character
             ref var rotation = ref entity.Get<RotationComponent>().Value;
             var inputValue = rotation * Vector3.forward;
             var moveSpeed = _characterSettingsBase.CharacterSettings.MoveSpeed;
-            EcsExtensions.MovePlayerOnNavMesh(inputValue, ref position, ref rotation, moveSpeed*2);
+            EcsExtensions.MovePlayerOnNavMesh(inputValue, ref position, ref rotation, _mask, moveSpeed*2);
         }
     }
 }

@@ -2,12 +2,14 @@
 using DataBase.Game;
 using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
+using ECS.Game.Components.AI;
 using ECS.Game.Components.Flags;
 using Game.Utils.MonoBehUtils;
 using Leopotam.Ecs;
 using PdUtils;
 using Services.Uid;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace ECS.Utils.Extensions
 {
@@ -44,6 +46,8 @@ namespace ECS.Utils.Extensions
             entity.Get<PositionComponent>().Value = position;
             entity.Get<RotationComponent>().Value = Quaternion.identity;
             entity.Get<PrefabComponent>().Value = "Enemy";
+            entity.Get<TargetComponent>().value = world.GetPlayer().Get<UIdComponent>().Value;
+            entity.Get<AiComponent>();
             return entity;
         }
         
