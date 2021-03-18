@@ -34,13 +34,9 @@ namespace ECS.Game.Systems.Arrow
                 arrowEntity.Get<OwnerComponent>().Value = entity.Get<OwnerComponent>().Value;
                 
                 if (owner.Has<TargetComponent>())
-                {
-                    var targetEntity = _world.GetEntityWithUid(owner.Get<TargetComponent>().value);
-                    var targetPos = targetEntity.Get<PositionComponent>().Value;
-                    arrowEntity.Get<TargetPositionComponent>().Value = new Vector3(targetPos.x, position.y, targetPos.z);
-                }
-                else arrowEntity.Get<TargetPositionComponent>().Value = position + (rotation * Vector3.forward) * 10;
-
+                    arrowEntity.Get<TargetComponent>().value = owner.Get<TargetComponent>().value;
+                else 
+                    arrowEntity.Get<TargetPositionComponent>().Value = position + (rotation * Vector3.forward) * 10;
                 break;
             }
             entity.Destroy();

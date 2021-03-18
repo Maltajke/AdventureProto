@@ -17,6 +17,7 @@
               <e p="EcsEntity.cs" t="Include" />
               <e p="EcsFilter.cs" t="Include" />
               <e p="EcsHelpers.cs" t="Include" />
+              <e p="EcsMultiThreadSystem.cs" t="Include" />
               <e p="EcsSystem.cs" t="Include" />
               <e p="EcsWorld.cs" t="Include" />
             </e>
@@ -108,6 +109,7 @@
             <e p="Systems" t="Include">
               <e p="AI" t="Include">
                 <e p="CalculatePathSystem.cs" t="Include" />
+                <e p="CalculatePathSystemThread.cs" t="Include" />
               </e>
               <e p="Arrow" t="Include">
                 <e p="ArrowDestroySystem.cs" t="Include" />
@@ -152,6 +154,7 @@
                 <e p="NpcInteractSystem.cs" t="Include" />
                 <e p="NpcMarkerSystem.cs" t="Include" />
               </e>
+              <e p="TargetPositionSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Installers" t="Include">

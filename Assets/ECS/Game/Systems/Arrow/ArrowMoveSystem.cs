@@ -2,7 +2,6 @@
 using ECS.Core.Utils.SystemInterfaces;
 using ECS.Game.Components;
 using ECS.Game.Components.Flags;
-using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -21,7 +20,8 @@ namespace ECS.Game.Systems.Arrow
             {
                 ref var currentPos = ref _availableArrows.Get1(i).Value;
                 ref var targetPos = ref _availableArrows.Get2(i).Value;
-                currentPos = Vector3.MoveTowards(currentPos, targetPos, 25 * Time.deltaTime); //Set speed!
+                var offset = new Vector3(targetPos.x, currentPos.y, targetPos.z);
+                currentPos = Vector3.MoveTowards(currentPos, offset, 25 * Time.deltaTime); //Set speed!
             }
         }
     }

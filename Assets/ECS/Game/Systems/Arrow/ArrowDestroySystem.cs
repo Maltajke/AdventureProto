@@ -17,12 +17,14 @@ namespace ECS.Game.Systems.Arrow
                 var entity = _filter.GetEntity(i);
                 ref var pos = ref _filter.Get1(i).Value;
                 ref var targetPos = ref _filter.Get2(i).Value;
-                if (pos != targetPos) continue;
+                var offset = new Vector3(pos.x, targetPos.y, pos.z);
+                if (offset != targetPos) continue;
 
                 Debug.Log("DEAL DAMAGE!");
                 entity.Del<IsAvailableComponent>();
                 entity.Get<EventRemoveComponent<IsAvailableComponent>>();
                 entity.Del<TargetPositionComponent>();
+                entity.Del<TargetComponent>();
                 entity.Del<OwnerComponent>();
             }
         }

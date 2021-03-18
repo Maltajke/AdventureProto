@@ -18,7 +18,7 @@ namespace ECS.Game.Systems
             CreateGameStage();
             CreatePlayer();
             CreateCamera();
-            CreateEnemies(10);
+            CreateEnemies(150);
             CreateNPC();
             CreateLevel();
             CreateArrowPool(20);
