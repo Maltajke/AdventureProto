@@ -35,7 +35,7 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<TargetPositionSystem>().AsSingle();
 
             //Container.BindInterfacesAndSelfTo<CalculatePathSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<CalculatePathSystemThread>().AsSingle();
+            //Container.BindInterfacesAndSelfTo<CalculatePathSystemThread>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<CharacterStartDiveSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CharacterEndDiveSystem>().AsSingle();

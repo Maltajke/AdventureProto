@@ -1793,7 +1793,16 @@
             <e p="SignalRemoveGameData.cs" t="Include" />
           </e>
           <e p="Tests" t="Include">
+            <e p="TestMesh.cs" t="Include" />
             <e p="TestPath.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="SeparateThreadExecutor" t="Include">
+              <e p="Impl" t="Include">
+                <e p="DefaultSeparateThreadExecutor.cs" t="Include" />
+              </e>
+              <e p="ISeparateThreadExecutor.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="ThirdParty" t="Include">

@@ -25,13 +25,14 @@
     <list default="true" id="2f306edf-e37a-4e87-9226-a15713c61a47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowDestroySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowDestroySystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/AI/PathComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/AI/PathComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/AI/Impl/PathCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/AI/Impl/PathCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop/3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop/3D.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/PolygonFantasyCharacters/Models/FixedScaleCharacters/Characters.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/PolygonFantasyCharacters/Models/FixedScaleCharacters/Characters.fbx.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,56 +46,59 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/01/1df568b5/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/8e/4dc056b8/WaitHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/PdUtils/Runtime/PdAudio/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53FA4D04-FF9E-437D-AC8E-1BA5C15E99CE/99/44771ed2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/445E1E74-5CF9-498A-8CE3-7874AACBB3A1/71/16eebdde/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/11/26fa05bf/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/42/69e659e6/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/fa/25ecf604/ReflectionProbe.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy performant outline/Scripts/Outlinable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/ec/0f685c5e/Handheld.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/0c/02a6575a/Activator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/31/14234e47/GZipStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BEF6D2FB-EF13-4893-9B77-102B4CF6A6E6/29/07548e00/HostView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/ISeparateThreadExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/Impl/DefaultSeparateThreadExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/cf/627a3f18/Motion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../GhostNight/Assets/ECS/Systems/Run/Player/PlayerMoveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../TotemWars/Unity/Assets/Scripts/Core/Utils/QuadArea.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/9b/ebafbc09/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/Impls/DiveBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/11/d9cb3dae/Thread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/3f/7af67282/AnimationEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tests/TestPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Utils/LevelUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/9d/07019f14/AnimationClip.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/29/91ec0ed1/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/cb/4d0c91c8/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Unity/2019.4.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/SceneLoading/ISceneLoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Initializers/PdAudioInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59F7B27D-A3FE-4739-B64F-C9DD173F6C05/d5/69a61f51/NavMeshPath.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ECS/Views/Impls/LinkableView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/f3/46d2ebb5/Resources.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/b4/de243bbb/Single.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/A555715E-F291-462E-B190-C2C939543F55/6f/eb956862/02000239.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Unity/2019.4.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/Impls/TransitionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/ea/c4813d3c/MethodImplAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../TotemWars/Unity/Assets/Scripts/Core/Utils/QuadAreaMono.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/f1/a8e2f745/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Unity/2019.4.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/59F7B27D-A3FE-4739-B64F-C9DD173F6C05/3b/76084122/02000013.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/be/39744e10/PreserveAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/be/a73aa5cd/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/71/1cec8f76/DOVirtual.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/0e/bbc52d3d/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/d9/6cf9044e/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59F7B27D-A3FE-4739-B64F-C9DD173F6C05/f3/12ba0290/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/c1/322ec6c7/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53FA4D04-FF9E-437D-AC8E-1BA5C15E99CE/99/44771ed2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/b3/0fa0eee8/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/83/7fa85c42/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/0c/02a6575a/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/31/14234e47/GZipStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BEF6D2FB-EF13-4893-9B77-102B4CF6A6E6/29/07548e00/HostView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../GhostNight/Assets/ECS/Systems/Run/Player/PlayerMoveSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/9b/ebafbc09/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/Impls/DiveBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/11/d9cb3dae/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tests/TestPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Utils/LevelUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/2f/9082df7b/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/29/91ec0ed1/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59F7B27D-A3FE-4739-B64F-C9DD173F6C05/d5/69a61f51/NavMeshPath.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ECS/Views/Impls/LinkableView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/b4/de243bbb/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Unity/2019.4.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/be/a73aa5cd/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/71/1cec8f76/DOVirtual.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/EnemyView.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/NpcView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Npc/NpcInteractSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/IFxSpawnService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/FX/Impls/FxSpawnService.cs" />
@@ -121,28 +125,31 @@
         <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/Components/StateMachineCallbackStart.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/CharacterSetMoveViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/CharacterSetAggressiveViewSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterDiveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tests/TestPath.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/PathComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/AiComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/AI/PathComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/AI/IPathCalculator.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterLookAtSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/AI/Impl/PathCalculator.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Core/src/EcsMultiThreadSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/EcsMainBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/TargetPositionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowDestroySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/AI/PathComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/Impl/DefaultSeparateThreadExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/ISeparateThreadExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/TestMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" />
       </list>
     </option>
   </component>
@@ -183,10 +190,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6760">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="6760" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -225,7 +232,9 @@
       <workItem from="1615892445041" duration="14485000" />
       <workItem from="1615971196213" duration="21699000" />
       <workItem from="1616007476323" duration="2182000" />
-      <workItem from="1616056960524" duration="7129000" />
+      <workItem from="1616056960524" duration="19731000" />
+      <workItem from="1616159231189" duration="353000" />
+      <workItem from="1616160016200" duration="1004000" />
     </task>
     <servers />
   </component>
@@ -346,10 +355,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="253" width="996" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615990035850" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616063043341">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616078643801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616063043341" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616078643801" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

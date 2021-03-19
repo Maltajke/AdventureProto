@@ -48,6 +48,7 @@ namespace ECS.Utils.Extensions
             entity.Get<PrefabComponent>().Value = "Enemy";
             entity.Get<TargetComponent>().value = world.GetPlayer().Get<UIdComponent>().Value;
             entity.Get<AiComponent>();
+            entity.Get<PathComponent>().Value = new Vector3[64];
             return entity;
         }
         

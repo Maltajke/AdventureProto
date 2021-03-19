@@ -7,6 +7,7 @@ using Leopotam.Ecs;
 using PdUtils;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = System.Random;
 
 namespace ECS.Utils.Extensions
 {
@@ -54,6 +55,18 @@ namespace ECS.Utils.Extensions
             systems.OneFrame<PrefabComponent>();
             systems.OneFrame<InteractEventComponent>();
             systems.OneFrame<ChangeStageComponent>();
+        }
+
+        public static void CalculateRandomPath(this Vector3[] path, Vector3 start, Vector3 end)
+        {
+            for (var i = 0; i < path.Length; i++)
+            {
+                path[i] = Vector3.zero + new Vector3(Mathf.Sin(2f), Mathf.Cos(3f), Mathf.Tan(45)) + end;
+                path[i] = Vector3.zero + new Vector3(Mathf.Sin(2f), Mathf.Cos(3f), Mathf.Tan(45)) + end;
+                path[i] = Vector3.zero + new Vector3(Mathf.Sin(2f), Mathf.Cos(3f), Mathf.Tan(45)) + end;
+                path[i] = Vector3.zero + new Vector3(Mathf.Sin(2f), Mathf.Cos(3f), Mathf.Tan(45)) + end;
+                path[i] = Vector3.zero + new Vector3(Mathf.Sin(2f), Mathf.Cos(3f), Mathf.Tan(45)) + end;
+            }
         }
     }
 }

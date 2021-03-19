@@ -19,9 +19,9 @@ namespace ECS.Game.Systems.AI
         protected override void Execute(EcsEntity entity)
         {
             ref var pos = ref entity.Get<PositionComponent>().Value;
-            ref var posTarget = ref _world.GetEntityWithUid(entity.Get<TargetComponent>().value).Get<PositionComponent>().Value;
+            ref var posTarget = ref entity.Get<TargetPositionComponent>().Value;
             ref var path = ref entity.Get<PathComponent>().Value;
-            path = _pathCalculator.CalculatePath(pos, posTarget);
+            path.CalculateRandomPath(pos, posTarget);
         }
     }
 }
