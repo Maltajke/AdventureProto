@@ -13,11 +13,16 @@
           <e p="Core" t="Include">
             <e p="Leopotam.Ecs.asmdef" t="Include" />
             <e p="src" t="Include">
+              <e p="ecs-threads-2020.4.22" t="Include">
+                <e p="Leopotam.Ecs.Threads.asmdef" t="Include" />
+                <e p="src" t="Include">
+                  <e p="EcsMultiThreadSystem.cs" t="Include" />
+                </e>
+              </e>
               <e p="EcsComponent.cs" t="Include" />
               <e p="EcsEntity.cs" t="Include" />
               <e p="EcsFilter.cs" t="Include" />
               <e p="EcsHelpers.cs" t="Include" />
-              <e p="EcsMultiThreadSystem.cs" t="Include" />
               <e p="EcsSystem.cs" t="Include" />
               <e p="EcsWorld.cs" t="Include" />
             </e>
@@ -97,6 +102,7 @@
               <e p="Listeners" t="Include">
                 <e p="IsAvailableListenerComponent.cs" t="Include" />
               </e>
+              <e p="MoveMagnitudeComponent.cs" t="Include" />
               <e p="OwnerComponent.cs" t="Include" />
               <e p="PositionComponent.cs" t="Include" />
               <e p="PrefabComponent.cs" t="Include" />
@@ -125,8 +131,8 @@
                 <e p="CharacterSafeMarkerSystem.cs" t="Include" />
                 <e p="CharacterSetTargetSystem.cs" t="Include" />
               </e>
+              <e p="CullingSystem.cs" t="Include" />
               <e p="GameInitializeSystem.cs" t="Include" />
-              <e p="GamePauseSystem.cs" t="Include" />
               <e p="GameStageSystem.cs" t="Include" />
               <e p="InstantiateSystem.cs" t="Include" />
               <e p="Linked" t="Include">
@@ -144,6 +150,7 @@
                     <e p="CharacterShootingStartSystem.cs" t="Include" />
                   </e>
                 </e>
+                <e p="GamePauseSystem.cs" t="Include" />
                 <e p="IsAvailableSetViewSystem.cs" t="Include" />
                 <e p="Npc" t="Include">
                   <e p="NpcSetInteractViewSystem.cs" t="Include" />
@@ -1631,6 +1638,19 @@
             <e p="zenject.asmdef" t="Include" />
           </e>
         </e>
+        <e p="Samples" t="Include">
+          <e p="Input System" t="Include">
+            <e p="1.0.2" t="Include">
+              <e p="Visualizers" t="Include">
+                <e p="InputActionVisualizer.cs" t="Include" />
+                <e p="InputControlVisualizer.cs" t="Include" />
+                <e p="InputVisualizer.cs" t="Include" />
+                <e p="Unity.InputSystem.Visualizers.asmdef" t="Include" />
+                <e p="VisualizationHelpers.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Behaviours" t="Include">
             <e p="IEcsBehaviourReceiver.cs" t="Include" />
@@ -1793,6 +1813,7 @@
             <e p="SignalRemoveGameData.cs" t="Include" />
           </e>
           <e p="Tests" t="Include">
+            <e p="DebugView.cs" t="Include" />
             <e p="TestMesh.cs" t="Include" />
             <e p="TestPath.cs" t="Include" />
           </e>
@@ -1909,6 +1930,79 @@
               <e p="VS_indirect.cginc" t="Include" />
             </e>
           </e>
+          <e p="Tayx" t="Include">
+            <e p="Graphy - Ultimate Stats Monitor" t="Include">
+              <e p="Changelog.txt" t="Include" />
+              <e p="Font" t="Include">
+                <e p="Northwest-Bold" t="Include">
+                  <e p="ERIC-TIRADO-NORTHWEST-LICENSE.txt" t="Include" />
+                </e>
+                <e p="Roboto" t="Include">
+                  <e p="LICENSE.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Scene" t="Include">
+                <e p="Color Picker" t="Include">
+                  <e p="G_CUIColorPicker.cs" t="Include" />
+                </e>
+                <e p="Customization Scripts" t="Include">
+                  <e p="CustomizeGraphy.cs" t="Include" />
+                  <e p="ForceSliderToMultipleOf3.cs" t="Include" />
+                  <e p="ForceSliderToPowerOf2.cs" t="Include" />
+                  <e p="UpdateTextWithSliderValue.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Advanced" t="Include">
+                  <e p="G_AdvancedData.cs" t="Include" />
+                </e>
+                <e p="Audio" t="Include">
+                  <e p="G_AudioGraph.cs" t="Include" />
+                  <e p="G_AudioManager.cs" t="Include" />
+                  <e p="G_AudioMonitor.cs" t="Include" />
+                  <e p="G_AudioText.cs" t="Include" />
+                </e>
+                <e p="Editor" t="Include">
+                  <e p="GraphyDebuggerEditor.cs" t="Include" />
+                  <e p="GraphyManagerEditor.cs" t="Include" />
+                </e>
+                <e p="Fps" t="Include">
+                  <e p="G_FpsGraph.cs" t="Include" />
+                  <e p="G_FpsManager.cs" t="Include" />
+                  <e p="G_FpsMonitor.cs" t="Include" />
+                  <e p="G_FpsText.cs" t="Include" />
+                </e>
+                <e p="Graph" t="Include">
+                  <e p="G_Graph.cs" t="Include" />
+                </e>
+                <e p="GraphyDebugger.cs" t="Include" />
+                <e p="GraphyManager.cs" t="Include" />
+                <e p="Ram" t="Include">
+                  <e p="G_RamGraph.cs" t="Include" />
+                  <e p="G_RamManager.cs" t="Include" />
+                  <e p="G_RamMonitor.cs" t="Include" />
+                  <e p="G_RamText.cs" t="Include" />
+                </e>
+                <e p="Shader" t="Include">
+                  <e p="G_GraphShader.cs" t="Include" />
+                </e>
+                <e p="UI" t="Include">
+                  <e p="IModifiableState.cs" t="Include" />
+                  <e p="IMovable.cs" t="Include" />
+                </e>
+                <e p="Util" t="Include">
+                  <e p="G_ExtensionMethods.cs" t="Include" />
+                  <e p="G_FloatString.cs" t="Include" />
+                  <e p="G_Intstring.cs" t="Include" />
+                  <e p="G_Singleton.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="GraphMobile.shader" t="Include" />
+                <e p="GraphStandard.shader" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
       </e>
       <e p="CFXRDemo.csproj" t="IncludeRecursive" />
@@ -1917,7 +2011,9 @@
       <e p="CFXRRuntime.csproj" t="IncludeRecursive" />
       <e p="EasyButtons.csproj" t="IncludeRecursive" />
       <e p="EasyButtons.Editor.csproj" t="IncludeRecursive" />
+      <e p="InputSystem.Samples.Visualizers.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.csproj" t="IncludeRecursive" />
+      <e p="Leopotam.Ecs.Threads.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.UnityIntegration.csproj" t="IncludeRecursive" />
       <e p="Leopotam.Ecs.UnityIntegration.Editor.csproj" t="IncludeRecursive" />
       <e p="Library" t="Include">

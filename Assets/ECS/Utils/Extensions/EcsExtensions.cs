@@ -1,13 +1,10 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using ECS.Game.Components;
+﻿using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
 using Leopotam.Ecs;
 using PdUtils;
 using UnityEngine;
 using UnityEngine.AI;
-using Random = System.Random;
 
 namespace ECS.Utils.Extensions
 {
@@ -19,8 +16,7 @@ namespace ECS.Utils.Extensions
             var newPos = pos + inputValue * Time.deltaTime * moveSpeed;
             var isValid = NavMesh.SamplePosition(newPos, out var hit, .3f, areaMask);
             if (isValid)
-                if ((pos - hit.position).magnitude >= .02f)
-                    pos = hit.position;
+                pos = hit.position;
             var lookDir = new Vector3(inputValue.x, 0, inputValue.z);
             var toRotation = Quaternion.LookRotation(lookDir, Vector3.up);
             rot = Quaternion.RotateTowards(rot, toRotation, 720  * rotateSpeed * Time.deltaTime);
@@ -31,6 +27,7 @@ namespace ECS.Utils.Extensions
             var filter = world.GetFilter(typeof(EcsFilter<PlayerComponent, PositionComponent>));
             return filter.GetEntity(0);
         }
+        
         public static EcsEntity GetGameStage(this EcsWorld world)
         {
             var filter = world.GetFilter(typeof(EcsFilter<GameStageComponent>));

@@ -17,3 +17,4 @@ MonoBehaviour:
     type: 3}
   inGameMenu: {fileID: 6781872839508693167, guid: fa2a9d70ac0341f41aa914c5c3bbfa03,
     type: 3}
+  debug: {fileID: 8001053695824978554, guid: 880868e52d7abcb459a3f9347e6efea2, type: 3}

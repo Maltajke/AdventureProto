@@ -1,4 +1,6 @@
-﻿using Ecs.Views.Linkable.Impl;
+﻿using ECS.Game.Components.Flags;
+using Ecs.Views.Linkable.Impl;
+using Leopotam.Ecs;
 using UnityEngine;
 
 namespace ECS.Views.Impls
@@ -6,11 +8,9 @@ namespace ECS.Views.Impls
     [RequireComponent(typeof(Camera))]
     public class CameraView : LinkableView
     {
-        public Camera Camera { get; private set; }
-        
-        private void Awake()
+        public override void Link(EcsEntity entity)
         {
-            Camera = GetComponent<Camera>();
+            entity.Get<CameraComponent>().Camera = GetComponent<Camera>();
         }
     }
 }

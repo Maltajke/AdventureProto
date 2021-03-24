@@ -7,6 +7,7 @@ using PdUtils.PlayerPrefs.Impl;
 using Services.Input;
 using Services.Input.Impls;
 using UniRx;
+using UnityEngine;
 using Zenject;
 using ZenjectUtil.Test.Extensions;
 
@@ -22,7 +23,6 @@ namespace Installers
             Container.BindSubstituteInterfacesTo<IInputManager, InputManager>().AsSingle();
             Container.BindFromSubstitute<IPlayerPrefsManager, PersistancePlayerPrefsManager>().AsSingle();
             Container.BindInterfacesTo<PdAudioInitializer>().AsSingle().NonLazy();
-            
             BindWindows();
         }
         

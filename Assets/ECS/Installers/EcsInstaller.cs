@@ -27,7 +27,6 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<IsAvailableSetViewSystem>().AsSingle();
             
             Container.BindInterfacesAndSelfTo<GameStageSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<GamePauseSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<GameInitializeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<InstantiateSystem>().AsSingle();
@@ -68,8 +67,12 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<ArrowShotSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<ArrowMoveSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<ArrowDestroySystem>().AsSingle();
+
+            Container.BindInterfacesAndSelfTo<CullingSystem>().AsSingle();
             
             Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
+
+            Container.BindInterfacesAndSelfTo<GamePauseSystem>().AsSingle();
         }
     }
 }

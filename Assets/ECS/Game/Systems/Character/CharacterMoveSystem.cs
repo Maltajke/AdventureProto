@@ -6,6 +6,7 @@ using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using Services.Input;
+using Tests;
 using UnityEngine.AI;
 using Zenject;
 
@@ -17,6 +18,7 @@ namespace ECS.Game.Systems.Character
         
         
         [Inject] private readonly IInputManager _inputManager;
+        [Inject] private readonly DebugView _debugView;
         [Inject] private readonly ICharacterSettingsBase _characterSettingsBase;
         private readonly EcsFilter<PlayerComponent, PositionComponent, RotationComponent> _player;
         private readonly EcsFilter<GameStageComponent> _gameStage;

@@ -82,10 +82,10 @@ namespace Leopotam.Ecs.Threads {
         void IEcsPostDestroySystem.PostDestroy () {
             for (var i = 0; i < _descs.Length; i++) {
                 var desc = _descs[i];
+                _descs[i] = null;
                 desc.Thread.Interrupt ();
                 desc.Thread.Join (10);
                 _syncs[i].Close ();
-                _descs[i] = null;
                 _syncs[i] = null;
             }
             _filter = null;

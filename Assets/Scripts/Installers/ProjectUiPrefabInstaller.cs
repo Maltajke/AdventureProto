@@ -1,5 +1,6 @@
 ﻿using Game.Ui.BlackScreen;
 using SimpleUi;
+using Tayx.Graphy;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Zenject;
@@ -20,7 +21,6 @@ namespace Installers
             var canvasTransform = canvasView.transform;
             var camera = canvasTransform.GetComponentInChildren<Camera>();
             camera.depth = 0;
-            
             Container.BindUiView<BlackScreenViewController, BlackScreenView>(blackScreen, canvasTransform);
         }
     }

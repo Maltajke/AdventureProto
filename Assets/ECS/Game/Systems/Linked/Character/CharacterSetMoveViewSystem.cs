@@ -19,6 +19,7 @@ namespace ECS.Game.Systems.Linked.Character
             foreach (var i in _player)
             {
                 var link = (MainPlayerView)_player.Get1(i).View;
+                ref var magnitude = ref _player.GetEntity(i).Get<MoveMagnitudeComponent>().Value;
                 link.SetMoveValue(_inputManager.InputValue.magnitude);
             }
         }

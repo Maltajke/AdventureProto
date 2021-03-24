@@ -22,12 +22,6 @@ namespace ECS.Views.Impls.Character.Impls
         {
             arrowMesh.SetActive(false);
         }
-        private void EnableArrowMesh(int value)
-        {
-            arrowMesh.SetActive(value == 1);
-            if (value != 0) return;
-            ShotSignal();
-        }
 
         private void ShotSignal()
         {
@@ -37,14 +31,23 @@ namespace ECS.Views.Impls.Character.Impls
             shotEvent.Get<RotationComponent>().Value = arrowMesh.transform.rotation;
             shotEvent.Get<OwnerComponent>().Value = _entity.Get<UIdComponent>().Value;
         }
+
+        public void SetAggressState(bool value) => _animator.SetBool(Aggressive, value);
+        public void SetDive(bool value) => _animator.SetBool(Dive, value);
+        public void SetShooting(bool value) => _animator.SetBool(Shooting, value);
+
+        #region AnimatorEvents
+        private void EnableArrowMesh(int value)
+        {
+            arrowMesh.SetActive(value == 1);
+            if (value != 0) return;
+            ShotSignal();
+        }
         private void EnableBowMesh(int value)
         {
             bowMeshBack.SetActive(value == 1);
             bowMeshArm.SetActive(value == 0);
         }
-
-        public void SetAggressState(bool value) => _animator.SetBool(Aggressive, value);
-        public void SetDive(bool value) => _animator.SetBool(Dive, value);
-        public void SetShooting(bool value) => _animator.SetBool(Shooting, value);
+        #endregion
     }
 }

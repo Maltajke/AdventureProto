@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Threading;
+using Boo.Lang;
 using UniRx;
 
 namespace Utils.SeparateThreadExecutor.Impl
@@ -47,11 +48,13 @@ namespace Utils.SeparateThreadExecutor.Impl
 		}
 	}
 
-	public class DefaultSeparateThreadExecutor : ISeparateThreadExecutor
+	public class DefaultSeparateThreadExecutor : ISeparateThreadExecutor, IDisposable
 	{
-		public void Execute(Action action, Action mainThreadAction)
+		private Worker worker;
+		public void 
+			Execute(Action action, Action mainThreadAction)
 		{
-			var worker = new Worker(action);
+			worker = new Worker(action);
 			Observable.FromMicroCoroutine(worker.Start)
 				.Subscribe(unit => mainThreadAction());
 		}
@@ -59,7 +62,7 @@ namespace Utils.SeparateThreadExecutor.Impl
 		private class Worker
 		{
 			private readonly Action _action;
-
+			private Thread _thread;
 			private bool _isComplete;
 
 			public Worker(Action action)
@@ -69,7 +72,7 @@ namespace Utils.SeparateThreadExecutor.Impl
 
 			public IEnumerator Start()
 			{
-				var thread = new Thread(o =>
+				_thread = new Thread(o =>
 				{
 					_action();
 					_isComplete = true;
@@ -78,13 +81,22 @@ namespace Utils.SeparateThreadExecutor.Impl
 					IsBackground = true,
 					Priority = ThreadPriority.Lowest
 				};
-				thread.Start();
+				_thread.Start();
 
 				while (!_isComplete)
 				{
 					yield return null;
 				}
 			}
+			public void DisposeThread()
+			{
+				_thread?.Abort();
+			}
+		}
+
+		public void Dispose()
+		{
+			worker.DisposeThread();
 		}
 	}
 }

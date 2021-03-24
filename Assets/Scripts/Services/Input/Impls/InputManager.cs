@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Zenject;
 
 namespace Services.Input.Impls
 {
-    public class InputManager : IInputManager
+    public class InputManager : IInputManager, ITickable
     {
         private class CacheInput
         {
@@ -76,10 +77,13 @@ namespace Services.Input.Impls
             moveEnable = _cacheInput.MoveEnable;
             return true;
         }
-
         public void Dispose()
         {
             _cacheInput.ActionsCache.Clear();
+        }
+        public void Tick()
+        {
+            InputSystem.Update();
         }
     }
 }

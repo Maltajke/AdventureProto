@@ -4,8 +4,6 @@ using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Leopotam.Ecs;
 using Leopotam.Ecs.Threads;
-using UnityEngine;
-using UnityEngine.AI;
 
 namespace ECS.Game.Systems.AI
 {

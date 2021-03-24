@@ -16,7 +16,6 @@ namespace ECS.Utils.Impls
         private readonly DiContainer _container;
         private readonly IPrefabsBase _prefabsBase;
         private readonly IFxBase _fxBase;
-        private readonly IPauseService _pauseService;
 
         public SpawnService(
             DiContainer container,
@@ -27,7 +26,6 @@ namespace ECS.Utils.Impls
             _container = container;
             _prefabsBase = prefabsBase;
             _fxBase = fxBase;
-            _pauseService = pauseService;
         }
 
         public ILinkable Spawn(EcsEntity entity)
@@ -44,9 +42,7 @@ namespace ECS.Utils.Impls
             var components = go.GetComponents<ILinkable>();
             Debug.Assert(components.Length == 1,$"Object view must have only one ILinkable component!!" +
                                                 $" Description : {go.name} " );
-            var iPause = go.GetComponent<IPause>();
             var linkable = go.GetComponent<ILinkable>();
-            if (iPause != null) _pauseService.AddPauseListener(iPause);
             return linkable;
         }
     }
