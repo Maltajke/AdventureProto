@@ -23,6 +23,7 @@ namespace ECS.Utils.Extensions
             entity.Get<PositionComponent>().Value = position;
             entity.Get<RotationComponent>().Value = Quaternion.identity;
             entity.Get<PrefabComponent>().Value = "MainPlayer";
+            entity.Get<EventAddComponent<PrefabComponent>>();
             return entity;
         }
         
@@ -34,6 +35,7 @@ namespace ECS.Utils.Extensions
             entity.Get<RotationComponent>().Value = Quaternion.Euler(new Vector3(47,0,0));
             entity.Get<CameraComponent>();
             entity.Get<PrefabComponent>().Value = "MainCamera";
+            entity.Get<EventAddComponent<PrefabComponent>>();
             return entity;
         }
 
@@ -46,6 +48,7 @@ namespace ECS.Utils.Extensions
             entity.Get<PositionComponent>().Value = position;
             entity.Get<RotationComponent>().Value = Quaternion.identity;
             entity.Get<PrefabComponent>().Value = "Enemy";
+            entity.Get<EventAddComponent<PrefabComponent>>();
             entity.Get<TargetComponent>().value = world.GetPlayer().Get<UIdComponent>().Value;
             entity.Get<AiComponent>();
             entity.Get<PathComponent>().Value = new Vector3[64];
@@ -60,6 +63,7 @@ namespace ECS.Utils.Extensions
             entity.Get<PositionComponent>().Value = position;
             entity.Get<RotationComponent>().Value = Quaternion.identity;
             entity.Get<PrefabComponent>().Value = "Arrow";
+            entity.Get<EventAddComponent<PrefabComponent>>();
             return entity;
         }
         
@@ -72,6 +76,7 @@ namespace ECS.Utils.Extensions
             entity.Get<PositionComponent>().Value = position;
             entity.Get<RotationComponent>().Value = rotation;
             entity.Get<PrefabComponent>().Value = "NPC";
+            entity.Get<EventAddComponent<PrefabComponent>>();
             return entity;
         }
         

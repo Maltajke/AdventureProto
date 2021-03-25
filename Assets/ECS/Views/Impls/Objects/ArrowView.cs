@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ECS.Game.Components.Listeners;
+using ECS.Game.Components.Listeners.Impl;
 using Ecs.Views.Linkable.Impl;
 using Leopotam.Ecs;
 using Services.PauseService;

@@ -7,5 +7,6 @@ namespace Game.Ui.InGameMenu
     {
         public Button Continue;
         public Button GoMenu;
+        public Button SaveGame;
     }
 }

@@ -96,7 +96,7 @@ namespace Utils.SeparateThreadExecutor.Impl
 
 		public void Dispose()
 		{
-			worker.DisposeThread();
+			worker?.DisposeThread();
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using DataBase.Game;
 using ECS.Game.Components;
+using ECS.Game.Components.Events;
 using ECS.Utils.Extensions;
 using ECS.Views.Impls.Character.Impls;
 using Game.SceneLoading;
@@ -18,12 +19,14 @@ namespace Game.Ui.InGameMenu
     public class InGameMenuViewController : UiController<InGameMenuView>, IInitializable
     {
         private readonly ISceneLoadingManager _sceneLoadingManager;
+        private readonly EcsWorld _world;
         private readonly SignalBus _signalBus;
         private readonly IPauseService _pauseService;
 
-        public InGameMenuViewController(ISceneLoadingManager sceneLoadingManager,  SignalBus signalBus, IPauseService pauseService)
+        public InGameMenuViewController(ISceneLoadingManager sceneLoadingManager, EcsWorld world, SignalBus signalBus, IPauseService pauseService)
         {
             _sceneLoadingManager = sceneLoadingManager;
+            _world = world;
             _signalBus = signalBus;
             _pauseService = pauseService;
         }
@@ -32,6 +35,7 @@ namespace Game.Ui.InGameMenu
         {
             View.GoMenu.OnClickAsObservable().Subscribe(x => OnGoMenu()).AddTo(View.GoMenu);
             View.Continue.OnClickAsObservable().Subscribe(x => OnContinue()).AddTo(View.Continue);
+            View.SaveGame.OnClickAsObservable().Subscribe(x => OnSaveGame()).AddTo(View.SaveGame);
         }
 
         public override void OnShow()
@@ -45,6 +49,11 @@ namespace Game.Ui.InGameMenu
         {
             _pauseService.PauseGame(false);
             _signalBus.BackWindow();
+        }
+
+        private void OnSaveGame()
+        {
+            _world.NewEntity().Get<SaveGameEventComponent>();
         }
         
         private void OnGoMenu()

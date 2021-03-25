@@ -49,7 +49,6 @@ namespace ECS.Utils.Extensions
 
         public static void DeclareOneFrameEvents(this EcsSystems systems)
         {
-            systems.OneFrame<PrefabComponent>();
             systems.OneFrame<InteractEventComponent>();
             systems.OneFrame<ChangeStageComponent>();
         }

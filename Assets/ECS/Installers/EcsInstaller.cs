@@ -73,6 +73,7 @@ namespace ECS.Installers
             Container.BindInterfacesAndSelfTo<PositionRotationTranslateSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<GamePauseSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<SaveGameSystem>().AsSingle();
         }
     }
 }

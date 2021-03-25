@@ -70,6 +70,10 @@
               </e>
             </e>
           </e>
+          <e p="DataSave" t="Include">
+            <e p="GeneralState.cs" t="Include" />
+            <e p="GeneralStatePool.cs" t="Include" />
+          </e>
           <e p="EcsMainBootstrap.cs" t="Include" />
           <e p="Game" t="Include">
             <e p="Components" t="Include">
@@ -82,6 +86,7 @@
                 <e p="ChangeStageComponent.cs" t="Include" />
                 <e p="DiveComponent.cs" t="Include" />
                 <e p="InteractEventComponent.cs" t="Include" />
+                <e p="SaveGameEventComponent.cs" t="Include" />
                 <e p="ShotEventComponent.cs" t="Include" />
               </e>
               <e p="Flags" t="Include">
@@ -100,7 +105,10 @@
               <e p="GameStageComponent.cs" t="Include" />
               <e p="LinkComponent.cs" t="Include" />
               <e p="Listeners" t="Include">
-                <e p="IsAvailableListenerComponent.cs" t="Include" />
+                <e p="IListener.cs" t="Include" />
+                <e p="Impl" t="Include">
+                  <e p="IsAvailableListenerComponent.cs" t="Include" />
+                </e>
               </e>
               <e p="MoveMagnitudeComponent.cs" t="Include" />
               <e p="OwnerComponent.cs" t="Include" />
@@ -161,6 +169,7 @@
                 <e p="NpcInteractSystem.cs" t="Include" />
                 <e p="NpcMarkerSystem.cs" t="Include" />
               </e>
+              <e p="SaveGameSystem.cs" t="Include" />
               <e p="TargetPositionSystem.cs" t="Include" />
             </e>
           </e>
@@ -458,6 +467,7 @@
                 </e>
                 <e p="IScheduledExecutorService.cs" t="Include" />
               </e>
+              <e p="StringExtension.cs" t="Include" />
               <e p="TemplatePool.cs" t="Include" />
               <e p="Uid.cs" t="Include" />
               <e p="Web" t="Include">
@@ -1823,6 +1833,10 @@
                 <e p="DefaultSeparateThreadExecutor.cs" t="Include" />
               </e>
               <e p="ISeparateThreadExecutor.cs" t="Include" />
+            </e>
+            <e p="ThreadLocalStorage" t="Include">
+              <e p="ThreadedLocalStorageDao.cs" t="Include" />
+              <e p="Utils.cs" t="Include" />
             </e>
           </e>
         </e>

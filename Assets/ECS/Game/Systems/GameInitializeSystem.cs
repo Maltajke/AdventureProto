@@ -1,9 +1,12 @@
-﻿using DataBase.FX;
+﻿using System.Collections.Generic;
+using DataBase.FX;
 using ECS.Core.Utils.ReactiveSystem.Components;
+using ECS.DataSave;
 using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
 using Game.Utils.MonoBehUtils;
 using Leopotam.Ecs;
+using PdUtils.Dao;
 using UnityEngine;
 using Zenject;
 
@@ -11,10 +14,16 @@ namespace ECS.Game.Systems
 {
     public class GameInitializeSystem : IEcsInitSystem
     {
+        [Inject] private readonly IDao<GeneralState> _generalStateDao;
+        [Inject] private readonly IMemoryPool<GeneralState> _pool;
         [Inject] private readonly GetPointFromScene _getPointFromScene;
         private readonly EcsWorld _world;
         public void Init()
         {
+            var gState = _pool.Spawn();
+            gState.states = new List<State>();
+            gState = _generalStateDao.Load();
+            
             CreateGameStage();
             CreatePlayer();
             CreateCamera();

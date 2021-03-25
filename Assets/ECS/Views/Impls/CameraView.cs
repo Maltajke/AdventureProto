@@ -8,9 +8,6 @@ namespace ECS.Views.Impls
     [RequireComponent(typeof(Camera))]
     public class CameraView : LinkableView
     {
-        public override void Link(EcsEntity entity)
-        {
-            entity.Get<CameraComponent>().Camera = GetComponent<Camera>();
-        }
+  
     }
 }

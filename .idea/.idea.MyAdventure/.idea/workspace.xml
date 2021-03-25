@@ -23,244 +23,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f306edf-e37a-4e87-9226-a15713c61a47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/.gitignore.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/LICENSE.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/Leopotam.Ecs.Threads.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/Leopotam.Ecs.Threads.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/Leopotam.Ecs.Threads.csproj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/README.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/src.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/MoveMagnitudeComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/MoveMagnitudeComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/CullingSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/CullingSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/Debug.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/Debug.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/.sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/GamepadVis.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/GamepadVis.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/GamepadVisualizer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/GamepadVisualizer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/InputActionVisualizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/InputActionVisualizer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/InputControlVisualizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/InputControlVisualizer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/InputVisualizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/InputVisualizer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/MouseVis.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/MouseVis.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/MouseVisualizer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/MouseVisualizer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/PenVis.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/PenVis.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/PenVisualizer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/PenVisualizer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/SimpleControls.inputactions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/SimpleControls.inputactions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/SimpleControlsVis.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/SimpleControlsVis.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/SimpleControlsVisualizer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/SimpleControlsVisualizer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/Unity.InputSystem.Visualizers.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/Unity.InputSystem.Visualizers.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/VisualizationHelpers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Input System/1.0.2/Visualizers/VisualizationHelpers.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tests/DebugView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tests/DebugView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Changelog.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/ERIC-TIRADO-NORTHWEST-LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/ERIC-TIRADO-NORTHWEST-LICENSE.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/NORTHWEST-B.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/NORTHWEST-B.otf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto/LICENSE.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Bold.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Regular.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/GUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/GUI/Graphy.guiskin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/GUI/Graphy.guiskin.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Graph.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Graph.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Highest_Values_Graph.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Highest_Values_Graph.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/FPS_Graph.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/FPS_Graph.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/RAM_Allocated_Graph.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/RAM_Allocated_Graph.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/RAM_Mono_Graph.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/RAM_Mono_Graph.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/RAM_Reserved_Graph.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Materials/RAM_Reserved_Graph.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Prefab/[Graphy].prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Prefab/[Graphy].prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Readme! - Graphy - Documentation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Readme! - Graphy - Documentation.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/Morning_Dew.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/Morning_Dew.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/158140__qubodup__epic-logo-intro-part-2-glass-and-machine_01.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/158140__qubodup__epic-logo-intro-part-2-glass-and-machine_01.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/170229__roachpowder__camera-shutter.aiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/170229__roachpowder__camera-shutter.aiff.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/171697__nenadsimic__menu-selection-click.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/171697__nenadsimic__menu-selection-click.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/269180__mickleness__chat-message-1-incoming-message_01.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/269180__mickleness__chat-message-1-incoming-message_01.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/349501__cabled-mess__triangle-open-01_01.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Audio/SFX/349501__cabled-mess__triangle-open-01_01.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/CUIColorPicker.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/CUIColorPicker.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/G_CUIColorPicker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/G_CUIColorPicker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/Transparency-Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Color Picker/Transparency-Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/CustomizeGraphy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/CustomizeGraphy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/ForceSliderToMultipleOf3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/ForceSliderToMultipleOf3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/ForceSliderToPowerOf2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/ForceSliderToPowerOf2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/UpdateTextWithSliderValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customization Scripts/UpdateTextWithSliderValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customize Graphy.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Customize Graphy.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Prefab/[Graphy] - Customizer.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scene/Prefab/[Graphy] - Customizer.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Advanced.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Advanced/G_AdvancedData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Advanced/G_AdvancedData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioGraph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioGraph.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioMonitor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioMonitor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioText.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Audio/G_AudioText.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor/GraphyDebuggerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor/GraphyDebuggerEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor/GraphyManagerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Editor/GraphyManagerEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsGraph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsGraph.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsMonitor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsMonitor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsText.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Fps/G_FpsText.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Graph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Graph/G_Graph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Graph/G_Graph.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/GraphyDebugger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/GraphyDebugger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/GraphyManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/GraphyManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamGraph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamGraph.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamMonitor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamMonitor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamText.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Ram/G_RamText.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Shader/G_GraphShader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Shader/G_GraphShader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/UI/IModifiableState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/UI/IModifiableState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/UI/IMovable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/UI/IMovable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_ExtensionMethods.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_ExtensionMethods.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_FloatString.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_FloatString.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_Intstring.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_Intstring.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_Singleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Scripts/Util/G_Singleton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Shaders/GraphMobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Shaders/GraphMobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Shaders/GraphStandard.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Shaders/GraphStandard.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/2x2_Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/2x2_Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_Dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_Dark.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_White.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_White.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_Dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_Dark.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_White.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ThirdParty/Tayx/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_White.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/DataSave.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralStatePool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralStatePool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/SaveGameEventComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/SaveGameEventComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/IListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/IListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/Impl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/Impl/IsAvailableListenerComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/SaveGameSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/SaveGameSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/PdUtils/Runtime/StringExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/PdUtils/Runtime/StringExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/ThreadedLocalStorageDao.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/ThreadedLocalStorageDao.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/Utils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/Utils.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Core/src/EcsMultiThreadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/src/EcsMultiThreadSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Core/src/EcsMultiThreadSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/src/EcsMultiThreadSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/CameraComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/CameraComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterMoveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GamePauseSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/GamePauseSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GamePauseSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/GamePauseSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/CharacterSetMoveViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/CharacterSetMoveViewSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/IsAvailableListenerComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/IsAvailableListenerComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/Impl/IsAvailableListenerComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/InstantiateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/InstantiateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/IsAvailableSetViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/IsAvailableSetViewSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Impls/SpawnService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Impls/SpawnService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/CameraView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/CameraView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/EnemyView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/EnemyView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Installers/GameUiPrefabInstaller.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Installers/GameUiPrefabInstaller.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Installers/ProjectUiPrefabInstaller.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Installers/ProjectUiPrefabInstaller.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop/3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop/3D.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop/UiDevelop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop/UiDevelop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene/NavMesh-[NAV_MESH].asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene/NavMesh-[NAV_MESH].asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameUiPrefabInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameUiPrefabInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectUiPrefabInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectUiPrefabInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/Input/InputSystem.inputsettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Input/InputSystem.inputsettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/IPauseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/IPauseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/Impls/PauseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/Impls/PauseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Objects/ArrowView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Views/Impls/Objects/ArrowView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/InGameMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/InGameMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/Impl/DefaultSeparateThreadExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/Impl/DefaultSeparateThreadExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,15 +105,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/59F7B27D-A3FE-4739-B64F-C9DD173F6C05/3b/76084122/02000013.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/be/39744e10/PreserveAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/74/dd96c6d4/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FDEE1383-DB0F-4513-9528-62F91D61E502/f2/a8643aed/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/0e/bbc52d3d/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A555715E-F291-462E-B190-C2C939543F55/d9/6cf9044e/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59F7B27D-A3FE-4739-B64F-C9DD173F6C05/f3/12ba0290/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/c1/322ec6c7/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FDEE1383-DB0F-4513-9528-62F91D61E502/90/530c7c81/JsonSerializerInternalWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/ThreadedLocalStorageDao.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53FA4D04-FF9E-437D-AC8E-1BA5C15E99CE/99/44771ed2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/b3/0fa0eee8/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/83/7fa85c42/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/0c/02a6575a/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/31/14234e47/GZipStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/15/408b57ef/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BEF6D2FB-EF13-4893-9B77-102B4CF6A6E6/29/07548e00/HostView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../GhostNight/Assets/ECS/Systems/Run/Player/PlayerMoveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81A2A079-7F3C-43B2-AABD-7604740BCD48/9b/ebafbc09/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -334,31 +139,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/IEventAddComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/Components/StateMachineCallbackEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/Components/StateMachineCallbackStart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/TestPath.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/PathComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/AiComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AI/IPathCalculator.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterLookAtSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AI/Impl/PathCalculator.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/EcsMainBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/TargetPositionSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowDestroySystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/AI/PathComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/ISeparateThreadExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tests/TestMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/MoveMagnitudeComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/CameraComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/CameraView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/CullingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/EnemyView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/AI/CalculatePathSystemThread.cs" />
@@ -369,22 +159,37 @@
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/CharacterSetMoveViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterDiveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameUiPrefabInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/Character/CharacterSetAggressiveViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/Input/Impls/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GamePauseSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/IPauseService.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Utils/Impls/SpawnService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/PauseService/Impls/PauseService.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/Character/Impls/MainPlayerView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/CullingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Core/src/ecs-threads-2020.4.22/src/EcsMultiThreadSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/Impl/DefaultSeparateThreadExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tests/DebugView.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/Linked/GamePauseSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Events/SaveGameEventComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Installers/EcsInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/InstantiateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/EcsExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/ThreadedLocalStorageDao.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralStatePool.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Flags/CameraComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Views/Impls/CameraView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/IListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Components/Listeners/Impl/IsAvailableListenerComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SeparateThreadExecutor/Impl/DefaultSeparateThreadExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/SaveGameSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralState.cs" />
       </list>
     </option>
   </component>
@@ -398,11 +203,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34950384" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.64829105" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29988974" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.32312927" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -425,10 +231,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7120">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7120" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -475,7 +281,8 @@
       <workItem from="1616404005520" duration="12654000" />
       <workItem from="1616439588364" duration="1071000" />
       <workItem from="1616506929246" duration="3464000" />
-      <workItem from="1616577345178" duration="9600000" />
+      <workItem from="1616577345178" duration="29886000" />
+      <workItem from="1616668592903" duration="2559000" />
     </task>
     <servers />
   </component>
@@ -500,78 +307,78 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="803" height="464" key="DebuggerActiveHint" timestamp="1616581683223">
+    <state width="803" height="664" key="DebuggerActiveHint" timestamp="1616617216595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="803" height="464" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581683223" />
-    <state width="938" height="132" key="GridCell.Tab.0.bottom" timestamp="1616581600635">
+    <state width="803" height="664" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617216595" />
+    <state width="938" height="132" key="GridCell.Tab.0.bottom" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581600635" />
-    <state width="938" height="132" key="GridCell.Tab.0.center" timestamp="1616581600635">
+    <state width="938" height="132" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.0.center" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581600635" />
-    <state width="938" height="132" key="GridCell.Tab.0.left" timestamp="1616581600635">
+    <state width="938" height="132" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.0.left" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581600635" />
-    <state width="938" height="132" key="GridCell.Tab.0.right" timestamp="1616581600635">
+    <state width="938" height="132" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.0.right" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581600635" />
-    <state width="938" height="132" key="GridCell.Tab.1.bottom" timestamp="1616581609879">
+    <state width="938" height="132" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.1.bottom" timestamp="1616617615896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581609879" />
-    <state width="938" height="132" key="GridCell.Tab.1.center" timestamp="1616581609879">
+    <state width="938" height="132" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615896" />
+    <state width="938" height="132" key="GridCell.Tab.1.center" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581609879" />
-    <state width="938" height="132" key="GridCell.Tab.1.left" timestamp="1616581609879">
+    <state width="938" height="132" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.1.left" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581609879" />
-    <state width="938" height="132" key="GridCell.Tab.1.right" timestamp="1616581609879">
+    <state width="938" height="132" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.1.right" timestamp="1616617615895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="132" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581609879" />
-    <state width="1877" height="119" key="GridCell.Tab.2.bottom" timestamp="1616064299340">
+    <state width="938" height="132" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615895" />
+    <state width="938" height="132" key="GridCell.Tab.2.bottom" timestamp="1616617615899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299340" />
-    <state width="1877" height="119" key="GridCell.Tab.2.center" timestamp="1616064299340">
+    <state width="938" height="132" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615899" />
+    <state width="938" height="132" key="GridCell.Tab.2.center" timestamp="1616617615898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299340" />
-    <state width="1877" height="119" key="GridCell.Tab.2.left" timestamp="1616064299340">
+    <state width="938" height="132" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615898" />
+    <state width="938" height="132" key="GridCell.Tab.2.left" timestamp="1616617615898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299340" />
-    <state width="1877" height="119" key="GridCell.Tab.2.right" timestamp="1616064299340">
+    <state width="938" height="132" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615898" />
+    <state width="938" height="132" key="GridCell.Tab.2.right" timestamp="1616617615899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299340" />
-    <state width="1877" height="119" key="GridCell.Tab.3.bottom" timestamp="1616064299341">
+    <state width="938" height="132" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615899" />
+    <state width="938" height="132" key="GridCell.Tab.3.bottom" timestamp="1616617615900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299341" />
-    <state width="1877" height="119" key="GridCell.Tab.3.center" timestamp="1616064299341">
+    <state width="938" height="132" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615900" />
+    <state width="938" height="132" key="GridCell.Tab.3.center" timestamp="1616617615899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299341" />
-    <state width="1877" height="119" key="GridCell.Tab.3.left" timestamp="1616064299341">
+    <state width="938" height="132" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615899" />
+    <state width="938" height="132" key="GridCell.Tab.3.left" timestamp="1616617615899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299341" />
-    <state width="1877" height="119" key="GridCell.Tab.3.right" timestamp="1616064299341">
+    <state width="938" height="132" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615899" />
+    <state width="938" height="132" key="GridCell.Tab.3.right" timestamp="1616617615899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616064299341" />
-    <state x="780" y="221" key="RiderGenerateDialog" timestamp="1616581214613">
+    <state width="938" height="132" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616617615899" />
+    <state x="780" y="221" key="RiderGenerateDialog" timestamp="1616591686528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="780" y="221" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616581214613" />
+    <state x="780" y="221" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616591686528" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1615564801448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -596,16 +403,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="595" y="270" width="996" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616406686218" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616585502793">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616615838288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616585502793" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616615838288" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="Type#ECS.DataSave.State" memberName="Key" />
         <PinnedItemInfo parentTag="Type#Leopotam.Ecs.EcsFilter`1" memberName="_pool1" />
         <PinnedItemInfo parentTag="Type#Leopotam.Ecs.EcsFilter" memberName="EntitiesCount" />
+        <PinnedItemInfo parentTag="Type#ECS.DataSave.State" memberName="_components" />
         <PinnedItemInfo parentTag="Type#Leopotam.Ecs.EcsGrowList`1" memberName="Items" />
       </pinned-members>
     </pin-to-top-manager>

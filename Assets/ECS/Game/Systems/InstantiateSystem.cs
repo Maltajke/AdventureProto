@@ -1,4 +1,5 @@
 ﻿using ECS.Core.Utils.ReactiveSystem;
+using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.Game.Components;
 using ECS.Utils;
 using ECS.Views;
@@ -7,10 +8,10 @@ using Zenject;
 
 namespace ECS.Game.Systems
 {
-    public class InstantiateSystem : ReactiveSystem<PrefabComponent>
+    public class InstantiateSystem : ReactiveSystem<EventAddComponent<PrefabComponent>>
     {
         [Inject] private readonly ISpawnService<EcsEntity, ILinkable> _spawnService;
-        protected override EcsFilter<PrefabComponent> ReactiveFilter { get; }
+        protected override EcsFilter<EventAddComponent<PrefabComponent>> ReactiveFilter { get; }
         protected override void Execute(EcsEntity entity)
         {
             var linkable = _spawnService.Spawn(entity);

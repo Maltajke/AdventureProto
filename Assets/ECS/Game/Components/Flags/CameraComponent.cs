@@ -5,6 +5,6 @@ namespace ECS.Game.Components.Flags
 {
     public struct CameraComponent : IEcsIgnoreInFilter
     {
-        public Camera Camera;
+        
     }
 }
