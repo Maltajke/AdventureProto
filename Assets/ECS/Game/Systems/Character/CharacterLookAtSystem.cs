@@ -15,7 +15,7 @@ namespace ECS.Game.Systems.Character
         protected override bool DeleteEvent => false;
         protected override void Execute(EcsEntity entity)
         {
-            var target = _world.GetEntityWithUid(entity.Get<TargetComponent>().value);
+            var target = _world.GetEntityWithUid(entity.Get<TargetComponent>().Value);
             
             ref var targetPos = ref target.Get<PositionComponent>().Value;
             ref var myPos = ref entity.Get<PositionComponent>().Value;

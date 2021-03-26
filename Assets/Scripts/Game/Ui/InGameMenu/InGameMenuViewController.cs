@@ -58,6 +58,7 @@ namespace Game.Ui.InGameMenu
         
         private void OnGoMenu()
         {
+            _world.NewEntity().Get<SaveGameEventComponent>();
             _signalBus.BackWindow();
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>

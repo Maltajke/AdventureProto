@@ -4,6 +4,7 @@ using ECS.Core.Utils.ReactiveSystem.Components;
 using ECS.DataSave;
 using ECS.Game.Components.Flags;
 using ECS.Utils.Extensions;
+using Game.SceneLoading;
 using Game.Utils.MonoBehUtils;
 using Leopotam.Ecs;
 using PdUtils.Dao;
@@ -14,17 +15,33 @@ namespace ECS.Game.Systems
 {
     public class GameInitializeSystem : IEcsInitSystem
     {
-        [Inject] private readonly IDao<GeneralState> _generalStateDao;
-        [Inject] private readonly IMemoryPool<GeneralState> _pool;
+        [Inject] private readonly IDao<GameState> _generalStateDao;
+        [Inject] private readonly IMemoryPool<GameState> _pool;
         [Inject] private readonly GetPointFromScene _getPointFromScene;
+        [Inject] private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly EcsWorld _world;
         public void Init()
         {
-            var gState = _pool.Spawn();
-            gState.states = new List<State>();
-            gState = _generalStateDao.Load();
-            
             CreateGameStage();
+            
+            var isLoaded = false;
+            var gState = _pool.Spawn();
+            gState.States = new List<SaveState>();
+            gState = _generalStateDao.Load();
+            if (gState != null)
+            {
+                if (gState.SceneKey == _sceneLoadingManager.CurrentScene)
+                {
+                    foreach (var state in gState.States)
+                    {
+                        var entity =_world.NewEntity();
+                        state.ReadState(entity);
+                        isLoaded = true;
+                    }
+                    if (isLoaded) return;
+                }
+            }
+
             CreatePlayer();
             CreateCamera();
             CreateEnemies(150);

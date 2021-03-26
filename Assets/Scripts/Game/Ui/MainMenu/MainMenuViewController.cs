@@ -1,5 +1,7 @@
-﻿using Game.SceneLoading;
+﻿using ECS.DataSave;
+using Game.SceneLoading;
 using Game.Ui.BlackScreen;
+using PdUtils.Dao;
 using Signals;
 using SimpleUi.Abstracts;
 using SimpleUi.Signals;
@@ -13,13 +15,15 @@ namespace Game.Ui.MainMenu
     public class MainMenuViewController : UiController<MainMenuView>, IInitializable
     {
         private readonly ISceneLoadingManager _sceneLoadingManager;
+        private readonly IDao<GeneralState> _generalState;
         private readonly SignalBus _signalBus;
         private readonly EventSystem _eventSystem;
 
-        public MainMenuViewController(ISceneLoadingManager sceneLoadingManager, SignalBus signalBus)
+        public MainMenuViewController(ISceneLoadingManager sceneLoadingManager, SignalBus signalBus, IDao<GeneralState> generalState)
         {
             _sceneLoadingManager = sceneLoadingManager;
             _signalBus = signalBus;
+            _generalState = generalState;
         }
         
         public void Initialize()
@@ -41,7 +45,9 @@ namespace Game.Ui.MainMenu
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>
             {
-                _sceneLoadingManager.LoadScene("StartScene");
+                var genState = _generalState.Load();
+                var sceneName = genState != null ? genState.Scene : "StartScene";
+                _sceneLoadingManager.LoadScene(sceneName);
             }));
         }
         private void OnAbout()

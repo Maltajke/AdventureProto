@@ -71,8 +71,9 @@
             </e>
           </e>
           <e p="DataSave" t="Include">
+            <e p="GameState.cs" t="Include" />
+            <e p="GameStatePool.cs" t="Include" />
             <e p="GeneralState.cs" t="Include" />
-            <e p="GeneralStatePool.cs" t="Include" />
           </e>
           <e p="EcsMainBootstrap.cs" t="Include" />
           <e p="Game" t="Include">

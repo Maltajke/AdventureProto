@@ -30,7 +30,7 @@ namespace ECS.Game.Systems.Character
         protected override void Execute(EcsEntity entity)
         {
             if (ClosestEnemy.IsNull()) return;
-            ref var targetId = ref entity.Get<TargetComponent>().value;
+            ref var targetId = ref entity.Get<TargetComponent>().Value;
             ref var target = ref ClosestEnemy.Get<UIdComponent>().Value;
             targetId = target;
         }

@@ -13,7 +13,7 @@ namespace ECS.Game.Systems
         protected override void Execute(EcsEntity entity)
         {
             ref var targetPos = ref entity.Get<TargetPositionComponent>().Value;
-            targetPos = _world.GetEntityWithUid(entity.Get<TargetComponent>().value).Get<PositionComponent>().Value;
+            targetPos = _world.GetEntityWithUid(entity.Get<TargetComponent>().Value).Get<PositionComponent>().Value;
         }
     }
 }

@@ -5,6 +5,7 @@ using ECS.DataSave;
 using ECS.Game.Components;
 using ECS.Game.Components.Events;
 using ECS.Game.Components.Listeners;
+using Game.SceneLoading;
 using Leopotam.Ecs;
 using PdUtils.Dao;
 using Utils.SeparateThreadExecutor.Impl;
@@ -14,8 +15,10 @@ namespace ECS.Game.Systems
 {
     public class SaveGameSystem : ReactiveSystem<SaveGameEventComponent>
     {
+        [Inject] private readonly IDao<GameState> _gameStateDao;
         [Inject] private readonly IDao<GeneralState> _generalStateDao;
-        [Inject] private readonly IMemoryPool<GeneralState> _pool;
+        [Inject] private readonly IMemoryPool<GameState> _pool;
+        [Inject] private readonly ISceneLoadingManager _sceneLoadingManager;
         
         private readonly EcsWorld _world;
 
@@ -25,27 +28,22 @@ namespace ECS.Game.Systems
         {
             var thread = new DefaultSeparateThreadExecutor();
             var generalState = _pool.Spawn();
-            generalState.states = new List<State>();
+            generalState.States = new List<SaveState>();
+            generalState.SceneKey = _sceneLoadingManager.CurrentScene;
             thread.Execute(() =>
             {
+                var genState = new GeneralState { Scene = _sceneLoadingManager.CurrentScene};
+                _generalStateDao.Save(genState);
                 foreach (var i in _entities)
                 {
-                    var state = new State(new List<object>());
-                    var indxComp = new object[256];
-                    _entities.GetEntity(i).GetComponentValues(ref indxComp);
-                    foreach (var j in indxComp)
-                    {
-                        if (j != null && !(j is LinkComponent) && !(j is IListener))
-                        {
-                            state._components.Add(j);
-                        }
-                    }
-                    generalState.states.Add(state);
+                    var components = new SaveState();
+                    components.WriteState(_entities.GetEntity(i));
+                    generalState.States.Add(components);
                 }
                 GC.Collect();
             }, () =>
             {
-                _generalStateDao.Save(generalState);
+                _gameStateDao.Save(generalState);
             });
         }
     }

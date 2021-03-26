@@ -38,12 +38,9 @@ namespace ECS.Core.Utils.ReactiveSystem
             {
                 var entity = ReactiveFilter.GetEntity(i);
                 if (EntityFilter(entity))
-                {
                     Execute(entity, true);
-                }
                 if(DeleteEvent)
                     entity.Del<T1>();
-                return;
             }
             
             foreach (var i in ReactiveFilter2)
@@ -53,7 +50,6 @@ namespace ECS.Core.Utils.ReactiveSystem
                     Execute(entity, false);
                 if(DeleteEvent)
                     entity.Del<T2>();
-                return;
             }
         }
         protected abstract void Execute(EcsEntity entity, bool added);

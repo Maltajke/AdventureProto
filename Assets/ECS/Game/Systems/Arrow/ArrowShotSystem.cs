@@ -34,7 +34,7 @@ namespace ECS.Game.Systems.Arrow
                 arrowEntity.Get<OwnerComponent>().Value = entity.Get<OwnerComponent>().Value;
                 
                 if (owner.Has<TargetComponent>())
-                    arrowEntity.Get<TargetComponent>().value = owner.Get<TargetComponent>().value;
+                    arrowEntity.Get<TargetComponent>().Value = owner.Get<TargetComponent>().Value;
                 else 
                     arrowEntity.Get<TargetPositionComponent>().Value = position + (rotation * Vector3.forward) * 10;
                 break;

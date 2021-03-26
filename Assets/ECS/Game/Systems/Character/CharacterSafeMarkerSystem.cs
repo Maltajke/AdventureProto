@@ -20,7 +20,7 @@ namespace ECS.Game.Systems.Character
                 ref var area = ref _safeArea.Get2(i);
                 var player = _player.GetEntity(i);
                 var hasComponent = player.Has<InSafeAreaComponent>();
-                if (pos.ValidatePoint(area.firstPoint, area.secondPoint))
+                if (pos.ValidatePoint(area.Value.firstPoint, area.Value.secondPoint))
                 {
                     if (!hasComponent)
                     {

@@ -49,7 +49,7 @@ namespace ECS.Utils.Extensions
             entity.Get<RotationComponent>().Value = Quaternion.identity;
             entity.Get<PrefabComponent>().Value = "Enemy";
             entity.Get<EventAddComponent<PrefabComponent>>();
-            entity.Get<TargetComponent>().value = world.GetPlayer().Get<UIdComponent>().Value;
+            entity.Get<TargetComponent>().Value = world.GetPlayer().Get<UIdComponent>().Value;
             entity.Get<AiComponent>();
             entity.Get<PathComponent>().Value = new Vector3[64];
             return entity;
@@ -86,8 +86,8 @@ namespace ECS.Utils.Extensions
             entity.Get<UIdComponent>().Value = UidGenerator.Next();
             entity.Get<LevelComponent>();
             ref var area = ref entity.Get<SafeAreaComponent>();
-            area.firstPoint = quadArea.point1.position;
-            area.secondPoint = quadArea.point2.position;
+            area.Value.firstPoint = quadArea.point1.position;
+            area.Value.secondPoint = quadArea.point2.position;
             return entity;
         }
         

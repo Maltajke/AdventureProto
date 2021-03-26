@@ -1,7 +1,9 @@
-﻿using Game.SceneLoading;
+﻿using ECS.DataSave;
+using Game.SceneLoading;
 using Game.SceneLoading.Impls;
 using Game.Ui.BlackScreen;
 using Game.Utils;
+using PdUtils.Dao;
 using PdUtils.PlayerPrefs;
 using PdUtils.PlayerPrefs.Impl;
 using Services.Input;
@@ -23,6 +25,10 @@ namespace Installers
             Container.BindSubstituteInterfacesTo<IInputManager, InputManager>().AsSingle();
             Container.BindFromSubstitute<IPlayerPrefsManager, PersistancePlayerPrefsManager>().AsSingle();
             Container.BindInterfacesTo<PdAudioInitializer>().AsSingle().NonLazy();
+            
+            Container.BindInterfacesTo<LocalStorageDao<GeneralState>>()
+                .AsTransient().WithArguments("generalState");
+            
             BindWindows();
         }
         

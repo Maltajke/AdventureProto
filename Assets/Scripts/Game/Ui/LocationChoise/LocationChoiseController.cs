@@ -1,5 +1,6 @@
 ﻿using System;
 using ECS.Game.Components;
+using ECS.Game.Components.Events;
 using ECS.Game.Components.Flags;
 using Game.SceneLoading;
 using Game.Ui.BlackScreen;
@@ -21,14 +22,16 @@ namespace Game.Ui.LocationChoise
         private readonly ISceneLoadingManager _sceneLoadingManager;
         private readonly IInputManager _inputManager;
         private readonly SignalBus _signalBus;
+        private readonly EcsWorld _world;
 
         public LocationChoiseController(
             ISceneLoadingManager sceneLoadingManager, IInputManager inputManager,
-            SignalBus signalBus)
+            SignalBus signalBus, EcsWorld world)
         {
             _sceneLoadingManager = sceneLoadingManager;
             _inputManager = inputManager;
             _signalBus = signalBus;
+            _world = world;
         }
 
         public override void OnShow()
@@ -68,6 +71,7 @@ namespace Game.Ui.LocationChoise
 
         private void OnLocationChoose()
         {
+            _world.NewEntity().Get<SaveGameEventComponent>();
             _signalBus.BackWindow();
             _signalBus.OpenWindow<BlackScreenWindow>(EWindowLayer.Project);
             _signalBus.Fire(new SignalBlackScreen(false, () =>

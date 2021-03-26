@@ -4,6 +4,6 @@ namespace ECS.Game.Components
 {
     public struct TargetComponent
     {
-        public Uid value;
+        public Uid Value;
     }
 }

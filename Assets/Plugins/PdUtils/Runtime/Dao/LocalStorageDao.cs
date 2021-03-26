@@ -6,35 +6,34 @@ namespace PdUtils.Dao
     public class LocalStorageDao<T> : IDao<T> where T : class
     {
         private readonly string _filename;
+        private readonly string _filePath;
 
         public LocalStorageDao(string filename)
         {
             _filename = filename;
+            _filePath = GetPath();
         }
 
         public void Save(T vo)
         {
             var json = JsonUtility.ToJson(vo);
             var serialized = json.Base64Encode();
-            var path = GetPath();
-            FileHandling.CreateDirectoryIfDoesntExistAndWriteAllText(path, serialized);
+            FileHandling.CreateDirectoryIfDoesntExistAndWriteAllText(_filePath, serialized);
         }
 
         public T Load()
         {
-            var path = GetPath();
-            if (!File.Exists(path))
+            if (!File.Exists(_filePath))
                 return null;
-            var json = File.ReadAllText(path).Base64Decode();
+            var json = File.ReadAllText(_filePath).Base64Decode();
             return JsonUtility.FromJson<T>(json);
         }
 
         public void Remove()
         {
-            var path = GetPath();
-            if (File.Exists(path))
+            if (File.Exists(_filePath))
             {
-                FileHandling.DeleteIfExists(path);
+                FileHandling.DeleteIfExists(_filePath);
             }
         }
 
