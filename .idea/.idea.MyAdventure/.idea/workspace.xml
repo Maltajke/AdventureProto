@@ -23,31 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f306edf-e37a-4e87-9226-a15713c61a47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAdventure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GameState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralStatePool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GameStatePool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralStatePool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GameStatePool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/SafeAreaComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/SafeAreaComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Components/TargetComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Components/TargetComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Arrow/ArrowShotSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterLookAtSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterLookAtSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterSafeMarkerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterSafeMarkerSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterSetTargetSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/Character/CharacterSetTargetSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/SaveGameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/SaveGameSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Game/Systems/TargetPositionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Game/Systems/TargetPositionSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/Utils/Extensions/GameExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/PdUtils/Runtime/Dao/LocalStorageDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/PdUtils/Runtime/Dao/LocalStorageDao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/LocationChoise/LocationChoiseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/LocationChoise/LocationChoiseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/MainMenu/MainMenuViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Ui/MainMenu/MainMenuViewController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/ThreadedLocalStorageDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ThreadLocalStorage/ThreadedLocalStorageDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ECS/DataSave/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ECS/DataSave/GameState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +143,6 @@
         <option value="$PROJECT_DIR$/Assets/ECS/DataSave/IGeneralState.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Core/Utils/ReactiveSystem/ReactiveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/DataSave/GeneralState.cs" />
-        <option value="$PROJECT_DIR$/Assets/ECS/DataSave/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/DataSave/GameStatePool.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/GameInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ECS/Game/Systems/SaveGameSystem.cs" />
@@ -176,6 +151,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/ProjectInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Ui/InGameMenu/InGameMenuViewController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ECS/DataSave/GameState.cs" />
       </list>
     </option>
   </component>
@@ -270,7 +246,7 @@
       <workItem from="1616577345178" duration="29886000" />
       <workItem from="1616668592903" duration="4899000" />
       <workItem from="1616752708529" duration="7196000" />
-      <workItem from="1616763088261" duration="5018000" />
+      <workItem from="1616763088261" duration="5591000" />
     </task>
     <servers />
   </component>
@@ -391,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="595" y="270" width="996" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616758765722" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616768478758">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616769043843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616768478758" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1616769043843" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

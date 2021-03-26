@@ -34,8 +34,6 @@ namespace ECS.DataSave
         public Vector3? Position { get; set; }
         public string Prefab { get; set; }
         public Quaternion? Rotation { get; set; }
-        public Uid? Target { get; set; }
-        public Vector3? TargetPosition { get; set; }
         public QuadAreaValue? QuadArea { get; set; }
         public Uid? Uid { get; set; }
 
@@ -64,10 +62,6 @@ namespace ECS.DataSave
                 Prefab = entity.Get<PrefabComponent>().Value;
             if (entity.Has<RotationComponent>())
                 Rotation = entity.Get<RotationComponent>().Value;
-            if (entity.Has<TargetComponent>())
-                Target = entity.Get<TargetComponent>().Value;
-            if (entity.Has<TargetPositionComponent>())
-                TargetPosition = entity.Get<TargetPositionComponent>().Value;
             if (entity.Has<SafeAreaComponent>())
                 QuadArea = entity.Get<SafeAreaComponent>().Value;
             if (entity.Has<UIdComponent>())
@@ -97,10 +91,6 @@ namespace ECS.DataSave
                 entity.Get<PositionComponent>().Value = Position.Value;
             if (Rotation.HasValue)
                 entity.Get<RotationComponent>().Value = Rotation.Value;
-            if (Target.HasValue)
-                entity.Get<TargetComponent>().Value = Target.Value;
-            if (TargetPosition.HasValue)
-                entity.Get<TargetPositionComponent>().Value = TargetPosition.Value;
             if (QuadArea.HasValue)
                 entity.Get<SafeAreaComponent>().Value = QuadArea.Value;
             if (Uid.HasValue)
