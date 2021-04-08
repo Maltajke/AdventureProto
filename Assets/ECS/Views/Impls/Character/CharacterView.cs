@@ -21,11 +21,7 @@ namespace ECS.Views.Impls.Character
         {
             var behaviours = _animator.GetBehaviours<StateMachineBehaviour>();
             foreach (var behaviour in behaviours)
-            {
-                if (!(behaviour is IEcsBehaviourReceiver)) continue;
-                var iReceiver = (IEcsBehaviourReceiver) behaviour;
-                iReceiver.SetEntity(entity);
-            }
+                if (behaviour is IEcsBehaviourReceiver iReceiver) iReceiver.SetEntity(entity);
         }
         
         public void SetMoveValue(float value) => _animator.SetFloat(Forward, value, 0.1f, Time.deltaTime);
